@@ -1,0 +1,498 @@
+{
+  "_id": "d3-quadtree",
+  "_rev": "7-168c71b0db0d3482d1f9ee7eba16f916",
+  "name": "d3-quadtree",
+  "description": "Two-dimensional recursive spatial subdivision.",
+  "dist-tags": {
+    "latest": "0.2.1"
+  },
+  "versions": {
+    "0.0.1": {
+      "name": "d3-quadtree",
+      "version": "0.0.1",
+      "description": "Two-dimensional recursive spatial subdivision.",
+      "keywords": [
+        "d3",
+        "quadtree"
+      ],
+      "homepage": "https://github.com/d3/d3-quadtree",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/quadtree",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3-quadtree.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && d3-bundler --format=umd --name=quadtree -- index.js > build/quadtree.js",
+        "test": "faucet `find test -name '*-test.js'`",
+        "prepublish": "npm run test && uglifyjs build/quadtree.js -c -m -o build/quadtree.min.js && rm -f build/quadtree.zip && zip -j build/quadtree.zip -- LICENSE README.md build/quadtree.js build/quadtree.min.js"
+      },
+      "devDependencies": {
+        "d3-arrays": "~0.0.4",
+        "d3-bundler": "~0.2.5",
+        "faucet": "0.0",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "gitHead": "679a8a4240bc0190c1ea7c3a445d2cc22d307e57",
+      "bugs": {
+        "url": "https://github.com/d3/d3-quadtree/issues"
+      },
+      "_id": "d3-quadtree@0.0.1",
+      "_shasum": "22fd00fec7ee70620e451e1b225f532903160970",
+      "_from": ".",
+      "_npmVersion": "2.11.2",
+      "_nodeVersion": "0.12.5",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mbostock@gmail.com"
+        }
+      ],
+      "dist": {
+        "shasum": "22fd00fec7ee70620e451e1b225f532903160970",
+        "tarball": "http://registry.npmjs.cf/d3-quadtree/-/d3-quadtree-0.0.1.tgz"
+      },
+      "directories": {}
+    },
+    "0.0.2": {
+      "name": "d3-quadtree",
+      "version": "0.0.2",
+      "description": "Two-dimensional recursive spatial subdivision.",
+      "keywords": [
+        "d3",
+        "quadtree"
+      ],
+      "homepage": "https://github.com/d3/d3-quadtree",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/quadtree.cjs",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3-quadtree.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && d3-bundler -x -f cjs -o build/quadtree.cjs.js",
+        "test": "faucet `find test -name '*-test.js'`",
+        "prepublish": "npm run test && d3-bundler -n quadtree -o build/quadtree.js && uglifyjs build/quadtree.js -c -m -o build/quadtree.min.js && rm -f build/quadtree.zip && zip -j build/quadtree.zip -- LICENSE README.md build/quadtree.js build/quadtree.min.js"
+      },
+      "devDependencies": {
+        "d3-arrays": "~0.1.2",
+        "d3-bundler": "~0.4.0",
+        "faucet": "0.0",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "gitHead": "0c4a114793baa572c1bfe7743b6686fdf19d3dd3",
+      "bugs": {
+        "url": "https://github.com/d3/d3-quadtree/issues"
+      },
+      "_id": "d3-quadtree@0.0.2",
+      "_shasum": "6f140dafff48d83798f7c8db1f3a4fe4fd838e4a",
+      "_from": ".",
+      "_npmVersion": "3.3.9",
+      "_nodeVersion": "5.0.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mike@ocks.org"
+        }
+      ],
+      "dist": {
+        "shasum": "6f140dafff48d83798f7c8db1f3a4fe4fd838e4a",
+        "tarball": "http://registry.npmjs.cf/d3-quadtree/-/d3-quadtree-0.0.2.tgz"
+      },
+      "directories": {}
+    },
+    "0.0.3": {
+      "name": "d3-quadtree",
+      "version": "0.0.3",
+      "description": "Two-dimensional recursive spatial subdivision.",
+      "keywords": [
+        "d3",
+        "quadtree"
+      ],
+      "homepage": "https://github.com/d3/d3-quadtree",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/d3-quadtree.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3-quadtree.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && node -e 'process.stdout.write(\"var version = \\\"\" + require(\"./package.json\").version + \"\\\"; export * from \\\"../index\\\"; export {version};\");' > build/bundle.js && rollup -f umd -u d3-quadtree -n d3_quadtree -o build/d3-quadtree.js -- build/bundle.js",
+        "test": "faucet `find test -name '*-test.js'`",
+        "prepublish": "npm run test && uglifyjs build/d3-quadtree.js -c -m -o build/d3-quadtree.min.js && rm -f build/d3-quadtree.zip && zip -j build/d3-quadtree.zip -- LICENSE README.md build/d3-quadtree.js build/d3-quadtree.min.js"
+      },
+      "devDependencies": {
+        "d3-arrays": "~0.3.1",
+        "faucet": "0.0",
+        "rollup": "0.20.5",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "gitHead": "d86b3c23e25136e3569fe84de325d1e5e0573a9a",
+      "bugs": {
+        "url": "https://github.com/d3/d3-quadtree/issues"
+      },
+      "_id": "d3-quadtree@0.0.3",
+      "_shasum": "1f75bb1f2da95b28c55dd53316be2eb6500ee9d6",
+      "_from": ".",
+      "_npmVersion": "3.3.9",
+      "_nodeVersion": "5.0.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mike@ocks.org"
+        }
+      ],
+      "dist": {
+        "shasum": "1f75bb1f2da95b28c55dd53316be2eb6500ee9d6",
+        "tarball": "http://registry.npmjs.cf/d3-quadtree/-/d3-quadtree-0.0.3.tgz"
+      },
+      "directories": {}
+    },
+    "0.1.0": {
+      "name": "d3-quadtree",
+      "version": "0.1.0",
+      "description": "Two-dimensional recursive spatial subdivision.",
+      "keywords": [
+        "d3",
+        "quadtree"
+      ],
+      "homepage": "https://github.com/d3/d3-quadtree",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/d3-quadtree.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3-quadtree.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && node -e 'process.stdout.write(\"var version = \\\"\" + require(\"./package.json\").version + \"\\\"; export * from \\\"../index\\\"; export {version};\");' > build/bundle.js && rollup -f umd -u d3-quadtree -n d3_quadtree -o build/d3-quadtree.js -- build/bundle.js",
+        "test": "faucet `find test -name '*-test.js'`",
+        "prepublish": "npm run test && uglifyjs build/d3-quadtree.js -c -m -o build/d3-quadtree.min.js && rm -f build/d3-quadtree.zip && zip -j build/d3-quadtree.zip -- LICENSE README.md build/d3-quadtree.js build/d3-quadtree.min.js"
+      },
+      "devDependencies": {
+        "d3-array": "~0.6.1",
+        "faucet": "0.0",
+        "rollup": "0.20.5",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "gitHead": "b1b88a74b6427c1905452be0ade1652f091714c8",
+      "bugs": {
+        "url": "https://github.com/d3/d3-quadtree/issues"
+      },
+      "_id": "d3-quadtree@0.1.0",
+      "_shasum": "33c73321dc2ad734a16b1c856753378aa3a01ef6",
+      "_from": ".",
+      "_npmVersion": "3.3.12",
+      "_nodeVersion": "5.1.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mike@ocks.org"
+        }
+      ],
+      "dist": {
+        "shasum": "33c73321dc2ad734a16b1c856753378aa3a01ef6",
+        "tarball": "http://registry.npmjs.cf/d3-quadtree/-/d3-quadtree-0.1.0.tgz"
+      },
+      "directories": {}
+    },
+    "0.1.1": {
+      "name": "d3-quadtree",
+      "version": "0.1.1",
+      "description": "Two-dimensional recursive spatial subdivision.",
+      "keywords": [
+        "d3",
+        "quadtree"
+      ],
+      "homepage": "https://github.com/d3/d3-quadtree",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/d3-quadtree.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3-quadtree.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && node -e 'process.stdout.write(\"var version = \\\"\" + require(\"./package.json\").version + \"\\\"; export * from \\\"../index\\\"; export {version};\");' > build/bundle.js && rollup -f umd -u d3-quadtree -n d3_quadtree -o build/d3-quadtree.js -- build/bundle.js",
+        "test": "faucet `find test -name '*-test.js'`",
+        "prepublish": "npm run test && uglifyjs build/d3-quadtree.js -c -m -o build/d3-quadtree.min.js && rm -f build/d3-quadtree.zip && zip -j build/d3-quadtree.zip -- LICENSE README.md build/d3-quadtree.js build/d3-quadtree.min.js"
+      },
+      "devDependencies": {
+        "d3-array": "~0.7.0",
+        "faucet": "0.0",
+        "rollup": "0.20.5",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "gitHead": "3a86da72d565806a2730852ffc280bf9e3f9e89b",
+      "bugs": {
+        "url": "https://github.com/d3/d3-quadtree/issues"
+      },
+      "_id": "d3-quadtree@0.1.1",
+      "_shasum": "5681cb65b30f341fa4452a7cbeee2870918b3d71",
+      "_from": ".",
+      "_npmVersion": "3.3.12",
+      "_nodeVersion": "5.1.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mike@ocks.org"
+        }
+      ],
+      "dist": {
+        "shasum": "5681cb65b30f341fa4452a7cbeee2870918b3d71",
+        "tarball": "http://registry.npmjs.cf/d3-quadtree/-/d3-quadtree-0.1.1.tgz"
+      },
+      "directories": {}
+    },
+    "0.2.0": {
+      "name": "d3-quadtree",
+      "version": "0.2.0",
+      "description": "Two-dimensional recursive spatial subdivision.",
+      "keywords": [
+        "d3",
+        "quadtree"
+      ],
+      "homepage": "https://github.com/d3/d3-quadtree",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/d3-quadtree.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3-quadtree.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && node -e 'process.stdout.write(\"var version = \\\"\" + require(\"./package.json\").version + \"\\\"; export * from \\\"../index\\\"; export {version};\");' > build/bundle.js && rollup -f umd -u d3-quadtree -n d3_quadtree -o build/d3-quadtree.js -- build/bundle.js",
+        "test": "faucet `find test -name '*-test.js'`",
+        "prepublish": "npm run test && uglifyjs build/d3-quadtree.js -c -m -o build/d3-quadtree.min.js && rm -f build/d3-quadtree.zip && zip -j build/d3-quadtree.zip -- LICENSE README.md build/d3-quadtree.js build/d3-quadtree.min.js"
+      },
+      "devDependencies": {
+        "d3-array": "~0.7.0",
+        "faucet": "0.0",
+        "rollup": "0.20.5",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "gitHead": "c6b06c02cd1dc19384a16f27946b409a8ca86914",
+      "bugs": {
+        "url": "https://github.com/d3/d3-quadtree/issues"
+      },
+      "_id": "d3-quadtree@0.2.0",
+      "_shasum": "6f42820795714b5b10525d261cba0c1b12c6316c",
+      "_from": ".",
+      "_npmVersion": "3.3.12",
+      "_nodeVersion": "5.4.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mike@ocks.org"
+        }
+      ],
+      "dist": {
+        "shasum": "6f42820795714b5b10525d261cba0c1b12c6316c",
+        "tarball": "http://registry.npmjs.cf/d3-quadtree/-/d3-quadtree-0.2.0.tgz"
+      },
+      "directories": {}
+    },
+    "0.2.1": {
+      "name": "d3-quadtree",
+      "version": "0.2.1",
+      "description": "Two-dimensional recursive spatial subdivision.",
+      "keywords": [
+        "d3",
+        "quadtree"
+      ],
+      "homepage": "https://github.com/d3/d3-quadtree",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/d3-quadtree.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3-quadtree.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && node -e 'process.stdout.write(\"var version = \\\"\" + require(\"./package.json\").version + \"\\\"; export * from \\\"../index\\\"; export {version};\");' > build/bundle.js && rollup -f umd -n d3_quadtree -o build/d3-quadtree.js -- build/bundle.js",
+        "test": "faucet `find test -name '*-test.js'` && eslint index.js src",
+        "prepublish": "npm run test && uglifyjs build/d3-quadtree.js -c -m -o build/d3-quadtree.min.js && rm -f build/d3-quadtree.zip && zip -j build/d3-quadtree.zip -- LICENSE README.md build/d3-quadtree.js build/d3-quadtree.min.js",
+        "postpublish": "VERSION=`node -e 'console.log(require(\"./package.json\").version)'`; git push && git tag -am \"Release $VERSION.\" v${VERSION} && git push --tags && cp build/d3-quadtree.js ../d3.github.com/d3-quadtree.v0.2.js && cp build/d3-quadtree.min.js ../d3.github.com/d3-quadtree.v0.2.min.js && cd ../d3.github.com && git add d3-quadtree.v0.2.js d3-quadtree.v0.2.min.js && git commit -m \"d3-quadtree ${VERSION}\" && git push"
+      },
+      "devDependencies": {
+        "d3-array": "~0.7.1",
+        "faucet": "0.0",
+        "rollup": "0.25",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "gitHead": "01d2d8a9eca4b07fa253a17d5831d39d940d3cfe",
+      "bugs": {
+        "url": "https://github.com/d3/d3-quadtree/issues"
+      },
+      "_id": "d3-quadtree@0.2.1",
+      "_shasum": "22e2b034f1db0468b61a63d7f057a84a78ce5d20",
+      "_from": ".",
+      "_npmVersion": "3.3.12",
+      "_nodeVersion": "5.4.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mike@ocks.org"
+        }
+      ],
+      "dist": {
+        "shasum": "22e2b034f1db0468b61a63d7f057a84a78ce5d20",
+        "tarball": "http://registry.npmjs.cf/d3-quadtree/-/d3-quadtree-0.2.1.tgz"
+      },
+      "directories": {}
+    }
+  },
+  "readme": "# d3-quadtree\n\nA [quadtree](https://en.wikipedia.org/wiki/Quadtree) is a two-dimensional recursive spatial subdivision. This implementation uses square partitions, dividing each square into four equally-sized squares. Each point exists in a unique node; if multiple points are in the same position, some points may be stored on internal nodes rather than leaf nodes. Quadtrees can be used to accelerate various spatial operations, such as the Barnes-Hut approximation for computing n-body forces, or collision detection.\n\n<a href=\"http://bl.ocks.org/mbostock/9078690\"><img src=\"http://bl.ocks.org/mbostock/raw/9078690/thumbnail.png\" width=\"202\"></a>\n<a href=\"http://bl.ocks.org/mbostock/4343214\"><img src=\"http://bl.ocks.org/mbostock/raw/4343214/thumbnail.png\" width=\"202\"></a>\n<a href=\"http://bl.ocks.org/mbostock/6216724\"><img src=\"http://bl.ocks.org/mbostock/raw/6216724/thumbnail.png\" width=\"202\"></a>\n<a href=\"http://bl.ocks.org/mbostock/6224050\"><img src=\"http://bl.ocks.org/mbostock/raw/6224050/thumbnail.png\" width=\"202\"></a>\n<a href=\"http://bl.ocks.org/patricksurry/6478178\"><img src=\"http://bl.ocks.org/patricksurry/raw/6478178/thumbnail.png\" width=\"202\"></a>\n<a href=\"http://bl.ocks.org/llb4ll/8709363\"><img src=\"http://bl.ocks.org/llb4ll/raw/8709363/thumbnail.png\" width=\"202\"></a>\n\n## Installing\n\nIf you use NPM, `npm install d3-quadtree`. Otherwise, download the [latest release](https://github.com/d3/d3-quadtree/releases/latest). The released bundle supports AMD, CommonJS, and vanilla environments. Create a custom build using [Rollup](https://github.com/rollup/rollup) or your preferred bundler. You can also load directly from [d3js.org](https://d3js.org):\n\n```html\n<script src=\"https://d3js.org/d3-quadtree.v0.2.min.js\"></script>\n```\n\nIn a vanilla environment, a `d3_quadtree` global is exported. [Try d3-quadtree in your browser.](https://tonicdev.com/npm/d3-quadtree)\n\n## API Reference\n\n<a name=\"quadtree\" href=\"#quadtree\">#</a> d3.<b>quadtree</b>()\n\nCreates a new [quadtree factory](#_quadtree) with the default [*x*-accessor](#quadtree_x), [*y*-accessor](#quadtree_y) and [extent](#quadtree_extent). The returned factory function can be used to create any number of quadtrees from data.\n\n<a name=\"_quadtree\" href=\"#_quadtree\">#</a> <i>quadtree</i>([<i>data</i>])\n\nConstructs a new quadtree for the specified array of *data*, returning the root node of a new quadtree. The *x*- and *y*-coordinates of each data point are determined using the current [*x*-](#quadtree_x) and [*y*-](#quadtree_y)accessor functions. To build a quadtree by adding points incrementally, the specified *data* array can be empty or omitted and then points can be later [added](#root_add) to the returned root node; in this case, you must explicitly specify the [extent](#quadtree_extent) of the quadtree.\n\nEach node in the quadtree has several properties:\n\n* `nodes` - a sparse array of four child nodes: top-left, top-right, bottom-left, bottom-right.\n* `leaf` - a boolean indicating whether this is an internal node or a leaf node.\n* `data` - the datum associated with this node, if any; may apply to either internal or leaf nodes.\n* `x` - the *x*-coordinate of the associated point, if any.\n* `y` - the *y*-coordinate of the associated point, if any.\n\nThe returned root node also defines [add](#root_add) and [visit](#root_visit) methods.\n\n<a name=\"root_add\" href=\"#root_add\">#</a> <i>root</i>.<b>add</b>(<i>datum</i>)\n\nAdds the specified new *datum* to this quadtree and returns *root*.\n\n<a name=\"root_find\" href=\"#root_find\">#</a> <i>root</i>.<b>find</b>(<i>x</i>, <i>y</i>)\n\nGiven a point ⟨*x*,*y*⟩, returns the closest datum in this quadtree.\n\n<a name=\"root_visit\" href=\"#root_visit\">#</a> <i>root</i>.<b>visit</b>(<i>callback</i>)\n\nVisits each node in this quadtree, invoking the specified *callback* with arguments {*node*, *x1*, *y1*, *x2*, *y2*} for each node, where *node* is the node being visited, ⟨*x1*, *y1*⟩ is the top-left corner, and ⟨*x2*, *y2*⟩ is the bottom-right corner. Returns *root*. Nodes are traversed in pre-order. If the *callback* returns true for a given node, then the children of that node are not visited; otherwise, all child nodes are visited.\n\nNote that the coordinate system used by the quadtree is arbitrary, so a more precise definition is that *x1* <= *x2* and *y1* <= *y2*. In the typical coordinate system used by SVG and Canvas, the origin ⟨0,0⟩ is in the top-left corner, and thus ⟨*x1*, *y1*⟩ is also the top-left corner of the current node.\n\n<a name=\"quadtree_x\" href=\"#quadtree_x\">#</a> <i>quadtree</i>.<b>x</b>([<i>x</i>])\n\nIf *x* is specified, sets the *x*-coordinate accessor and returns this quadtree factory. If *x* is not specified, returns the current *x*-coordinate accessor, which defaults to:\n\n```js\nfunction x(d) {\n  return d[0];\n}\n```\n\nFor each point added to the quadtree, either during [initial construction](#_quadtree) or lazily [added](#root_add), the *x*-accessor is invoked, being passed the current datum `d` and index `i`. The *x*-accessor must then return a numeric value indicating the *x*-coordinate of the point corresponding to the given datum. The *x*-accessor may also be defined as a constant number rather than a function, if desired.\n\n<a name=\"quadtree_y\" href=\"#quadtree_y\">#</a> <i>quadtree</i>.<b>y</b>([<i>y</i>])\n\nIf *y* is specified, sets the y-coordinate accessor and returns this quadtree factory. If *y* is not specified, returns the current *y*-coordinate accessor, which defaults to:\n\n```js\nfunction y(d) {\n  return d[1];\n}\n```\n\nFor each point added to the quadtree, either during [initial construction](#_quadtree) or lazily [added](#root_add), the *y*-accessor is invoked, being passed the current datum `d` and index `i`. The *y*-accessor must then return a numeric value indicating the *y*-coordinate of the point corresponding to the given datum. The *y*-accessor may also be defined as a constant number rather than a function, if desired.\n\n<a name=\"quadtree_extent\" href=\"#quadtree_extent\">#</a> <i>quadtree</i>.<b>extent</b>([<i>extent</i>])\n\nIf *extent* is specified, sets the current extent and returns this quadtree factory. If *extent* is not specified, returns the current extent, which defaults to null. When the extent is null, an extent will be computed automatically by scanning the array of input data points passed to the [quadtree constructor](#_quadtree). Otherwise, the *extent* must be specified as a two-dimensional array [​[*x0*, *y0*], [​*x1*, *y1*]​], where *x0* and *y0* are the lower bounds of the extent, and *x1* and *y1* are the upper bounds of the extent. Setting an extent is required when constructing a quadtree lazily from an initially-empty set of nodes.\n\n<a name=\"quadtree_size\" href=\"#quadtree_size\">#</a> <i>quadtree</i>.<b>size</b>([<i>size</i>])\n\nAn alias for [*quadtree*.extent](#quadtree_extent) where the minimum *x* and *y* of the extent are ⟨0,0⟩. Given a quadtree factory `q`, this is equivalent to `q.extent([[0, 0], size])`.\n",
+  "maintainers": [
+    {
+      "name": "mbostock",
+      "email": "mike@ocks.org"
+    }
+  ],
+  "time": {
+    "modified": "2016-01-29T18:27:57.820Z",
+    "created": "2015-07-02T18:05:32.874Z",
+    "0.0.1": "2015-07-02T18:05:32.874Z",
+    "0.0.2": "2015-11-04T07:38:04.691Z",
+    "0.0.3": "2015-11-11T19:19:45.170Z",
+    "0.1.0": "2015-12-18T22:57:32.685Z",
+    "0.1.1": "2016-01-07T20:29:47.551Z",
+    "0.2.0": "2016-01-15T00:41:37.737Z",
+    "0.2.1": "2016-01-29T18:27:57.820Z"
+  },
+  "homepage": "https://github.com/d3/d3-quadtree",
+  "keywords": [
+    "d3",
+    "quadtree"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d3/d3-quadtree.git"
+  },
+  "author": {
+    "name": "Mike Bostock",
+    "url": "http://bost.ocks.org/mike"
+  },
+  "bugs": {
+    "url": "https://github.com/d3/d3-quadtree/issues"
+  },
+  "license": "BSD-3-Clause",
+  "readmeFilename": "README.md",
+  "_attachments": {
+    "d3-quadtree-0.1.1.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-nCQPX1m3Ax7ZYBaFK6M94w==",
+      "length": 8072,
+      "stub": true
+    },
+    "d3-quadtree-0.0.2.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-sbRm6pozS2+/xUZ3sce+2Q==",
+      "length": 7775,
+      "stub": true
+    },
+    "d3-quadtree-0.0.3.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-RphFnBVIcXFZlH4SURLpWA==",
+      "length": 7859,
+      "stub": true
+    },
+    "d3-quadtree-0.0.1.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-ROBI/WOg+3Jp1CKszWZAyw==",
+      "length": 7682,
+      "stub": true
+    },
+    "d3-quadtree-0.2.0.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-talTLu2POhwZ3Y74hzbYuA==",
+      "length": 7973,
+      "stub": true
+    },
+    "d3-quadtree-0.1.0.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-1gzzLJ3vY09MoTU5SQDUog==",
+      "length": 8058,
+      "stub": true
+    },
+    "d3-quadtree-0.2.1.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-kCFDJh+okNBmOtx/AqzHmw==",
+      "length": 8217,
+      "stub": true
+    }
+  }
+}

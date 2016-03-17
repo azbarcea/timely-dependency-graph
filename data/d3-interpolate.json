@@ -1,0 +1,1029 @@
+{
+  "_id": "d3-interpolate",
+  "_rev": "14-2881bad38c14507ed3e233a569fe25f6",
+  "name": "d3-interpolate",
+  "time": {
+    "modified": "2016-02-28T17:28:03.355Z",
+    "created": "2014-03-29T22:16:04.579Z",
+    "0.0.0": "2014-03-29T22:16:04.579Z",
+    "0.0.1": "2015-06-10T21:22:11.366Z",
+    "0.1.0": "2015-06-10T21:55:37.267Z",
+    "0.1.1": "2015-06-16T20:36:57.936Z",
+    "0.1.2": "2015-10-18T17:46:57.372Z",
+    "0.1.3": "2015-11-04T07:30:29.242Z",
+    "0.1.4": "2015-11-11T19:14:32.595Z",
+    "0.2.0": "2015-11-25T19:44:26.707Z",
+    "0.2.1": "2015-12-18T20:57:39.633Z",
+    "0.3.0": "2015-12-19T18:18:51.839Z",
+    "0.4.0": "2016-01-07T21:28:43.322Z",
+    "0.4.1": "2016-01-29T18:24:40.957Z",
+    "0.5.0": "2016-02-01T20:19:53.959Z",
+    "0.5.1": "2016-02-02T20:57:32.668Z",
+    "0.5.2": "2016-02-03T17:44:33.029Z",
+    "0.6.0": "2016-02-26T21:38:30.110Z",
+    "0.7.0": "2016-02-28T17:28:03.355Z"
+  },
+  "maintainers": [
+    {
+      "name": "mbostock",
+      "email": "mike@ocks.org"
+    }
+  ],
+  "dist-tags": {
+    "latest": "0.7.0"
+  },
+  "description": "Interpolate numbers, colors, strings, arrays, objects, whatever!",
+  "readme": "# d3-interpolate\n\nThis module provides a variety of interpolation methods for blending between two values. Values may be numbers, colors, strings, arrays, or even deeply-nested objects. For example:\n\n```js\nvar i = d3.interpolateNumber(10, 20);\ni(0.0); // 10\ni(0.2); // 12\ni(0.5); // 15\ni(1.0); // 20\n```\n\nThe returned function `i` is called an *interpolator*. Given a starting value *a* and an ending value *b*, it takes a parameter *t* in the domain [0, 1] and returns the corresponding interpolated value between *a* and *b*. An interpolator typically returns a value equivalent to *a* at *t* = 0 and a value equivalent to *b* at *t* = 1.\n\nYou can interpolate more than just numbers. To find the perceptual midpoint between steelblue and brown:\n\n```js\nd3.interpolateLab(\"steelblue\", \"brown\")(0.5); // \"rgb(142, 92, 109)\"\n```\n\nHere’s a more elaborate example demonstrating type inference used by [interpolate](#interpolate):\n\n```js\nvar i = d3.interpolate({colors: [\"red\", \"blue\"]}, {colors: [\"white\", \"black\"]});\ni(0.0); // {colors: [\"rgb(255, 0, 0)\", \"rgb(0, 0, 255)\"]}\ni(0.5); // {colors: [\"rgb(255, 128, 128)\", \"rgb(0, 0, 128)\"]}\ni(1.0); // {colors: [\"rgb(255, 255, 255)\", \"rgb(0, 0, 0)\"]}\n```\n\nNote that the generic value interpolator detects not only nested objects and arrays, but also color strings and numbers embedded in strings!\n\n## Installing\n\nIf you use NPM, `npm install d3-interpolate`. Otherwise, download the [latest release](https://github.com/d3/d3-interpolate/releases/latest). You can also load directly from [d3js.org](https://d3js.org), either as a [standalone library](https://d3js.org/d3-interpolate.v0.7.min.js) or as part of [D3 4.0 alpha](https://github.com/mbostock/d3/tree/4). AMD, CommonJS, and vanilla environments are supported. In vanilla, a `d3_interpolate` global is exported:\n\n```html\n<script src=\"https://d3js.org/d3-color.v0.4.min.js\"></script>\n<script src=\"https://d3js.org/d3-interpolate.v0.7.min.js\"></script>\n<script>\n\nvar interpolate = d3_interpolate.interpolateRgb(\"steelblue\", \"brown\");\n\n</script>\n```\n\n[Try d3-interpolate in your browser.](https://tonicdev.com/npm/d3-interpolate)\n\n## API Reference\n\n<a name=\"interpolate\" href=\"#interpolate\">#</a> d3.<b>interpolate</b>(<i>a</i>, <i>b</i>)\n\nReturns an interpolator between the two arbitrary values *a* and *b*. The interpolator implementation is based on the type of the end value *b*, using the following algorithm:\n\n1. If *b* is null, undefined or a boolean, use the constant *b*.\n2. If *b* is a number, use [interpolateNumber](#interpolateNumber).\n3. If *b* is a [color](https://github.com/d3/d3-color#color) or a string coercible to a color, use [interpolateRgb](#interpolateRgb).\n4. If *b* is a string, use [interpolateString](#interpolateString).\n5. If *b* is an [array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray), use [interpolateArray](#interpolateArray).\n6. Use [interpolateObject](#interpolateObject).\n\nBased on the chosen interpolator, *a* is coerced to the suitable corresponding type.\n\n<a name=\"interpolateNumber\" href=\"#interpolateNumber\">#</a> d3.<b>interpolateNumber</b>(<i>a</i>, <i>b</i>)\n\nReturns an interpolator between the two numbers *a* and *b*. The returned interpolator is equivalent to:\n\n```js\nfunction interpolate(t) {\n  return a * (1 - t) + b * t;\n}\n```\n\nCaution: avoid interpolating to or from the number zero when the interpolator is used to generate a string. When very small values are stringified, they may be converted to scientific notation, which is an invalid attribute or style property value. For example, the number `0.0000001` is converted to the string `\"1e-7\"`. This is particularly noticeable with interpolating opacity. To avoid scientific notation, start or end the transition at 1e-6: the smallest value that is not stringified in scientific notation.\n\n<a name=\"interpolateRound\" href=\"#interpolateRound\">#</a> d3.<b>interpolateRound</b>(<i>a</i>, <i>b</i>)\n\nReturns an interpolator between the two numbers *a* and *b*; the interpolator is similar to [interpolateNumber](#interpolateNumber), except it will round the resulting value to the nearest integer.\n\n<a name=\"interpolateString\" href=\"#interpolateString\">#</a> d3.<b>interpolateString</b>(<i>a</i>, <i>b</i>)\n\nReturns an interpolator between the two strings *a* and *b*. The string interpolator finds numbers embedded in *a* and *b*, where each number is of the form understood by JavaScript. A few examples of numbers that will be detected within a string: `-1`, `42`, `3.14159`, and `6.0221413e+23`.\n\nFor each number embedded in *b*, the interpolator will attempt to find a corresponding number in *a*. If a corresponding number is found, a numeric interpolator is created using [interpolateNumber](#interpolateNumber). The remaining parts of the string *b* are used as a template: the static parts of the string *b* remain constant for the interpolation, with the interpolated numeric values embedded in the template.\n\nFor example, if *a* is `\"300 12px sans-serif\"`, and *b* is `\"500 36px Comic-Sans\"`, two embedded numbers are found. The remaining static parts of the string are a space between the two numbers (`\" \"`), and the suffix (`\"px Comic-Sans\"`). The result of the interpolator at *t* = 0.5 is `\"400 24px Comic-Sans\"`.\n\n<a name=\"interpolateArray\" href=\"#interpolateArray\">#</a> d3.<b>interpolateArray</b>(<i>a</i>, <i>b</i>)\n\nReturns an interpolator between the two arrays *a* and *b*. Internally, an array template is created that is the same length in *b*. For each element in *b*, if there exists a corresponding element in *a*, a generic interpolator is created for the two elements using [interpolate](#interpolate). If there is no such element, the static value from *b* is used in the template. Then, for the given parameter *t*, the template’s embedded interpolators are evaluated. The updated array template is then returned.\n\nFor example, if *a* is the array `[0, 1]` and *b* is the array `[1, 10, 100]`, then the result of the interpolator for *t* = 0.5 is the array `[0.5, 5.5, 100]`.\n\nNote: **no defensive copy** of the template array is created; modifications of the returned array may adversely affect subsequent evaluation of the interpolator. No copy is made for performance reasons; interpolators are often part of the inner loop of [animated transitions](https://github.com/d3/d3-transition).\n\n<a name=\"interpolateObject\" href=\"#interpolateObject\">#</a> d3.<b>interpolateObject</b>(<i>a</i>, <i>b</i>)\n\nReturns an interpolator between the two objects *a* and *b*. Internally, an object template is created that has the same properties as *b*. For each property in *b*, if there exists a corresponding property in *a*, a generic interpolator is created for the two elements using [interpolate](#interpolate). If there is no such property, the static value from *b* is used in the template. Then, for the given parameter *t*, the template's embedded interpolators are evaluated and the updated object template is then returned.\n\nFor example, if *a* is the object `{x: 0, y: 1}` and *b* is the object `{x: 1, y: 10, z: 100}`, the result of the interpolator for *t* = 0.5 is the object `{x: 0.5, y: 5.5, z: 100}`.\n\nObject interpolation is particularly useful for *dataspace interpolation*, where data is interpolated rather than attribute values. For example, you can interpolate an object which describes an arc in a pie chart, and then use d3.svg.arc to compute the new SVG path data.\n\nNote: **no defensive copy** of the template object is created; modifications of the returned object may adversely affect subsequent evaluation of the interpolator. No copy is made for performance reasons; interpolators are often part of the inner loop of [animated transitions](https://github.com/d3/d3-transition).\n\n<a name=\"interpolateTransformCss\" href=\"#interpolateTransformCss\">#</a> d3.<b>interpolateTransformCss</b>(<i>a</i>, <i>b</i>)\n\nReturns an interpolator between the two 2D CSS transforms represented by *a* and *b*. Each transform is decomposed to a standard representation of translate, rotate, *x*-skew and scale; these component transformations are then interpolated. This behavior is standardized by CSS: see [matrix decomposition for animation](http://www.w3.org/TR/css3-2d-transforms/#matrix-decomposition).\n\n<a name=\"interpolateTransformSvg\" href=\"#interpolateTransformSvg\">#</a> d3.<b>interpolateTransformSvg</b>(<i>a</i>, <i>b</i>)\n\nReturns an interpolator between the two 2D SVG transforms represented by *a* and *b*. Each transform is decomposed to a standard representation of translate, rotate, *x*-skew and scale; these component transformations are then interpolated. This behavior is standardized by CSS: see [matrix decomposition for animation](http://www.w3.org/TR/css3-2d-transforms/#matrix-decomposition).\n\n<a name=\"interpolateZoom\" href=\"#interpolateZoom\">#</a> d3.<b>interpolateZoom</b>(<i>a</i>, <i>b</i>)\n\nReturns an interpolator between the two views *a* and *b* of a two-dimensional plane, based on [“Smooth and efficient zooming and panning”](https://www.google.com/search?q=Smooth+and+efficient+zooming+and+panning) by Jarke J. van Wijk and Wim A.A. Nuij. Each view is defined as an array of three numbers: *cx*, *cy* and *width*. The first two coordinates *cx*, *cy* represent the center of the viewport; the last coordinate *width* represents the size of the viewport.\n\nThe returned interpolator exposes a *duration* property which encodes the recommended transition duration in milliseconds. This duration is based on the path length of the curved trajectory through *x,y* space. If you want to a slower or faster transition, multiply this by an arbitrary scale factor (<i>V</i> as described in the original paper).\n\n<a name=\"interpolateRgb\" href=\"#interpolateRgb\">#</a> d3.<b>interpolateRgb</b>(<i>a</i>, <i>b</i>)\n\n<img src=\"https://raw.githubusercontent.com/d3/d3-interpolate/master/img/rgb.png\" width=\"100%\" height=\"40\" alt=\"rgb\">\n\nOr, with a corrected [gamma](#interpolate_gamma) of 2.2:\n\n<img src=\"https://raw.githubusercontent.com/d3/d3-interpolate/master/img/rgbGamma.png\" width=\"100%\" height=\"40\" alt=\"rgbGamma\">\n\nReturns an RGB color space interpolator between the two colors *a* and *b* with a configurable [gamma](#interpolate_gamma). If the gamma is not specified, it defaults to 1.0. The colors *a* and *b* need not be in RGB; they will be converted to RGB using [color.rgb](https://github.com/d3/d3-color#rgb). The return value of the interpolator is an RGB string.\n\n<a name=\"interpolateHsl\" href=\"#interpolateHsl\">#</a> d3.<b>interpolateHsl</b>(<i>a</i>, <i>b</i>)\n\n<img src=\"https://raw.githubusercontent.com/d3/d3-interpolate/master/img/hsl.png\" width=\"100%\" height=\"40\" alt=\"hsl\">\n\nReturns an HSL color space interpolator between the two colors *a* and *b*. The colors *a* and *b* need not be in HSL; they will be converted to HSL using [color.hsl](https://github.com/d3/d3-color#hsl). If either color’s hue or saturation is NaN, the opposing color’s channel value is used. The shortest path between hues is used. The return value of the interpolator is an RGB string.\n\n<a name=\"interpolateHslLong\" href=\"#interpolateHslLong\">#</a> d3.<b>interpolateHslLong</b>(<i>a</i>, <i>b</i>)\n\n<img src=\"https://raw.githubusercontent.com/d3/d3-interpolate/master/img/hslLong.png\" width=\"100%\" height=\"40\" alt=\"hslLong\">\n\nLike [interpolateHsl](#interpolateHsl), but does not use the shortest path between hues.\n\n<a name=\"interpolateLab\" href=\"#interpolateLab\">#</a> d3.<b>interpolateLab</b>(<i>a</i>, <i>b</i>)\n\n<img src=\"https://raw.githubusercontent.com/d3/d3-interpolate/master/img/lab.png\" width=\"100%\" height=\"40\" alt=\"lab\">\n\nReturns a Lab color space interpolator between the two colors *a* and *b*. The colors *a* and *b* need not be in Lab; they will be converted to Lab using [color.lab](https://github.com/d3/d3-color#lab). The return value of the interpolator is an RGB string.\n\n<a name=\"interpolateHcl\" href=\"#interpolateHcl\">#</a> d3.<b>interpolateHcl</b>(<i>a</i>, <i>b</i>)\n\n<img src=\"https://raw.githubusercontent.com/d3/d3-interpolate/master/img/hcl.png\" width=\"100%\" height=\"40\" alt=\"hcl\">\n\nReturns an HCL color space interpolator between the two colors *a* and *b*. The colors *a* and *b* need not be in HCL; they will be converted to HCL using [color.hcl](https://github.com/d3/d3-color#hcl). If either color’s hue or chroma is NaN, the opposing color’s channel value is used. The shortest path between hues is used. The return value of the interpolator is an RGB string.\n\n<a name=\"interpolateHclLong\" href=\"#interpolateHclLong\">#</a> d3.<b>interpolateHclLong</b>(<i>a</i>, <i>b</i>)\n\n<img src=\"https://raw.githubusercontent.com/d3/d3-interpolate/master/img/hclLong.png\" width=\"100%\" height=\"40\" alt=\"hclLong\">\n\nLike [interpolateHcl](#interpolateHcl), but does not use the shortest path between hues.\n\n<a name=\"interpolateCubehelix\" href=\"#interpolateCubehelix\">#</a> d3.<b>interpolateCubehelix</b>(<i>a</i>, <i>b</i>)\n\n<img src=\"https://raw.githubusercontent.com/d3/d3-interpolate/master/img/cubehelix.png\" width=\"100%\" height=\"40\" alt=\"cubehelix\">\n\nOr, with a [gamma](#interpolate_gamma) of 3.0 to emphasize high-intensity values:\n\n<img src=\"https://raw.githubusercontent.com/d3/d3-interpolate/master/img/cubehelixGamma.png\" width=\"100%\" height=\"40\" alt=\"cubehelixGamma\">\n\nReturns a Cubehelix color space interpolator between the two colors *a* and *b* using a configurable [gamma](#interpolate_gamma). If the gamma is not specified, it defaults to 1.0. The colors *a* and *b* need not be in Cubehelix; they will be converted to Cubehelix using [color.cubehelix](https://github.com/d3/d3-color#cubehelix). If either color’s hue or saturation is NaN, the opposing color’s channel value is used. The shortest path between hues is used. The return value of the interpolator is an RGB string.\n\n<a name=\"interpolateCubehelixLong\" href=\"#interpolateCubehelixLong\">#</a> d3.<b>interpolateCubehelixLong</b>(<i>a</i>, <i>b</i>)\n\n<img src=\"https://raw.githubusercontent.com/d3/d3-interpolate/master/img/cubehelixLong.png\" width=\"100%\" height=\"40\" alt=\"cubehelixLong\">\n\nOr, with a [gamma](#interpolate_gamma) of 3.0 to emphasize high-intensity values:\n\n<img src=\"https://raw.githubusercontent.com/d3/d3-interpolate/master/img/cubehelixGammaLong.png\" width=\"100%\" height=\"40\" alt=\"cubehelixGammaLong\">\n\nLike [interpolateCubehelix](#interpolateCubehelix), but does not use the shortest path between hues.\n\n### Gamma Correction\n\n<a name=\"interpolate_gamma\" href=\"#interpolate_gamma\">#</a> <i>interpolate</i>.<b>gamma</b>(<i>gamma</i>)\n\nGiven that *interpolate* is one of [interpolateRgb](#interpolateRgb), [interpolateCubehelix](#interpolateCubehelix) or [interpolateCubehelixLong](#interpolateCubehelixLong), returns a new interpolator factory of the same type using the specified *gamma*. For example, to interpolate from purple to orange with a gamma of 2.2 in RGB space:\n\n```js\nvar interpolate = d3.interpolateRgb.gamma(2.2)(\"purple\", \"orange\");\n```\n\nSee Eric Brasseur’s article, [Gamma error in picture scaling](https://web.archive.org/web/20160112115812/http://www.4p8.com/eric.brasseur/gamma.html), for more on gamma correction.\n",
+  "versions": {
+    "0.1.1": {
+      "name": "d3-interpolate",
+      "version": "0.1.1",
+      "description": "Interpolate numbers, colors, strings, arrays, objects, whatever!",
+      "keywords": [
+        "d3",
+        "interpolate",
+        "interpolation"
+      ],
+      "homepage": "https://github.com/d3/d3-interpolate",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/interpolate",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-interpolate.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && d3-bundler --format=umd --name=interpolate -- index.js > build/interpolate.js",
+        "test": "faucet `find test -name '*-test.js'`",
+        "prepublish": "npm run test && uglifyjs build/interpolate.js -c -m -o build/interpolate.min.js && rm -f build/interpolate.zip && zip -j build/interpolate.zip -- LICENSE README.md build/interpolate.js build/interpolate.min.js"
+      },
+      "devDependencies": {
+        "d3-bundler": "~0.2.6",
+        "d3-color": "~0.2.0",
+        "faucet": "0.0",
+        "tape": "4",
+        "uglifyjs": "2"
+      },
+      "gitHead": "e094e81f3328bfe349745cf4549fb7a5d38945ad",
+      "bugs": {
+        "url": "https://github.com/d3/d3-interpolate/issues"
+      },
+      "_id": "d3-interpolate@0.1.1",
+      "_shasum": "4809295fc6329531243d22433087d6de51c0ddd2",
+      "_from": ".",
+      "_npmVersion": "2.7.5",
+      "_nodeVersion": "0.12.2",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mike@ocks.org"
+        }
+      ],
+      "dist": {
+        "shasum": "4809295fc6329531243d22433087d6de51c0ddd2",
+        "tarball": "http://registry.npmjs.cf/d3-interpolate/-/d3-interpolate-0.1.1.tgz"
+      },
+      "directories": {}
+    },
+    "0.1.2": {
+      "name": "d3-interpolate",
+      "version": "0.1.2",
+      "description": "Interpolate numbers, colors, strings, arrays, objects, whatever!",
+      "keywords": [
+        "d3",
+        "interpolate",
+        "interpolation"
+      ],
+      "homepage": "https://github.com/d3/d3-interpolate",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/interpolate",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3-interpolate.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && d3-bundler --format=umd --name=interpolate -- index.js > build/interpolate.js",
+        "test": "faucet `find test -name '*-test.js'`",
+        "prepublish": "npm run test && uglifyjs build/interpolate.js -c -m -o build/interpolate.min.js && rm -f build/interpolate.zip && zip -j build/interpolate.zip -- LICENSE README.md build/interpolate.js build/interpolate.min.js"
+      },
+      "devDependencies": {
+        "d3-bundler": "~0.2.9",
+        "d3-color": "~0.2.6",
+        "faucet": "0.0",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "gitHead": "535a7e704b33f1d18a97bcc93edcb2d84a4aa508",
+      "bugs": {
+        "url": "https://github.com/d3/d3-interpolate/issues"
+      },
+      "_id": "d3-interpolate@0.1.2",
+      "_shasum": "63916e6b7619ca9bf3167f1d9407b935ab97b203",
+      "_from": ".",
+      "_npmVersion": "2.11.2",
+      "_nodeVersion": "0.12.5",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mike@ocks.org"
+        }
+      ],
+      "dist": {
+        "shasum": "63916e6b7619ca9bf3167f1d9407b935ab97b203",
+        "tarball": "http://registry.npmjs.cf/d3-interpolate/-/d3-interpolate-0.1.2.tgz"
+      },
+      "directories": {}
+    },
+    "0.1.3": {
+      "name": "d3-interpolate",
+      "version": "0.1.3",
+      "description": "Interpolate numbers, colors, strings, arrays, objects, whatever!",
+      "keywords": [
+        "d3",
+        "interpolate",
+        "interpolation"
+      ],
+      "homepage": "https://github.com/d3/d3-interpolate",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/interpolate.cjs",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3-interpolate.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && d3-bundler -x -f cjs -o build/interpolate.cjs.js",
+        "test": "faucet `find test -name '*-test.js'`",
+        "prepublish": "npm run test && d3-bundler -n interpolate -o build/interpolate.js && uglifyjs build/interpolate.js -c -m -o build/interpolate.min.js && rm -f build/interpolate.zip && zip -j build/interpolate.zip -- LICENSE README.md build/interpolate.js build/interpolate.min.js"
+      },
+      "dependencies": {
+        "d3-color": "~0.2.7"
+      },
+      "devDependencies": {
+        "d3-bundler": "~0.4.0",
+        "faucet": "0.0",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "gitHead": "8e772508cf97faaf3759ba51e24b8cd39706a089",
+      "bugs": {
+        "url": "https://github.com/d3/d3-interpolate/issues"
+      },
+      "_id": "d3-interpolate@0.1.3",
+      "_shasum": "28be485964088a1661ceaa5da037d6886df93095",
+      "_from": ".",
+      "_npmVersion": "3.3.9",
+      "_nodeVersion": "5.0.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mike@ocks.org"
+        }
+      ],
+      "dist": {
+        "shasum": "28be485964088a1661ceaa5da037d6886df93095",
+        "tarball": "http://registry.npmjs.cf/d3-interpolate/-/d3-interpolate-0.1.3.tgz"
+      },
+      "directories": {}
+    },
+    "0.1.4": {
+      "name": "d3-interpolate",
+      "version": "0.1.4",
+      "description": "Interpolate numbers, colors, strings, arrays, objects, whatever!",
+      "keywords": [
+        "d3",
+        "interpolate",
+        "interpolation"
+      ],
+      "homepage": "https://github.com/d3/d3-interpolate",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/d3-interpolate.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3-interpolate.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && node -e 'process.stdout.write(\"var version = \\\"\" + require(\"./package.json\").version + \"\\\"; export * from \\\"../index\\\"; export {version};\");' > build/bundle.js && rollup -f umd -g d3-color:d3_color -u d3-interpolate -n d3_interpolate -o build/d3-interpolate.js -- build/bundle.js",
+        "test": "faucet `find test -name '*-test.js'`",
+        "prepublish": "npm run test && uglifyjs build/d3-interpolate.js -c -m -o build/d3-interpolate.min.js && rm -f build/d3-interpolate.zip && zip -j build/d3-interpolate.zip -- LICENSE README.md build/d3-interpolate.js build/d3-interpolate.min.js"
+      },
+      "dependencies": {
+        "d3-color": "~0.2.8"
+      },
+      "devDependencies": {
+        "faucet": "0.0",
+        "rollup": "0.20.5",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "gitHead": "7c7e7c8c67b2a9a7a81d2f423620b0f8cb716d63",
+      "bugs": {
+        "url": "https://github.com/d3/d3-interpolate/issues"
+      },
+      "_id": "d3-interpolate@0.1.4",
+      "_shasum": "19295ec21c7c0604d4d61cf36a949b6b97b0885b",
+      "_from": ".",
+      "_npmVersion": "3.3.9",
+      "_nodeVersion": "5.0.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mike@ocks.org"
+        }
+      ],
+      "dist": {
+        "shasum": "19295ec21c7c0604d4d61cf36a949b6b97b0885b",
+        "tarball": "http://registry.npmjs.cf/d3-interpolate/-/d3-interpolate-0.1.4.tgz"
+      },
+      "directories": {}
+    },
+    "0.2.0": {
+      "name": "d3-interpolate",
+      "version": "0.2.0",
+      "description": "Interpolate numbers, colors, strings, arrays, objects, whatever!",
+      "keywords": [
+        "d3",
+        "interpolate",
+        "interpolation"
+      ],
+      "homepage": "https://github.com/d3/d3-interpolate",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/d3-interpolate.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3-interpolate.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && node -e 'process.stdout.write(\"var version = \\\"\" + require(\"./package.json\").version + \"\\\"; export * from \\\"../index\\\"; export {version};\");' > build/bundle.js && rollup -f umd -g d3-color:d3_color -u d3-interpolate -n d3_interpolate -o build/d3-interpolate.js -- build/bundle.js",
+        "test": "faucet `find test -name '*-test.js'`",
+        "prepublish": "npm run test && uglifyjs build/d3-interpolate.js -c -m -o build/d3-interpolate.min.js && rm -f build/d3-interpolate.zip && zip -j build/d3-interpolate.zip -- LICENSE README.md build/d3-interpolate.js build/d3-interpolate.min.js"
+      },
+      "dependencies": {
+        "d3-color": "~0.3.1"
+      },
+      "devDependencies": {
+        "faucet": "0.0",
+        "rollup": "0.20.5",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "gitHead": "5f3a7b0969001433b43b33b5d67e80e5dea0f3f3",
+      "bugs": {
+        "url": "https://github.com/d3/d3-interpolate/issues"
+      },
+      "_id": "d3-interpolate@0.2.0",
+      "_shasum": "e9fb73a306f3b70e29980ac4c60d969b4a520fd9",
+      "_from": ".",
+      "_npmVersion": "3.3.9",
+      "_nodeVersion": "5.0.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mike@ocks.org"
+        }
+      ],
+      "dist": {
+        "shasum": "e9fb73a306f3b70e29980ac4c60d969b4a520fd9",
+        "tarball": "http://registry.npmjs.cf/d3-interpolate/-/d3-interpolate-0.2.0.tgz"
+      },
+      "directories": {}
+    },
+    "0.2.1": {
+      "name": "d3-interpolate",
+      "version": "0.2.1",
+      "description": "Interpolate numbers, colors, strings, arrays, objects, whatever!",
+      "keywords": [
+        "d3",
+        "interpolate",
+        "interpolation"
+      ],
+      "homepage": "https://github.com/d3/d3-interpolate",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/d3-interpolate.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3-interpolate.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && node -e 'process.stdout.write(\"var version = \\\"\" + require(\"./package.json\").version + \"\\\"; export * from \\\"../index\\\"; export {version};\");' > build/bundle.js && rollup -f umd -g d3-color:d3_color -u d3-interpolate -n d3_interpolate -o build/d3-interpolate.js -- build/bundle.js",
+        "test": "faucet `find test -name '*-test.js'`",
+        "prepublish": "npm run test && uglifyjs build/d3-interpolate.js -c -m -o build/d3-interpolate.min.js && rm -f build/d3-interpolate.zip && zip -j build/d3-interpolate.zip -- LICENSE README.md build/d3-interpolate.js build/d3-interpolate.min.js"
+      },
+      "dependencies": {
+        "d3-color": "~0.3.2"
+      },
+      "devDependencies": {
+        "faucet": "0.0",
+        "rollup": "0.20.5",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "gitHead": "d8948188d96aaf2a43814cbbd3868623da4e6bc2",
+      "bugs": {
+        "url": "https://github.com/d3/d3-interpolate/issues"
+      },
+      "_id": "d3-interpolate@0.2.1",
+      "_shasum": "0f0d7364e40ab5e7f2ebd010de1539c5e6711991",
+      "_from": ".",
+      "_npmVersion": "3.3.12",
+      "_nodeVersion": "5.1.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mike@ocks.org"
+        }
+      ],
+      "dist": {
+        "shasum": "0f0d7364e40ab5e7f2ebd010de1539c5e6711991",
+        "tarball": "http://registry.npmjs.cf/d3-interpolate/-/d3-interpolate-0.2.1.tgz"
+      },
+      "directories": {}
+    },
+    "0.3.0": {
+      "name": "d3-interpolate",
+      "version": "0.3.0",
+      "description": "Interpolate numbers, colors, strings, arrays, objects, whatever!",
+      "keywords": [
+        "d3",
+        "interpolate",
+        "interpolation",
+        "color"
+      ],
+      "homepage": "https://github.com/d3/d3-interpolate",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/d3-interpolate.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3-interpolate.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && node -e 'process.stdout.write(\"var version = \\\"\" + require(\"./package.json\").version + \"\\\"; export * from \\\"../index\\\"; export {version};\");' > build/bundle.js && rollup -f umd -g d3-color:d3_color -u d3-interpolate -n d3_interpolate -o build/d3-interpolate.js -- build/bundle.js",
+        "test": "faucet `find test -name '*-test.js'`",
+        "prepublish": "npm run test && uglifyjs build/d3-interpolate.js -c -m -o build/d3-interpolate.min.js && rm -f build/d3-interpolate.zip && zip -j build/d3-interpolate.zip -- LICENSE README.md build/d3-interpolate.js build/d3-interpolate.min.js"
+      },
+      "dependencies": {
+        "d3-color": "~0.3.2"
+      },
+      "devDependencies": {
+        "faucet": "0.0",
+        "rollup": "0.20.5",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "gitHead": "19a71227cce67f40d863da54f7f4038b61f946c3",
+      "bugs": {
+        "url": "https://github.com/d3/d3-interpolate/issues"
+      },
+      "_id": "d3-interpolate@0.3.0",
+      "_shasum": "74124ac750b08ff8f064540672b7663294bd3656",
+      "_from": ".",
+      "_npmVersion": "3.3.12",
+      "_nodeVersion": "5.1.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mike@ocks.org"
+        }
+      ],
+      "dist": {
+        "shasum": "74124ac750b08ff8f064540672b7663294bd3656",
+        "tarball": "http://registry.npmjs.cf/d3-interpolate/-/d3-interpolate-0.3.0.tgz"
+      },
+      "directories": {}
+    },
+    "0.4.0": {
+      "name": "d3-interpolate",
+      "version": "0.4.0",
+      "description": "Interpolate numbers, colors, strings, arrays, objects, whatever!",
+      "keywords": [
+        "d3",
+        "interpolate",
+        "interpolation",
+        "color"
+      ],
+      "homepage": "https://github.com/d3/d3-interpolate",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/d3-interpolate.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3-interpolate.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && node -e 'process.stdout.write(\"var version = \\\"\" + require(\"./package.json\").version + \"\\\"; export * from \\\"../index\\\"; export {version};\");' > build/bundle.js && rollup -f umd -g d3-color:d3_color -u d3-interpolate -n d3_interpolate -o build/d3-interpolate.js -- build/bundle.js",
+        "test": "faucet `find test -name '*-test.js'`",
+        "prepublish": "npm run test && uglifyjs build/d3-interpolate.js -c -m -o build/d3-interpolate.min.js && rm -f build/d3-interpolate.zip && zip -j build/d3-interpolate.zip -- LICENSE README.md build/d3-interpolate.js build/d3-interpolate.min.js"
+      },
+      "dependencies": {
+        "d3-color": "~0.3.3"
+      },
+      "devDependencies": {
+        "faucet": "0.0",
+        "rollup": "0.20.5",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "gitHead": "edc6c6862e321a3e9eedcc87050a09dd0954f337",
+      "bugs": {
+        "url": "https://github.com/d3/d3-interpolate/issues"
+      },
+      "_id": "d3-interpolate@0.4.0",
+      "_shasum": "49fcc6c65ea7d7d8c227a8cd29aacf7d1050e6d6",
+      "_from": ".",
+      "_npmVersion": "3.3.12",
+      "_nodeVersion": "5.1.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mike@ocks.org"
+        }
+      ],
+      "dist": {
+        "shasum": "49fcc6c65ea7d7d8c227a8cd29aacf7d1050e6d6",
+        "tarball": "http://registry.npmjs.cf/d3-interpolate/-/d3-interpolate-0.4.0.tgz"
+      },
+      "directories": {}
+    },
+    "0.4.1": {
+      "name": "d3-interpolate",
+      "version": "0.4.1",
+      "description": "Interpolate numbers, colors, strings, arrays, objects, whatever!",
+      "keywords": [
+        "d3",
+        "interpolate",
+        "interpolation",
+        "color"
+      ],
+      "homepage": "https://github.com/d3/d3-interpolate",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/d3-interpolate.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3-interpolate.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && node -e 'process.stdout.write(\"var version = \\\"\" + require(\"./package.json\").version + \"\\\"; export * from \\\"../index\\\"; export {version};\");' > build/bundle.js && rollup -f umd -g d3-color:d3_color -n d3_interpolate -o build/d3-interpolate.js -- build/bundle.js",
+        "test": "faucet `find test -name '*-test.js'` && eslint index.js src",
+        "prepublish": "npm run test && uglifyjs build/d3-interpolate.js -c -m -o build/d3-interpolate.min.js && rm -f build/d3-interpolate.zip && zip -j build/d3-interpolate.zip -- LICENSE README.md build/d3-interpolate.js build/d3-interpolate.min.js",
+        "postpublish": "VERSION=`node -e 'console.log(require(\"./package.json\").version)'`; git push && git tag -am \"Release $VERSION.\" v${VERSION} && git push --tags && cp build/d3-interpolate.js ../d3.github.com/d3-interpolate.v0.4.js && cp build/d3-interpolate.min.js ../d3.github.com/d3-interpolate.v0.4.min.js && cd ../d3.github.com && git add d3-interpolate.v0.4.js d3-interpolate.v0.4.min.js && git commit -m \"d3-interpolate ${VERSION}\" && git push"
+      },
+      "dependencies": {
+        "d3-color": "~0.3.4"
+      },
+      "devDependencies": {
+        "faucet": "0.0",
+        "rollup": "0.25",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "gitHead": "7150b8440cc359b7674c8664043a66bccfa49635",
+      "bugs": {
+        "url": "https://github.com/d3/d3-interpolate/issues"
+      },
+      "_id": "d3-interpolate@0.4.1",
+      "_shasum": "9e1da74320509771b6211a92ae490a4062475123",
+      "_from": ".",
+      "_npmVersion": "3.3.12",
+      "_nodeVersion": "5.4.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mike@ocks.org"
+        }
+      ],
+      "dist": {
+        "shasum": "9e1da74320509771b6211a92ae490a4062475123",
+        "tarball": "http://registry.npmjs.cf/d3-interpolate/-/d3-interpolate-0.4.1.tgz"
+      },
+      "directories": {}
+    },
+    "0.5.0": {
+      "name": "d3-interpolate",
+      "version": "0.5.0",
+      "description": "Interpolate numbers, colors, strings, arrays, objects, whatever!",
+      "keywords": [
+        "d3",
+        "interpolate",
+        "interpolation",
+        "color"
+      ],
+      "homepage": "https://github.com/d3/d3-interpolate",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/d3-interpolate.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3-interpolate.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && node -e 'process.stdout.write(\"var version = \\\"\" + require(\"./package.json\").version + \"\\\"; export * from \\\"../index\\\"; export {version};\");' > build/bundle.js && rollup -f umd -g d3-color:d3_color -n d3_interpolate -o build/d3-interpolate.js -- build/bundle.js",
+        "test": "faucet `find test -name '*-test.js'` && eslint index.js src",
+        "prepublish": "npm run test && uglifyjs build/d3-interpolate.js -c -m -o build/d3-interpolate.min.js && rm -f build/d3-interpolate.zip && zip -j build/d3-interpolate.zip -- LICENSE README.md build/d3-interpolate.js build/d3-interpolate.min.js",
+        "postpublish": "VERSION=`node -e 'console.log(require(\"./package.json\").version)'`; git push && git tag -am \"Release $VERSION.\" v${VERSION} && git push --tags && cp build/d3-interpolate.js ../d3.github.com/d3-interpolate.v0.5.js && cp build/d3-interpolate.min.js ../d3.github.com/d3-interpolate.v0.5.min.js && cd ../d3.github.com && git add d3-interpolate.v0.5.js d3-interpolate.v0.5.min.js && git commit -m \"d3-interpolate ${VERSION}\" && git push"
+      },
+      "dependencies": {
+        "d3-color": "~0.3.4"
+      },
+      "devDependencies": {
+        "faucet": "0.0",
+        "rollup": "0.25",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "gitHead": "70ebb631406397785194b7e93413db0eec6304d3",
+      "bugs": {
+        "url": "https://github.com/d3/d3-interpolate/issues"
+      },
+      "_id": "d3-interpolate@0.5.0",
+      "_shasum": "28d64fc2e282120e1b6719251e88caf867bfee24",
+      "_from": ".",
+      "_npmVersion": "3.5.3",
+      "_nodeVersion": "5.5.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mike@ocks.org"
+        }
+      ],
+      "dist": {
+        "shasum": "28d64fc2e282120e1b6719251e88caf867bfee24",
+        "tarball": "http://registry.npmjs.cf/d3-interpolate/-/d3-interpolate-0.5.0.tgz"
+      },
+      "_npmOperationalInternal": {
+        "host": "packages-9-west.internal.npmjs.com",
+        "tmp": "tmp/d3-interpolate-0.5.0.tgz_1454357993449_0.3644542375113815"
+      },
+      "directories": {}
+    },
+    "0.5.1": {
+      "name": "d3-interpolate",
+      "version": "0.5.1",
+      "description": "Interpolate numbers, colors, strings, arrays, objects, whatever!",
+      "keywords": [
+        "d3",
+        "interpolate",
+        "interpolation",
+        "color"
+      ],
+      "homepage": "https://github.com/d3/d3-interpolate",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/d3-interpolate.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3-interpolate.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && node -e 'process.stdout.write(\"var version = \\\"\" + require(\"./package.json\").version + \"\\\"; export * from \\\"../index\\\"; export {version};\");' > build/bundle.js && rollup -f umd -g d3-color:d3_color -n d3_interpolate -o build/d3-interpolate.js -- build/bundle.js",
+        "test": "faucet `find test -name '*-test.js'` && eslint index.js src",
+        "prepublish": "npm run test && uglifyjs build/d3-interpolate.js -c -m -o build/d3-interpolate.min.js && rm -f build/d3-interpolate.zip && zip -j build/d3-interpolate.zip -- LICENSE README.md build/d3-interpolate.js build/d3-interpolate.min.js",
+        "postpublish": "VERSION=`node -e 'console.log(require(\"./package.json\").version)'`; git push && git tag -am \"Release $VERSION.\" v${VERSION} && git push --tags && cp build/d3-interpolate.js ../d3.github.com/d3-interpolate.v0.5.js && cp build/d3-interpolate.min.js ../d3.github.com/d3-interpolate.v0.5.min.js && cd ../d3.github.com && git add d3-interpolate.v0.5.js d3-interpolate.v0.5.min.js && git commit -m \"d3-interpolate ${VERSION}\" && git push"
+      },
+      "dependencies": {
+        "d3-color": "~0.3.4"
+      },
+      "devDependencies": {
+        "faucet": "0.0",
+        "rollup": "0.25",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "gitHead": "50d961f8125dc91b3beff0e248c5c5d653706899",
+      "bugs": {
+        "url": "https://github.com/d3/d3-interpolate/issues"
+      },
+      "_id": "d3-interpolate@0.5.1",
+      "_shasum": "0d8c6289241f6dd909c1c6689b7b2d83c8a7e01d",
+      "_from": ".",
+      "_npmVersion": "3.5.3",
+      "_nodeVersion": "5.5.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mike@ocks.org"
+        }
+      ],
+      "dist": {
+        "shasum": "0d8c6289241f6dd909c1c6689b7b2d83c8a7e01d",
+        "tarball": "http://registry.npmjs.cf/d3-interpolate/-/d3-interpolate-0.5.1.tgz"
+      },
+      "_npmOperationalInternal": {
+        "host": "packages-6-west.internal.npmjs.com",
+        "tmp": "tmp/d3-interpolate-0.5.1.tgz_1454446652035_0.9019788042642176"
+      },
+      "directories": {}
+    },
+    "0.5.2": {
+      "name": "d3-interpolate",
+      "version": "0.5.2",
+      "description": "Interpolate numbers, colors, strings, arrays, objects, whatever!",
+      "keywords": [
+        "d3",
+        "interpolate",
+        "interpolation",
+        "color"
+      ],
+      "homepage": "https://github.com/d3/d3-interpolate",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/d3-interpolate.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3-interpolate.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && node -e 'process.stdout.write(\"var version = \\\"\" + require(\"./package.json\").version + \"\\\"; export * from \\\"../index\\\"; export {version};\");' > build/bundle.js && rollup -f umd -g d3-color:d3_color -n d3_interpolate -o build/d3-interpolate.js -- build/bundle.js",
+        "test": "faucet `find test -name '*-test.js'` && eslint index.js src test",
+        "prepublish": "npm run test && uglifyjs build/d3-interpolate.js -c -m -o build/d3-interpolate.min.js && rm -f build/d3-interpolate.zip && zip -j build/d3-interpolate.zip -- LICENSE README.md build/d3-interpolate.js build/d3-interpolate.min.js",
+        "postpublish": "VERSION=`node -e 'console.log(require(\"./package.json\").version)'`; git push && git tag -am \"Release $VERSION.\" v${VERSION} && git push --tags && cp build/d3-interpolate.js ../d3.github.com/d3-interpolate.v0.5.js && cp build/d3-interpolate.min.js ../d3.github.com/d3-interpolate.v0.5.min.js && cd ../d3.github.com && git add d3-interpolate.v0.5.js d3-interpolate.v0.5.min.js && git commit -m \"d3-interpolate ${VERSION}\" && git push"
+      },
+      "dependencies": {
+        "d3-color": "~0.4.0"
+      },
+      "devDependencies": {
+        "faucet": "0.0",
+        "rollup": "0.25",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "gitHead": "e0f5fdfab68f9beaf96d89afb3378fadf282e65b",
+      "bugs": {
+        "url": "https://github.com/d3/d3-interpolate/issues"
+      },
+      "_id": "d3-interpolate@0.5.2",
+      "_shasum": "ba621cd92bc84d0387bdb83f88ad14d88479c701",
+      "_from": ".",
+      "_npmVersion": "3.5.3",
+      "_nodeVersion": "5.5.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mike@ocks.org"
+        }
+      ],
+      "dist": {
+        "shasum": "ba621cd92bc84d0387bdb83f88ad14d88479c701",
+        "tarball": "http://registry.npmjs.cf/d3-interpolate/-/d3-interpolate-0.5.2.tgz"
+      },
+      "_npmOperationalInternal": {
+        "host": "packages-5-east.internal.npmjs.com",
+        "tmp": "tmp/d3-interpolate-0.5.2.tgz_1454521469418_0.052781931357458234"
+      },
+      "directories": {}
+    },
+    "0.6.0": {
+      "name": "d3-interpolate",
+      "version": "0.6.0",
+      "description": "Interpolate numbers, colors, strings, arrays, objects, whatever!",
+      "keywords": [
+        "d3",
+        "interpolate",
+        "interpolation",
+        "color"
+      ],
+      "homepage": "https://github.com/d3/d3-interpolate",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/d3-interpolate.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3-interpolate.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && node -e 'process.stdout.write(\"var version = \\\"\" + require(\"./package.json\").version + \"\\\"; export * from \\\"../index\\\"; export {version};\");' > build/bundle.js && rollup -f umd -g d3-color:d3_color -n d3_interpolate -o build/d3-interpolate.js -- build/bundle.js",
+        "test": "faucet `find test -name '*-test.js'` && eslint index.js src test",
+        "prepublish": "npm run test && uglifyjs build/d3-interpolate.js -c -m -o build/d3-interpolate.min.js && rm -f build/d3-interpolate.zip && zip -j build/d3-interpolate.zip -- LICENSE README.md build/d3-interpolate.js build/d3-interpolate.min.js",
+        "postpublish": "VERSION=`node -e 'console.log(require(\"./package.json\").version)'`; git push && git push --tags && cp build/d3-interpolate.js ../d3.github.com/d3-interpolate.v0.6.js && cp build/d3-interpolate.min.js ../d3.github.com/d3-interpolate.v0.6.min.js && cd ../d3.github.com && git add d3-interpolate.v0.6.js d3-interpolate.v0.6.min.js && git commit -m \"d3-interpolate ${VERSION}\" && git push"
+      },
+      "dependencies": {
+        "d3-color": "~0.4.0"
+      },
+      "devDependencies": {
+        "faucet": "0.0",
+        "rollup": "0.25",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "gitHead": "1668db910184168e2719811f57e6e25bd978a4b3",
+      "bugs": {
+        "url": "https://github.com/d3/d3-interpolate/issues"
+      },
+      "_id": "d3-interpolate@0.6.0",
+      "_shasum": "b79869c2b3b2801c255bec15aaa821dee74ffde2",
+      "_from": ".",
+      "_npmVersion": "3.6.0",
+      "_nodeVersion": "5.7.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mike@ocks.org"
+        }
+      ],
+      "dist": {
+        "shasum": "b79869c2b3b2801c255bec15aaa821dee74ffde2",
+        "tarball": "http://registry.npmjs.cf/d3-interpolate/-/d3-interpolate-0.6.0.tgz"
+      },
+      "_npmOperationalInternal": {
+        "host": "packages-9-west.internal.npmjs.com",
+        "tmp": "tmp/d3-interpolate-0.6.0.tgz_1456522709071_0.8244739326182753"
+      },
+      "directories": {}
+    },
+    "0.7.0": {
+      "name": "d3-interpolate",
+      "version": "0.7.0",
+      "description": "Interpolate numbers, colors, strings, arrays, objects, whatever!",
+      "keywords": [
+        "d3",
+        "interpolate",
+        "interpolation",
+        "color"
+      ],
+      "homepage": "https://github.com/d3/d3-interpolate",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/d3-interpolate.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3-interpolate.git"
+      },
+      "scripts": {
+        "pretest": "mkdir -p build && node -e 'process.stdout.write(\"var version = \\\"\" + require(\"./package.json\").version + \"\\\"; export * from \\\"../index\\\"; export {version};\");' > build/bundle.js && rollup -f umd -g d3-color:d3_color -n d3_interpolate -o build/d3-interpolate.js -- build/bundle.js",
+        "test": "faucet `find test -name '*-test.js'` && eslint index.js src test",
+        "prepublish": "npm run test && uglifyjs build/d3-interpolate.js -c -m -o build/d3-interpolate.min.js && rm -f build/d3-interpolate.zip && zip -j build/d3-interpolate.zip -- LICENSE README.md build/d3-interpolate.js build/d3-interpolate.min.js",
+        "postpublish": "VERSION=`node -e 'console.log(require(\"./package.json\").version)'`; git push && git push --tags && cp build/d3-interpolate.js ../d3.github.com/d3-interpolate.v0.7.js && cp build/d3-interpolate.min.js ../d3.github.com/d3-interpolate.v0.7.min.js && cd ../d3.github.com && git add d3-interpolate.v0.7.js d3-interpolate.v0.7.min.js && git commit -m \"d3-interpolate ${VERSION}\" && git push"
+      },
+      "dependencies": {
+        "d3-color": "~0.4.0"
+      },
+      "devDependencies": {
+        "faucet": "0.0",
+        "rollup": "0.25",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "gitHead": "07ed4a7a6a43c31900ee1a9c152daf4163eaf5f9",
+      "bugs": {
+        "url": "https://github.com/d3/d3-interpolate/issues"
+      },
+      "_id": "d3-interpolate@0.7.0",
+      "_shasum": "1f9ff17cd8c90b7f121f6743e6ef1062dfe898d1",
+      "_from": ".",
+      "_npmVersion": "3.6.0",
+      "_nodeVersion": "5.7.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mike@ocks.org"
+        }
+      ],
+      "dist": {
+        "shasum": "1f9ff17cd8c90b7f121f6743e6ef1062dfe898d1",
+        "tarball": "http://registry.npmjs.cf/d3-interpolate/-/d3-interpolate-0.7.0.tgz"
+      },
+      "_npmOperationalInternal": {
+        "host": "packages-9-west.internal.npmjs.com",
+        "tmp": "tmp/d3-interpolate-0.7.0.tgz_1456680482299_0.8702485559042543"
+      },
+      "directories": {}
+    }
+  },
+  "homepage": "https://github.com/d3/d3-interpolate",
+  "keywords": [
+    "d3",
+    "interpolate",
+    "interpolation",
+    "color"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d3/d3-interpolate.git"
+  },
+  "author": {
+    "name": "Mike Bostock",
+    "url": "http://bost.ocks.org/mike"
+  },
+  "bugs": {
+    "url": "https://github.com/d3/d3-interpolate/issues"
+  },
+  "license": "BSD-3-Clause",
+  "readmeFilename": "README.md",
+  "_attachments": {
+    "d3-interpolate-0.1.4.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-zt8+eoQarfrWnL2nFk3fPg==",
+      "length": 10351,
+      "stub": true
+    },
+    "d3-interpolate-0.2.0.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-mn2n8ReAdgQPAeDxSC+y8w==",
+      "length": 13004,
+      "stub": true
+    },
+    "d3-interpolate-0.1.2.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-QqnENYbmZlZBUHu0K0hQsQ==",
+      "length": 15719,
+      "stub": true
+    },
+    "d3-interpolate-0.2.1.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-g5PRgsxWhX8L1fQzitLLHg==",
+      "length": 24639,
+      "stub": true
+    },
+    "d3-interpolate-0.1.1.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-1XGds8jSRg0IeXCrzV0wmQ==",
+      "length": 14927,
+      "stub": true
+    },
+    "d3-interpolate-0.1.3.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-+AkszuYqnUMk2UZY2IS6jA==",
+      "length": 18727,
+      "stub": true
+    },
+    "d3-interpolate-0.3.0.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-qH3ZVzNbALa7BBIbYAHQXA==",
+      "length": 24793,
+      "stub": true
+    },
+    "d3-interpolate-0.4.0.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-TFdSCSbXPT9o77RdZISgDQ==",
+      "length": 25345,
+      "stub": true
+    },
+    "d3-interpolate-0.4.1.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-esf5+Gt9OI/FO9+ywz4H1w==",
+      "length": 25258,
+      "stub": true
+    },
+    "d3-interpolate-0.5.0.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-FNN1FTtuzFHuyGPwbo+TKQ==",
+      "length": 25006,
+      "stub": true
+    },
+    "d3-interpolate-0.5.1.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-fzDxCw1DCJlxM/MJru0Ofw==",
+      "length": 31528,
+      "stub": true
+    },
+    "d3-interpolate-0.5.2.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-YeqBG5N0p24s2xmxWI16PQ==",
+      "length": 31445,
+      "stub": true
+    },
+    "d3-interpolate-0.6.0.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-YXJTGxKPQLmZ3UJHNiZXzw==",
+      "length": 29749,
+      "stub": true
+    },
+    "d3-interpolate-0.7.0.tgz": {
+      "content_type": "application/octet-stream",
+      "revpos": 0,
+      "digest": "md5-wIfwAmxqsvQp13PWSpe7Lw==",
+      "length": 29163,
+      "stub": true
+    }
+  }
+}

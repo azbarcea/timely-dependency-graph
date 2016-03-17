@@ -1,0 +1,125 @@
+<html>
+
+    <head>
+        <title>D3 modules dependencies time graphs</title>
+        <link href="index.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <section id="chart">
+                <h1>D3 modules dependencies time graphs</h1>
+            </section>
+            <section id="sidebar">
+                <section class="panel">
+                    <div class="title">
+                        <h1>FOCUS</h1>
+                    </div>
+                    <div class="card cursor">
+                        <h2>Cursor</h2>
+                        <div class="row keyvalue date">
+                            <p class="key">Date</p>
+                            <p class="value">-</p>
+                        </div>
+                        <div class="row keyvalue time">
+                            <p class="key">Time</p>
+                            <p class="value">-</p>
+                        </div>
+                    </div>
+                    <div class="card release">
+                        <h2>Release</h2>
+                        <div class="row keyvalue module">
+                            <p class="key">Module</p>
+                            <p class="value">-</p>
+                        </div>
+                        <div class="row keyvalue version">
+                            <p class="key">Version</p>
+                            <p class="value">-</p>
+                        </div>
+                        <div class="row keyvalue date">
+                            <p class="key">Date</p>
+                            <p class="value">-</p>
+                        </div>
+                        <div class="row keyvalue time">
+                            <p class="key">Time</p>
+                            <p class="value">-</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="panel">
+                    <div class="title">
+                        <h1>CONTROLS</h1>
+                    </div>
+                    <div class="card">
+                        <h2>Dependency Graph</h2>
+                        <div class="row control">
+                            <input type="radio" id="useFirst" name="version" value="useFirst"/>
+                            <label for="useFirst">Use first valid release version</label>
+                        </div>
+                        <!-- <div class="row control indent">
+                            <input type="checkbox" name="showValidityPeriod" value="showValidPeriod"/>
+                            <label for="showValidityPeriod">Show validity period</label>
+                        </div> -->
+                        <div class="row control">
+                            <input type="radio" id="useLast" name="version" value="useLast"/>
+                            <label for="useLast">Use last valid release version</label>
+                        </div>
+                        <div class="row control">
+                            <input type="checkbox" name="showServersAsSets" value="showServersAsSets"/>
+                            <label for="showServersAsSets">Show servers as sets</label>
+                        </div>
+                        <div class="row control">
+                            <input type="checkbox" name="showClientsLines" value="showClientsLines"/>
+                            <label for="showClientsLines">Show clients lines</label>
+                        </div>
+                    </div>
+                </section>
+                <section class="panel">
+                    <div class="title">
+                        <h1>LEGEND</h1>
+                    </div>
+                    <div class="card">
+                        <h2>Releases</h2>
+                        <div class="row legend">
+                            <div class="repr withdeps">
+                                <svg width="1.6em" height="1.6em">
+                                    <circle cx="0.8em" cy="0.8em" r="0.6em"></circle>
+                                </svg>
+                            </div>
+                            <p class="label">With dependencies</p>
+                        </div>
+                        <div class="row legend">
+                            <div class="repr withoutdeps">
+                                <svg width="1.6em" height="1.6em">
+                                    <circle cx="0.8em" cy="0.8em" r="0.5em"></circle>
+                                </svg>
+                            </div>
+                            <p class="label">Without dependencies</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h2>Dependency Graph</h2>
+                        <div class="row legend">
+                            <div class="repr serversSet">
+                                <svg width="1.6em" height="1.6em">
+                                    <line x1="0" y1="0.8em" x2="1.6em" y2="0.8em"></line>
+                                </svg>
+                            </div>
+                            <p class="meaning">Dependency set or edge from the focused release to a server (width depends on depth)</p>
+                        </div>
+                        <div class="row legend">
+                            <div class="repr clientLine">
+                                <svg width="1.6em" height="1.6em">
+                                    <line x1="0" y1="0.8em" x2="1.6em" y2="0.8em"></line>
+                                </svg>
+                            </div>
+                            <p class="meaning">Edge from the focused release to a client</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+        <script src="index.js"></script>
+    </body>
+
+</html>

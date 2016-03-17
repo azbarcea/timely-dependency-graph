@@ -1,0 +1,196 @@
+.hidden {
+  display: none !important;
+}
+input {
+  outline: none;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 0.4em;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+html,
+body,
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+#wrapper {
+  display: flex;
+}
+#wrapper #chart {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+}
+#wrapper #chart h1 {
+  flex: 0 0 1.2em;
+  padding: 0.6em 0.8em 1em;
+  font-size: 2em;
+}
+#wrapper #chart svg {
+  flex: 1;
+}
+#wrapper #chart svg text {
+  fill: black;
+  stroke: none;
+}
+#wrapper #chart svg .axis path.domain {
+  fill: none;
+  stroke: black;
+  stroke-width: 0.5;
+  stroke-opacity: 0.15;
+  shape-rendering: crispEdges;
+}
+#wrapper #chart svg .axis.y .tick line {
+  stroke: black;
+  stroke-width: 0.35;
+  stroke-dasharray: 1 1;
+}
+#wrapper #chart svg .axis.y .tick text.nodeYLabel {
+  font-weight: bold;
+}
+#wrapper #chart svg #modules clipPath#clip {
+  fill: none;
+  pointer-events: all;
+}
+#wrapper #chart svg #modules rect.sensor {
+  fill-opacity: 0;
+  stroke: none;
+}
+#wrapper #chart svg #modules line.cursor {
+  stroke: black;
+  stroke-width: 0.65;
+  stroke-dasharray: 1 6;
+  stroke-opacity: 0.75;
+}
+#wrapper #chart svg .release rect {
+  fill: white;
+  fill-opacity: 0.08;
+  stroke: black;
+  stroke-width: 0.16;
+  stroke-opacity: 0.08;
+}
+#wrapper #chart svg .release rect.current {
+  fill-opacity: 0.2;
+}
+#wrapper #chart svg .release rect.clickable {
+  cursor: pointer;
+}
+#wrapper #chart svg .release rect:hover {
+  fill-opacity: 0.4;
+}
+#wrapper #chart svg .release text {
+  pointer-events: none;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+#wrapper #chart svg .release circle {
+  pointer-events: none;
+  fill: white;
+  fill-opacity: 0;
+  stroke: black;
+  stroke-width: 3;
+  stroke-opacity: 1;
+}
+#wrapper #chart svg .release circle.hasDeps {
+  fill-opacity: 1;
+}
+#wrapper #chart svg .release .dimmed {
+  opacity: 0.35;
+}
+#wrapper #chart svg #depTree path.serverSet {
+  fill: none;
+  stroke: red;
+  stroke-width: 5;
+}
+#wrapper #chart svg #depTree line.serverLine {
+  stroke: red;
+  stroke-width: 5;
+}
+#wrapper #chart svg #depTree line.clientLine {
+  stroke-width: 0.5;
+  stroke-dasharray: 2 2;
+  stroke: black;
+}
+#wrapper #sidebar {
+  flex: 0 0 20em;
+  overflow-y: auto;
+}
+#wrapper #sidebar .panel {
+  border-left: 0.05em solid #e6e6e6;
+}
+#wrapper #sidebar .title {
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1em;
+  background-color: #e6e6e6;
+}
+#wrapper #sidebar .card {
+  padding: 1em;
+  border-bottom: 0.05em solid #e6e6e6;
+}
+#wrapper #sidebar .card h2 {
+  flex: 0 0 1em;
+  align-self: flex-start;
+  font-size: 1.1em;
+}
+#wrapper #sidebar .card .row {
+  display: flex;
+  align-items: center;
+  padding-top: 1em;
+}
+#wrapper #sidebar .card .row.keyvalue p.key {
+  font-style: italic;
+  flex: 0 0 5em;
+}
+#wrapper #sidebar .card .row.keyvalue p.value {
+  flex: 1;
+}
+#wrapper #sidebar .card .row.control input[type="radio"],
+#wrapper #sidebar .card .row.control input[type="checkbox"] {
+  flex: 0 0 1.7em;
+  width: 0.85em;
+  height: 0.85em;
+}
+#wrapper #sidebar .card .row.control label {
+  flex: 1;
+}
+#wrapper #sidebar .card .row.control.indent {
+  margin-left: 2.55em;
+}
+#wrapper #sidebar .card .row.legend .repr {
+  width: 1.7em;
+  height: 1.7em;
+  margin: 0 0.5em;
+}
+#wrapper #sidebar .card .row.legend p.label {
+  flex: 1;
+}
+#wrapper #sidebar .card .repr.withdeps svg circle {
+  fill: grey;
+  stroke: none;
+  stroke-width: 0.15em;
+}
+#wrapper #sidebar .card .repr.withoutdeps svg circle {
+  fill: none;
+  stroke: grey;
+  stroke-width: 0.15em;
+}
+#wrapper #sidebar .card .repr.serversSet svg line,
+#wrapper #sidebar .card .repr.clientLine svg line {
+  stroke: grey;
+}
+#wrapper #sidebar .card .repr.serversSet svg line {
+  stroke-width: 0.15em;
+}
+#wrapper #sidebar .card .repr.clientLine svg line {
+  stroke-width: 1;
+  stroke-dasharray: 2 2;
+}
