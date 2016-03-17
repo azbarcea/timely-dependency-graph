@@ -1,0 +1,63 @@
+// http://jscs.info/rules.html
+
+{
+  "disallowAnonymousFunctions": null,
+  "requireAnonymousFunctions": null,
+
+  "disallowArrowFunctions": null,
+  "requireArrowFunctions": null,
+
+  "disallowCapitalizedComments": null,
+  "requireCapitalizedComments": null,
+
+  "disallowCommaBeforeLineBreak": null,
+  "requireCommaBeforeLineBreak": null,
+
+  "disallowCurlyBraces": null,
+  "requireCurlyBraces": true,
+
+  "disallowFunctionDeclarations": null,
+  "requireFunctionDeclarations": null,
+
+  "disallowDanglingUnderscores": false,
+  "disallowEmptyBlocks": {"allExcept": ["comments"]},
+  "disallowIdentifierNames": [],
+  "disallowImplicitTypeConversion": [],
+  "disallowKeywords": [],
+  "disallowKeywordsInComments": null,
+
+  "disallowKeywordsOnNewLine": [],
+  "requireKeywordsOnNewLine": [],
+
+  "disallowMixedSpacesAndTabs": "smart",
+  "disallowMultipleLineBreaks": null,
+  "disallowMultipleLineStrings": true,
+  "disallowMultipleSpaces": null,
+
+  "disallowMultipleVarDecl": null,
+  "requireMultipleVarDecl": null,
+
+  "disallowTrailingComma": null,
+  "requireTrailingComma": null,
+
+  "validateIndentation": null,
+
+  "jsDoc": {
+    "enforceExistence": false,
+    "checkAnnotations": true,
+    "checkParamNames": true,
+    "requireParamTypes": true,
+    "checkRedundantParams": true,
+    "checkReturnTypes": true,
+    "checkRedundantReturns": true,
+    "requireReturnTypes": true,
+    "checkTypes": "capitalizedNativeCase",
+    "checkRedundantAccess": "enforceLeadingUnderscore",
+    "leadingUnderscoreAccess": true,
+    "requireHyphenBeforeDescription": true,
+    "requireNewlineAfterDescription": true,
+    "disallowNewlineAfterDescription": true,
+    "requireDescriptionCompleteSentence": true,
+    "requireParamDescription": true
+  }
+}

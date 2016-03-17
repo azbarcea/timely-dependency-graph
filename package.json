@@ -1,0 +1,33 @@
+{
+  "name": "timely-dependency-graph",
+  "version": "1.0.0",
+  "description": "npm Module Temporal Dependency Graph",
+  "keywords": ["dependency", "graph", "time", "npm"],
+  "homepage": "https://mindrones.github.io/timely-dependency-graph",
+  "repository": {
+    "url": "https://github.com/mindrones/timely-dependency-graph",
+    "type": "git"
+  },
+  "bugs": "https://github.com/mindrones/timely-dependency-graph/issues",
+  "license": "GPL-3.0",
+  "author": {
+    "name": "Luca Bonavita",
+    "url": "http://mindrones.com/"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "browserify": "^13.0.0",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.0.5",
+    "gulp-util": "^3.0.7",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "d3": "^3.5.16",
+    "semver": "^5.1.0",
+    "underscore": "^1.8.3"
+  }
+}
