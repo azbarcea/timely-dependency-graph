@@ -1,0 +1,136 @@
+@import "_vars";
+
+#chart {
+    flex: 1 1 0;
+
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        flex: 0 0 1.2em;
+        padding: 0.6em 0.8em 1em;
+        font-size: 2em;
+    }
+
+    svg {
+        flex: 1;
+
+        text {
+            fill: black;
+            stroke: none;
+        }
+
+        .axis {
+            path.domain {
+                fill: none;
+                stroke: black;
+                stroke-width: 0.5;
+                stroke-opacity: 0.15;
+                shape-rendering: crispEdges;
+            }
+
+            &.y {
+                .tick {
+                    line {
+                        stroke: black;
+                        stroke-width: 0.35;
+                        stroke-dasharray: 1 1;
+                    }
+                    text.nodeYLabel {
+                        font-weight: bold;
+                    }
+                    text.underlined {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        #modules {
+            clipPath#clip {
+                fill: none;
+                pointer-events: all;
+            }
+
+            rect.sensor {
+                fill-opacity: 0;
+                stroke: none;
+            }
+
+            line.cursor {
+                stroke: black;
+                stroke-width: 0.65;
+                stroke-dasharray: 1 6;
+                stroke-opacity: 0.75;
+            }
+        }
+
+        .release {
+            rect {
+                fill: white;    // fallback
+                fill-opacity: 0.08;
+
+                stroke: black;
+                stroke-width: 0.16;
+                stroke-opacity: 0.08;
+
+                &.current {
+                    fill-opacity: 0.2;
+                }
+                &.clickable {
+                    cursor: pointer;
+                }
+                &:hover {
+                    fill-opacity: 0.4;
+                }
+            }
+            text {
+                pointer-events: none;
+                dominant-baseline: middle;
+                text-anchor: middle;
+            }
+            circle {
+                pointer-events: none;
+                fill: white;    // fallback
+                fill-opacity: 0;
+
+                stroke: black;    // fallback
+                stroke-width: 3;
+                stroke-opacity: 1;
+
+                &.hasDeps {
+                    fill-opacity: 1;
+                }
+            }
+            .dimmed {
+                opacity: 0.35;
+            }
+        }
+
+        #depTree {
+            path.serverSet {
+                fill: none;
+
+                // fallback
+                stroke: red;
+                stroke-width: 5;
+            }
+
+            line.serverLine {
+                // fallback
+                stroke: red;
+                stroke-width: 5;
+            }
+
+            line.clientLine {
+                stroke-width: 0.5;
+
+                // atm this is overridden by code
+                stroke-dasharray: @clientLineStrokeDasharray;
+
+                // fallback
+                stroke: black;
+            }
+        }
+    }
+}

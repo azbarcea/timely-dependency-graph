@@ -1,0 +1,127 @@
+@import "_vars";
+
+@sidebarSizeSymbol: 1.7em;
+@sidebarColorGray: lighten(grey, 40%);
+@sidebarColorRepr: grey;
+@sidebarStrokeWidthRepr: 0.15em;
+
+#sidebar {
+    flex: 0 0 20em;
+    overflow-y: auto;
+
+    .panel {
+        border-left: 0.05em solid @sidebarColorGray;
+    }
+
+    .title {
+        height: 3em;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        padding-right: 1em;
+        background-color: @sidebarColorGray;
+    }
+
+    .card {
+        padding: 1em;
+        border-bottom: 0.05em solid @sidebarColorGray;
+
+        h2 {
+            flex: 0 0 1em;
+            align-self: flex-start;
+
+            font-size: 1.1em;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            padding-top: 1em;
+
+            &.keyvalue {
+                p.key {
+                    font-style: italic;
+                    flex: 0 0 5em;
+                }
+                p.value {
+                    flex: 1;
+                }
+            }
+
+            &.control {
+                input[type="radio"],
+                input[type="checkbox"] {
+                    flex: 0 0 @sidebarSizeSymbol;
+                    width: @sidebarSizeSymbol / 2;
+                    height: @sidebarSizeSymbol / 2;
+                }
+                label {
+                    flex: 1;
+                }
+
+                &.indent {
+                    margin-left: 1.5 * @sidebarSizeSymbol;
+                }
+            }
+
+            &.legend {
+                .repr {
+                    width: @sidebarSizeSymbol;
+                    height: @sidebarSizeSymbol;
+                    // margin: 0.5em;
+                    margin: 0 0.5em;
+                }
+
+                p.label {
+                    flex: 1;
+                }
+            }
+        }
+
+        .repr {
+            &.withdeps {
+                svg {
+                    circle {
+                        fill: @sidebarColorRepr;
+                        stroke: none;
+                        stroke-width: @sidebarStrokeWidthRepr;
+                    }
+                }
+            }
+            &.withoutdeps {
+                svg {
+                    circle {
+                        fill: none;
+                        stroke: @sidebarColorRepr;
+                        stroke-width: @sidebarStrokeWidthRepr;
+                    }
+                }
+            }
+            &.serversSet,
+            &.clientLine {
+                svg {
+                    line {
+                        stroke: @sidebarColorRepr;
+                    }
+                }
+            }
+            &.serversSet {
+                svg {
+                    line {
+                        stroke-width: @sidebarStrokeWidthRepr;
+                    }
+                }
+            }
+            &.clientLine {
+                svg {
+                    line {
+                        stroke-width: 1;
+                        stroke-dasharray: @clientLineStrokeDasharray;
+                    }
+                }
+            }
+        }
+    }
+}
