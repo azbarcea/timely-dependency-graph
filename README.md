@@ -27,9 +27,11 @@ Shows:
 
 - choose how you want to inspect dependencies release date.
 
-  For example if a module `X` has a release `0.1.1` that depends on module `Y` version `~1.2.3` and `Y` has also released versions `1.2.4`, `1.2.5`, `1.2.6` and `1.3.0`:
-  - the first valid version of `Y` as a dependency of `X-0.1.1` is `1.2.3`
-  - the last valid version of `Y` as a dependency of `X-0.1.1` is `1.2.6`
+  For example, `d3-shape` version `0.6.0` depends on `d3-path` version `~0.1.3`. In [semver](https://github.com/npm/node-semver) lingo this is a version `range` meaning `>=0.1.3 <0.2.0`, hence as of now:
+  - the first valid version of `d3-path` as a dependency of `d3-shape` `0.6.0` is `0.1.3`
+  - the last valid version of `d3-path` as a dependency of `d3-shape` `0.6.0` is `0.1.5`
+  
+  ![First and last valid dependency version](https://raw.githubusercontent.com/mindrones/timely-dependency-graph/master/doc/images/d3_modules_use_first_or_last.gif)
 
 - choose how to visualize "servers" (dependencies):
   - as "sets" (lines passing through the focused release and all servers)
