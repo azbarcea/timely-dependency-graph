@@ -13193,6 +13193,7 @@ function buildDepTree(focusedRelease) {
     initDepTree()
 
     if (!_.isUndefined(focusedRelease)) {
+        depTree.focusedRelease = focusedRelease;
         addReleaseToNodes(focusedRelease)
         addClientsLines()
         addServersSet(focusedRelease, 0)
@@ -13425,17 +13426,20 @@ function highlightYLabels() {
     if (_.size(depTree.nodes) === 0) {
         yLabel
             .classed('nodeYLabel', false)
+            .classed('underlined', false)
             .style('font-size', null)
     } else {
         yLabel
             .each(function(d) {
                 var isNodeYLabel = _.has(depTree.nodes, d)
+                var isFocusedReleaseYLabel = d === depTree.focusedRelease.name
                 var newFontSize = Math.max(
                     moduleMaxFontSize,
                     domUtils.getTextFontSize(this)
                 )
                 d3.select(this)
                     .classed('nodeYLabel', isNodeYLabel)
+                    .classed('underlined', isFocusedReleaseYLabel)
                     .style('font-size', isNodeYLabel ? newFontSize : null)
             })
     }

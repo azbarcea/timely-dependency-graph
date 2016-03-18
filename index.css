@@ -54,6 +54,9 @@ body,
 #wrapper #chart svg .axis.y .tick text.nodeYLabel {
   font-weight: bold;
 }
+#wrapper #chart svg .axis.y .tick text.underlined {
+  text-decoration: underline;
+}
 #wrapper #chart svg #modules clipPath#clip {
   fill: none;
   pointer-events: all;
