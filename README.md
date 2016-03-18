@@ -14,6 +14,13 @@ Focusing on a certain release of a d3 module, you can visualize its dependencies
 - With the mouse wheel, zoom in and out
 - Drag (click + move) to pan left-right
 
+### UI terminology
+
+- `server`: a module the focused release depends on
+- `client`: a module depending on the hovered release
+
+(this will most certainly change in the future)
+
 ### Sidebar
 
 **FOCUS panel**
@@ -51,13 +58,6 @@ Shows:
 
 Shows graphs elements representation associated with their meaning.
 Well, it's a legend :)
-
-### UI terminology
-
-- `server`: a module the focused release depends on
-- `client`: a module depending on the hovered release
-
-(this will most certainly change in the future)
 
 
 ## To run it locally
