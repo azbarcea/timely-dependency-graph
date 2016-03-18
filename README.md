@@ -25,19 +25,27 @@ Shows:
 
 **CONTROLS panel**
 
-- choose how you want to inspect dependencies release date.
+- Choose how you want to inspect dependencies release date.
 
   For example, `d3-shape` version `0.6.0` depends on `d3-path` version `~0.1.3`. In [semver](https://github.com/npm/node-semver) lingo this is a version `range` meaning `>=0.1.3 <0.2.0`, hence as of now:
-  - the first valid version of `d3-path` as a dependency of `d3-shape` `0.6.0` is `0.1.3`
-  - the last valid version of `d3-path` as a dependency of `d3-shape` `0.6.0` is `0.1.5`
-  
+  - the first valid version of `d3-path` as a dependency of `d3-shape` `0.6.0` is `0.1.3`;
+  - the last valid version of `d3-path` as a dependency of `d3-shape` `0.6.0` is `0.1.5`.
+
   ![First and last valid dependency version](https://raw.githubusercontent.com/mindrones/timely-dependency-graph/master/doc/images/d3_modules_use_first_or_last.gif)
 
-- choose how to visualize "servers" (dependencies):
-  - as "sets" (lines passing through the focused release and all servers)
-  - as links between each server and the focused release
+- Choose how to visualize "servers" (dependencies):
+  - as "sets" (lines passing through the focused release and all servers);
+  - as links between each server and the focused release.
 
-- choose if you want to see "client lines", links between the focused release and its clients.
+  ![Show dependencies as sets or links](https://raw.githubusercontent.com/mindrones/timely-dependency-graph/master/doc/images/d3_modules_dependencies_set_or_links.gif)
+
+  Note that dependencies graph is a tree (because dependencies have their own dependencies):
+  - since a set is basically a subtree, the color of a set is the color of the module originating that subtree;
+  - links, instead, gets the color of the dependency.
+
+- Choose if you want to see "client lines", links between the focused release and its clients.
+
+  ![Show or hide clients](https://raw.githubusercontent.com/mindrones/timely-dependency-graph/master/doc/images/d3_modules_clients_shown_or_hidden.gif)
 
 **LEGEND panel**
 
