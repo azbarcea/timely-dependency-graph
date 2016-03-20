@@ -5,7 +5,7 @@ const
 gulp.task('serve', function() {
     browserSync.init({
         server: {
-            baseDir: './gh-pages',
+            baseDir: './build/dev',
         },
         port: 8001,
         open: false,

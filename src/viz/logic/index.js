@@ -1,3 +1,10 @@
+/*!
+    timely-dependency-graph 1.0.0
+    (c) 2016 Luca Bonavita https://github.com/mindrones
+    Source code at https://github.com/mindrones/timely-dependency-graph
+    timely-dependency-graph may be freely distributed under the GPL-V3 license.
+*/
+
 var d3 = require('d3')
 var _ = require('underscore')
 var semver = require('semver')

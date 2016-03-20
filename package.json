@@ -2,7 +2,12 @@
   "name": "timely-dependency-graph",
   "version": "1.0.0",
   "description": "npm Module Temporal Dependency Graph",
-  "keywords": ["dependency", "graph", "time", "npm"],
+  "keywords": [
+    "dependency",
+    "graph",
+    "time",
+    "npm"
+  ],
   "homepage": "https://mindrones.github.io/timely-dependency-graph",
   "repository": {
     "url": "https://github.com/mindrones/timely-dependency-graph",
@@ -18,7 +23,9 @@
     "browser-sync": "^2.11.1",
     "browserify": "^13.0.0",
     "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.1",
     "gulp-less": "^3.0.5",
+    "gulp-uglify": "^1.5.3",
     "gulp-util": "^3.0.7",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.5",
