@@ -1,0 +1,46 @@
+@import "media";
+
+.resolutionBasedGlobalFont() {
+    @media @mediumDensityScreen {
+        font-size: e("@{mdppx}vmin");
+    }
+    @media @highDensityScreen {
+        font-size: e("@{hdppx}vmin");
+    }
+    @media @xhighDensityScreen {
+        font-size: e("@{xhdppx}vmin");
+    }
+    @media @xxhighDensityScreen {
+        font-size: e("@{xxhdppx}vmin");
+    }
+}
+
+.resolutionBasedFont() {
+    @media @mediumDensityScreen {
+        font-size: 1.4em;
+    }
+    @media @highDensityScreen {
+        font-size: 0.9em;
+    }
+    @media @xhighDensityScreen {
+        font-size: 0.8em;
+    }
+    @media @xxhighDensityScreen {
+        font-size: 0.7em;
+    }
+}
+
+.dev_resolutionBasedBkgColor() {
+    @media @mediumDensityScreen {
+        background-color: lighten(red, 40%);
+    }
+    @media @highDensityScreen {
+        background-color: lighten(yellow, 10%);
+    }
+    @media @xhighDensityScreen {
+        background-color: lighten(palegreen, 10%);
+    }
+    @media @xxhighDensityScreen {
+        background-color: lighten(cyan, 40%);
+    }
+}

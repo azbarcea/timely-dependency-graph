@@ -1,0 +1,61 @@
+// http://blog.scur.pl/2012/06/variable-media-queries-less-css/
+
+/* breakpoints */
+
+// portrait: mobile, assume 16:9 ratio, so height = width * 16 / 9, rounded
+@mobile_S_portrait_max_width: 320px;    @mobile_S_portrait_max_height: 570px;
+@mobile_M_portrait_max_width: 375px;    @mobile_M_portrait_max_height: 670px;
+@mobile_L_portrait_max_width: 425px;    @mobile_L_portrait_max_height: 756px;
+
+// portrait: tablet, assume 4:3 ratio, so height = width * 4 / 3, rounded
+@tablet_portrait_max_width: 768px;      @tablet_portrait_max_height: 1024px;
+
+// landscape: laptop, assume 16:9 ratio, so height = width * 9 / 16, rounded
+@laptop_S_landscape_max_width: 1440px;  @laptop_S_landscape_max_width: 810px;
+@laptop_M_landscape_max_width: 1920px;  @laptop_M_landscape_max_width: 1080px;
+
+@screen: "only screen";
+@portrait: "(orientation: portrait)";
+@landscape: "(orientation: landscape)";
+@portraitScreen: e("@{screen} and @{portrait}");
+@landscapeScreen: e("@{screen} and @{landscape}");
+
+// pixel density
+@mdppx: 1.0;
+@hdppx: 1.5;
+@xhdppx: 2.0;
+@xxhdppx: 3.0;
+
+@mediumDensityScreen: ~"@{screen} and (min-resolution: @{mdppx}dppx) and (max-resolution: @{hdppx}dppx)";
+@highDensityScreen: ~"@{screen} and (min-resolution: @{hdppx}dppx) and (max-resolution: @{xhdppx}dppx)";
+@xhighDensityScreen: ~"@{screen} and (min-resolution: @{xhdppx}dppx) and (max-resolution: @{xxhdppx}dppx)";
+@xxhighDensityScreen: ~"@{screen} and (min-resolution: @{xxhdppx}dppx)";
+
+/* media */
+
+// portrait
+@mobilePortraitS: e("@{portraitScreen} and (max-width: @{mobile_S_portrait_max_width})");
+@mobilePortraitM: e("@{portraitScreen} and (min-width: @{mobile_S_portrait_max_width}) and (max-width: @{mobile_M_portrait_max_width})");
+@mobilePortraitL: e("@{portraitScreen} and (min-width: @{mobile_M_portrait_max_width}) and (max-width: @{mobile_L_portrait_max_width})");
+@tabletPortrait: e("@{portraitScreen} and (min-width: @{mobile_L_portrait_max_width}) and (max-width: @{tablet_portrait_max_width})");
+
+// landscape
+@mobileLandscapeS: e("@{landscapeScreen} and (max-width: @{mobile_S_portrait_max_height})");
+@mobileLandscapeM: e("@{landscapeScreen} and (min-width: @{mobile_S_portrait_max_height}) and (max-width: @{mobile_M_portrait_max_height})");
+@mobileLandscapeL: e("@{landscapeScreen} and (min-width: @{mobile_M_portrait_max_height}) and (max-width: @{mobile_L_portrait_max_height})");
+@tabletLandscape: e("@{landscapeScreen} and (min-width: @{mobile_L_portrait_max_height}) and (max-width: @{tablet_portrait_max_height})");
+@laptopLandscapeS: e("@{landscapeScreen} and (min-width: @{tablet_portrait_max_height}) and (max-width: @{laptop_S_landscape_max_width})");
+@laptopLandscapeM: e("@{landscapeScreen} and (min-width: @{laptop_S_landscape_max_width}) and (max-width: @{laptop_M_landscape_max_width})");
+@laptopLandscapeL: e("@{landscapeScreen} and (min-width: @{laptop_M_landscape_max_width})");
+
+// @media @mobilePortraitS {}
+// @media @mobilePortraitM {}
+// @media @mobilePortraitL {}
+// @media @tabletPortrait {}
+// @media @mobileLandscapeS {}
+// @media @mobileLandscapeM {}
+// @media @mobileLandscapeL {}
+// @media @tabletLandscape {}
+// @media @laptopLandscapeS {}
+// @media @laptopLandscapeM {}
+// @media @laptopLandscapeL {}
