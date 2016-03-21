@@ -12,7 +12,7 @@ var parseVersion = require('./utils/semver').parseVersion
 var domUtils = require('./utils/dom')
 
 var MODULE_NAME = 'd3'
-var REALTIME_DATA = false
+var REALTIME_DATA = true
 var NPM_API_BASE = 'http://registry.npmjs.cf/'
 var LOCAL_API_BASE = './data/'
 var URL_BASE = REALTIME_DATA ? NPM_API_BASE : LOCAL_API_BASE
