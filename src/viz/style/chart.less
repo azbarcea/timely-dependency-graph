@@ -1,6 +1,8 @@
 @import "_vars";
 @import "_mixins";
 
+@chartH1FontSize: 1.5em;
+
 #chart {
     flex: 1 1 0;
 
@@ -8,8 +10,9 @@
     flex-direction: column;
 
     h1 {
-        flex: 0 0 1.2em;
+        flex: 0 0 @chartH1FontSize;
         padding: 0.6em 0.8em 1em;
+        font-size: @chartH1FontSize;
     }
 
     svg {

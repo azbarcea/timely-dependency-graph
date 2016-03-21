@@ -5,6 +5,7 @@ In the future it might support generic `npm` modules.
 
 Focusing on a certain release of a d3 module, you can visualize its dependencies tree and the modules that depends on the focused release.
 
+![Quick usage](https://raw.githubusercontent.com/mindrones/timely-dependency-graph/master/doc/images/usage_quick.gif)
 
 ## Usage
 
