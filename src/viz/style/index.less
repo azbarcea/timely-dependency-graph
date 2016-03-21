@@ -1,3 +1,5 @@
+@import "_mixins";
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,8 +7,12 @@
 }
 
 html {
-    font-size: 0.4em;
     font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+    .resolutionBasedGlobalFont;
+    // .dev_resolutionBasedBkgColor;
 }
 
 html,

@@ -52,9 +52,9 @@ var serversSetLine = d3.svg.line()
 var moduleHeight, moduleSemiHeight, moduleMaxFontSize, releaseCircleRadius
 
 // DOM
-var chart, svg, g_modules, clipPath, zoomSensor, g_xAxis, g_yAxis, yLabel,
+var chart, svg, g_modules, g_modules_clipPath, zoomSensor, g_xAxis, g_yAxis, yLabel,
 g_module, g_release, g_release_rect, g_release_circle, g_release_text,
-cursor_line, serverSet, serverLine, clientLine
+g_modules_cursor, serverSet, serverLine, clientLine
 
 // interactivity vars
 var useLastValidVersion = false
@@ -385,7 +385,7 @@ function updateGeometry() {
         modules: {
             pad: {
                 top: 0.05,
-                right: 0.1,
+                right: 0.12,
                 bottom: 0.05,
                 left: 0.05,
             }
@@ -452,11 +452,11 @@ function initAxes() {
 
 function updateAxesGeometry() {
     xAxis
-        .tickSize(geom.modules.y / 20, geom.modules.y / 10)
+        .tickSize(-geom.modules.height, 0)
         .tickPadding(geom.modules.y / 20)
 
     yAxis
-        .tickSize(-geom.modules.width)
+        .tickSize(-geom.modules.width, 0)
         .tickPadding(geom.modules.x / 20)
 }
 
@@ -471,7 +471,7 @@ function setupChart() {
         .attr('id', 'modules')
         .attr('clip-path', 'url(#clip)')
 
-    clipPath =
+    g_modules_clipPath =
         g_modules.append('clipPath')
             .attr('id', 'clip')
             .append('rect')
@@ -480,7 +480,7 @@ function setupChart() {
         g_modules.append('rect')
             .classed('sensor', true)
 
-    cursor_line =
+    g_modules_cursor =
         g_modules.append('line')
             .classed('cursor', true)
 
@@ -561,6 +561,17 @@ function operatorReleaseTextFontSize(d) {
 }
 
 function setChartGeometry() {
+
+    /* geom */
+
+    svg
+        .attr('width', geom.chart.width)
+        .attr('height', geom.chart.height)
+
+    /* zoom */
+
+    zoom.size(geom.modules.size)
+
     /* axes */
 
     g_xAxis
@@ -571,17 +582,9 @@ function setChartGeometry() {
         .attr('transform', 'translate(' + geom.modules.corner.tr + ')')
         .call(yAxis)
 
-    /* scaling */
+    /* modules */
 
-    zoom.size(geom.modules.size)
-
-    /* geom */
-
-    svg
-        .attr('width', geom.chart.width)
-        .attr('height', geom.chart.height)
-
-    clipPath
+    g_modules_clipPath
         .attr('width', geom.modules.width)
         .attr('height', geom.modules.height)
 
@@ -594,7 +597,7 @@ function setChartGeometry() {
         .attr('width', geom.modules.width)
         .attr('height', geom.modules.height)
 
-    cursor_line
+    g_modules_cursor
         .attr('y2', geom.modules.height)
 
     g_module
@@ -736,15 +739,15 @@ function zoomChart() {
 /* cursor */
 
 function hideCursor() {
-    cursor_line.classed('hidden', true)
+    g_modules_cursor.classed('hidden', true)
 }
 
 function showCursor() {
-    cursor_line.classed('hidden', false)
+    g_modules_cursor.classed('hidden', false)
 }
 
 function updateCursor(mousePos) {
-    cursor_line
+    g_modules_cursor
         .attr('x1', mousePos.x)
         .attr('x2', mousePos.x)
 }

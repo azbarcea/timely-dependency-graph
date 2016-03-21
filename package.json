@@ -1,12 +1,17 @@
 {
   "name": "timely-dependency-graph",
   "version": "1.0.0",
-  "description": "npm Module Temporal Dependency Graph",
+  "description": "Interactive Dependency Time Graph for NPM Modules",
   "keywords": [
+    "npm",
+    "module",
+    "release",
+    "version",
     "dependency",
     "graph",
     "time",
-    "npm"
+    "data visualization",
+    "d3"
   ],
   "homepage": "https://mindrones.github.io/timely-dependency-graph",
   "repository": {

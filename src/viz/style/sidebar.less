@@ -1,11 +1,14 @@
 @import "_vars";
+@import "_mixins";
 
-@sidebarSizeSymbol: 1.7em;
+@sidebarSymbolSize: 1.7em;
 @sidebarColorGray: lighten(grey, 40%);
 @sidebarColorRepr: grey;
 @sidebarStrokeWidthRepr: 0.15em;
 
 #sidebar {
+    .resolutionBasedFont;
+
     flex: 0 0 20em;
     overflow-y: auto;
 
@@ -14,13 +17,11 @@
     }
 
     .title {
-        height: 3em;
-
         display: flex;
         align-items: center;
         justify-content: flex-end;
 
-        padding-right: 1em;
+        padding: 0.5em 1em;
         background-color: @sidebarColorGray;
     }
 
@@ -31,7 +32,6 @@
         h2 {
             flex: 0 0 1em;
             align-self: flex-start;
-
             font-size: 1.1em;
         }
 
@@ -53,23 +53,23 @@
             &.control {
                 input[type="radio"],
                 input[type="checkbox"] {
-                    flex: 0 0 @sidebarSizeSymbol;
-                    width: @sidebarSizeSymbol / 2;
-                    height: @sidebarSizeSymbol / 2;
+                    flex: 0 0 @sidebarSymbolSize;
+                    width: @sidebarSymbolSize / 2;
+                    height: @sidebarSymbolSize / 2;
                 }
                 label {
                     flex: 1;
                 }
 
                 &.indent {
-                    margin-left: 1.5 * @sidebarSizeSymbol;
+                    margin-left: 1.5 * @sidebarSymbolSize;
                 }
             }
 
             &.legend {
                 .repr {
-                    width: @sidebarSizeSymbol;
-                    height: @sidebarSizeSymbol;
+                    width: @sidebarSymbolSize;
+                    height: @sidebarSymbolSize;
                     // margin: 0.5em;
                     margin: 0 0.5em;
                 }
