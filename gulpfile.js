@@ -1,3 +1,12 @@
-var requireDir = require('require-dir');
+// read and export command line options
 
-requireDir('./gulptasks', { recurse: true });
+var minimist = require('minimist');
+module.exports = minimist(process.argv.slice(2), {
+    boolean: 'a', // add analytics
+    default: {a: false}
+});
+
+// require all tasks
+
+var requireDir = require('require-dir');
+requireDir('./gulptasks', {recurse: true});
