@@ -1,6 +1,6 @@
 {
   "_id": "d3",
-  "_rev": "74-cb108d6dbbd12bdc68203fb312a3a130",
+  "_rev": "76-ce8bf63a4fb55b55851497e46f44e830",
   "name": "d3",
   "description": "A JavaScript visualization library for HTML and SVG.",
   "dist-tags": {
@@ -10396,7 +10396,9 @@
     "bemace": true,
     "ristostevcev": true,
     "roman-io": true,
-    "koskokos": true
+    "koskokos": true,
+    "polariscode": true,
+    "imsovru": true
   },
   "readme": "# Data-Driven Documents\n\n<a href=\"https://d3js.org\"><img src=\"https://d3js.org/logo.svg\" align=\"left\" hspace=\"10\" vspace=\"6\"></a>\n\n**D3.js** is a JavaScript library for manipulating documents based on data. **D3** helps you bring data to life using HTML, SVG, and CSS. **D3** emphasizes web standards and combines powerful visualization components with a data-driven approach to DOM manipulation, giving you the full capabilities of modern browsers without tying yourself to a proprietary framework.\n\nWant to learn more? [See the wiki.](https://github.com/mbostock/d3/wiki)\n\nFor examples, [see the gallery](https://github.com/mbostock/d3/wiki/Gallery) and [mbostock’s bl.ocks](http://bl.ocks.org/mbostock).\n",
   "readmeFilename": "README.md",
