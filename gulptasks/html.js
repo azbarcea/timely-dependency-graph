@@ -6,7 +6,7 @@ var cliOptions = require('../gulpfile');
 gulp.task('html', function() {
     return gulp.src('./src/viz/index.html')
         .pipe(preprocess({
-            context: {ADD_ANALYTICS: cliOptions.a}
+            context: {PRODUCTION: cliOptions.p}
         }))
         .pipe(gulp.dest('./build/dev'))
         .pipe(gulp.dest('./build/dist'))

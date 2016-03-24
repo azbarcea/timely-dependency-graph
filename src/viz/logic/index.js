@@ -1,6 +1,6 @@
 /*!
     timely-dependency-graph 1.0.0
-    (c) 2016 Luca Bonavita https://github.com/mindrones
+    (c) 2016 Luca Bonavita http://mindrones.com
     Source code at https://github.com/mindrones/timely-dependency-graph
     timely-dependency-graph may be freely distributed under the GPL-V3 license.
 */
@@ -11,8 +11,13 @@ var semver = require('semver')
 var parseVersion = require('./utils/semver').parseVersion
 var domUtils = require('./utils/dom')
 
-var MODULE_NAME = 'd3'
+// @if PRODUCTION=true
 var REALTIME_DATA = true
+// @endif
+// @if PRODUCTION=false
+var REALTIME_DATA = false
+// @endif
+var MODULE_NAME = 'd3'
 var NPM_API_BASE = 'http://registry.npmjs.cf/'
 var LOCAL_API_BASE = './data/'
 var URL_BASE = REALTIME_DATA ? NPM_API_BASE : LOCAL_API_BASE

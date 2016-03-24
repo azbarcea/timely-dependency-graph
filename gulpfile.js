@@ -2,8 +2,12 @@
 
 var minimist = require('minimist');
 module.exports = minimist(process.argv.slice(2), {
-    boolean: 'a', // add analytics
-    default: {a: false}
+    boolean: [
+        'p', // production build?
+    ],
+    default: {
+        p: false,
+    }
 });
 
 // require all tasks
