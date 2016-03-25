@@ -1,3 +1,3 @@
 const gulp = require('gulp');
 
-gulp.task('build', ['images', 'data', 'html', 'logic', 'style']);
+gulp.task('build', ['images', 'assets', 'data', 'html', 'logic', 'style']);

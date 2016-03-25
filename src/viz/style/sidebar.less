@@ -79,6 +79,24 @@
                     flex: 1;
                 }
             }
+
+            @iconSize: 1.5em;
+            &.social {
+                justify-content: center;
+
+                .icon {
+                    flex: 1 1 0;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        max-width: @iconSize;
+                        outline: none;
+                    }
+                }
+            }
         }
 
         .repr {
