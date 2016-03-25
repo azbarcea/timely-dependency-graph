@@ -20,6 +20,6 @@ gulp.task('serve', function() {
     gulp.watch([
         './src/viz/logic/**/*.js',
     ], ['logic', browserSync.reload]);
-    gulp.watch('./src/viz/index.html', ['copy_html', browserSync.reload]);
-    gulp.watch('./data/**/*.json', ['copy_data', browserSync.reload]);
+    gulp.watch('./src/viz/index.html', ['html', browserSync.reload]);
+    gulp.watch('./data/**/*.json', ['data', browserSync.reload]);
 });
