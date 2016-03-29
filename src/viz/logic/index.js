@@ -18,11 +18,8 @@ var REALTIME_DATA = true
 var REALTIME_DATA = false
 // @endif
 var MODULE_NAME = 'd3'
-var NPM_API_BASE = 'http://registry.npmjs.cf/'
-var LOCAL_API_BASE = './data/'
-var URL_BASE = REALTIME_DATA ? NPM_API_BASE : LOCAL_API_BASE
+var URL_BASE = REALTIME_DATA ? 'http://registry.npmjs.cf/' : './data/'
 var URL_EXTENSION = REALTIME_DATA ? '' : '.json'
-var FIRST_D3_V4_RELEASE = '4.0.0-alpha.1'
 
 var LOG = {
     modules: 0,
@@ -281,6 +278,7 @@ function processModule(moduleObj) {
 
 function processModules() {
     processDependencies()
+    dispatch.modules_processed()
 
     function processDependencies() {
         _.each(modules, function(moduleObj, name) {
@@ -322,8 +320,6 @@ function processModules() {
             })
         })
     }
-
-    dispatch.modules_processed()
 }
 
 function logModules() {
