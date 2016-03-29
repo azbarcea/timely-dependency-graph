@@ -14,8 +14,9 @@ Focusing on a certain release of a d3 module, you can visualize its dependencies
 ### Interaction
 
 - With the mouse, hover the release rectangles to show their dependencies graph
-- With the mouse wheel, zoom in and out
-- Drag (click + move) to pan left-right
+- `click` on a release: pin/unpin it (then you can change how to display the dependencies graph using sidebar's controls)
+- `mouse wheel`: zoom in and out
+- `mouse drag`: pan left-right
 
 ### UI terminology
 
