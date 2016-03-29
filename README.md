@@ -1,4 +1,4 @@
-# [D3 modules dependency time graphs](https://mindrones.github.io/timely-dependency-graph)
+# [D3 modules dependency time graphs](https://mindrones.github.io/timely-dependency-graph/#npm/d3)
 
 As of today, this script create dependency graphs of [D3 modules](https://github.com/d3), for `d3` version 4+.
 In the future it might support generic `npm` modules.
