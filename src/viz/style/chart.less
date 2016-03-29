@@ -78,14 +78,17 @@
                 stroke-width: 0.16;
                 stroke-opacity: 0.08;
 
+                cursor: pointer;
+
                 &.current {
                     fill-opacity: 0.2;
                 }
-                &.clickable {
-                    cursor: pointer;
-                }
-                &:hover {
+
+                &.focused {
                     fill-opacity: 0.4;
+                }
+                &.pinned {
+                    fill-opacity: 0.6 !important;
                 }
             }
             text {

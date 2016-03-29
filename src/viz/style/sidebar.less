@@ -16,14 +16,14 @@
 
     .panel {
         box-shadow: -0.35em -0.35em 0.5em -0.3em lighten(grey, 35%);
-    }
 
-    .title {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
+        > .title {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
 
-        padding: 0.5em 1em 0;
+            padding: 0.5em 1em 0;
+        }
     }
 
     .card {
@@ -42,12 +42,29 @@
         .row {
             display: flex;
             align-items: center;
-            padding-top: 0.75em;
+
+            &:not(:first-child) {
+                padding-top: 0.75em;
+            }
+
+            &.title {
+                // padding: 0;
+
+                h2 {
+                    flex: 1;
+                    font-size: 1.1em;
+                }
+
+                img {
+                    width: 1.1em;
+                    height: 1.1em;
+                }
+            }
 
             &.keyvalue {
                 p.key {
-                    font-style: italic;
                     flex: 0 0 5em;
+                    font-style: italic;
                 }
                 p.value {
                     flex: 1;

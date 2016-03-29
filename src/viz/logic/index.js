@@ -64,7 +64,11 @@ var showServersAsSets = true
 var showClientLines = true
 var safetyFontSize = 1
 var minFontSize = 3
-var cursorModules, focusedRelease, depTree
+var userFocus = {
+    isFree: true,
+    release: undefined
+}
+var cursorModules, depTree
 
 /* events */
 
@@ -83,6 +87,9 @@ var dispatch =
         'cursor_move',
         'cursor_date',
         'cursor_modules',
+        'target_change',
+        'change_pin',
+        'pin_changed',
         'focused_release',
         'dep_tree',
         'which_version'
@@ -108,18 +115,21 @@ var dispatch =
     .on('cursor_date.log', LOG.cursorDate ? logCursorDate : null)
     .on('cursor_modules.show', showCursorModules)
     .on('cursor_modules.log', LOG.cursorModules ? logCursorModules : null)
-    .on('focused_release.buildTree', buildDepTree)
+    .on('target_change', updateUserFocus)
+    .on('change_pin', updatePin)
+    .on('pin_changed.sidebar', sidebarFocusUpdatePin)
+    .on('focused_release.tree', buildDepTree)
     .on('focused_release.sidebar', sidebarFocusUpdateRelease)
     .on('dep_tree.draw', drawDepTree)
     .on('dep_tree.dim', dimReleasesNotInDepTree)
-    .on('dep_tree.highlightYLabels', highlightYLabels)
+    .on('dep_tree.yLabels', highlightYLabels)
     .on('dep_tree.log', LOG.logDepTree ? logDepTree : null)
     .on('which_version.controls', updateControls)
-    .on('which_version.tree', drawDepTree)
-
-/* fetch data */
+    .on('which_version.tree', buildDepTree)
 
 dispatch.fetch_module(MODULE_NAME)
+
+/* fetch data */
 
 function registerModule(name) {
     progress[name] = true
@@ -261,6 +271,7 @@ function processModule(moduleObj) {
 
             .mapObject(function(release, version, releasesObj) {
                 var rel = _.pick(release, 'name', 'version')
+                rel.id = rel.name + '_' + rel.version
                 rel.nextVersion = _.findKey(releasesObj, function(cursor_release, cursor_version) {
                     return semver.gt(cursor_version, version)
                 })
@@ -524,7 +535,6 @@ function drawChart() {
     g_release_rect =
         g_release.append('rect')
         .style('fill', function(d, i) { return moduleColor(d.name) })
-        .classed('clickable', function(d, i) { return d.dependencies ? true : false })
 
     g_release_circle =
         g_release.append('circle')
@@ -660,14 +670,30 @@ function enableChartInteractivity() {
         .on('mouseleave', function() {
             hideCursor()
             dispatch.cursor_date()
-            dispatch.focused_release()
+            dispatch.target_change()
         })
 
     g_modules_sensor
-        .on('mouseover', function() { dispatch.focused_release() })
+        .on('mouseover', function() { dispatch.target_change() })
 
     g_release_rect
-        .on('mouseover', function(d) { dispatch.focused_release(d) })
+        .on('mouseover', function(d) {
+            dispatch.target_change(d)
+            d3.select(this).classed('focused', userFocus.isFree)
+        })
+        .on('mouseout', function(d) {
+            if (userFocus.isFree) {
+                d3.select(this).classed('focused', false)
+            }
+        })
+        .on('click', function(d) {
+            dispatch.change_pin(d);
+            d3.selectAll('.release rect.pinned').classed('pinned', false);
+            d3.select(this).classed({
+                pinned: !userFocus.isFree,
+                focused: userFocus.isFree
+            })
+        })
 }
 
 /* resize */
@@ -809,14 +835,13 @@ function getDepTree() {
     return depTree
 }
 
-function buildDepTree(focusedRelease) {
+function buildDepTree() {
     initDepTree()
 
-    if (!_.isUndefined(focusedRelease)) {
-        depTree.focusedRelease = focusedRelease;
-        addReleaseToNodes(focusedRelease)
+    if (!_.isUndefined(userFocus.release)) {
+        addReleaseToNodes(userFocus.release)
         addClientsLines()
-        addServersSet(focusedRelease, 0)
+        addServersSet(userFocus.release, 0)
     }
     dispatch.dep_tree()
 
@@ -828,7 +853,7 @@ function buildDepTree(focusedRelease) {
     }
 
     function addClientsLines() {
-        depTree.clientsLines = _.map(focusedRelease.clients, function(client) {
+        depTree.clientsLines = _.map(userFocus.release.clients, function(client) {
 
             addReleaseToNodes(client)
 
@@ -836,7 +861,7 @@ function buildDepTree(focusedRelease) {
             return {
                 id: client.name + '-' + client.version,
                 name: client.name,
-                coords: {p1: focusedRelease, p2: client}
+                coords: {p1: userFocus.release, p2: client}
             }
         })
     }
@@ -1052,7 +1077,7 @@ function highlightYLabels() {
         yLabel
             .each(function(d) {
                 var isNodeYLabel = _.has(depTree.nodes, d)
-                var isFocusedReleaseYLabel = d === depTree.focusedRelease.name
+                var isFocusedReleaseYLabel = (d === userFocus.release.name)
                 var newFontSize = Math.max(
                     moduleMaxFontSize,
                     domUtils.getTextFontSize(this)
@@ -1063,6 +1088,29 @@ function highlightYLabels() {
                     .style('font-size', isNodeYLabel ? newFontSize : null)
             })
     }
+}
+
+/* focus state */
+
+function updateUserFocus(d) {
+    if (userFocus.isFree) {
+        userFocus.release = d
+        dispatch.focused_release()
+    }
+}
+
+function updatePin(d) {
+    if (userFocus.isFree) {
+        userFocus.isFree = false;
+    } else {
+        userFocus.isFree = (d.id === userFocus.release.id)
+        if (!userFocus.isFree) {
+            // we clicked on a new rect -> build a new tree
+            userFocus.release = d
+            dispatch.focused_release()
+        }
+    }
+    dispatch.pin_changed()
 }
 
 /* sidebar */
@@ -1079,22 +1127,26 @@ function sidebarFocusUpdateDate() {
     }
 }
 
-function sidebarFocusUpdateRelease(focusedRelease) {
+function sidebarFocusUpdateRelease() {
     var moduleP = d3.select('#sidebar .release .module .value')
     var versionP = d3.select('#sidebar .release .version .value')
     var dateP = d3.select('#sidebar .release .date .value')
     var timeP = d3.select('#sidebar .release .time .value')
-    if (focusedRelease) {
-        moduleP.text(focusedRelease.name)
-        versionP.text(focusedRelease.version)
-        dateP.text(focusedRelease.startDate.toDateString())
-        timeP.text(focusedRelease.startDate.toTimeString())
+    if (userFocus.release) {
+        moduleP.text(userFocus.release.name)
+        versionP.text(userFocus.release.version)
+        dateP.text(userFocus.release.startDate.toDateString())
+        timeP.text(userFocus.release.startDate.toTimeString())
     } else {
         moduleP.text('-')
         versionP.text('-')
         dateP.text('-')
         timeP.text('-')
     }
+}
+
+function sidebarFocusUpdatePin() {
+    d3.select('#pinIcon').classed('hidden', userFocus.isFree);
 }
 
 /* controls */
@@ -1131,13 +1183,13 @@ function enableControls() {
     d3.select('#sidebar input[name="showServersAsSets"]')
     .on('change', function(d) {
         showServersAsSets = this.checked
-        // dispatch.dep_tree()   // TODO if graph is visible
+        dispatch.dep_tree()
     })
 
     d3.select('#sidebar input[name="showClientsLines"]')
     .on('change', function(d) {
         showClientLines = this.checked
-        // dispatch.dep_tree()   // TODO if graph is visible
+        dispatch.dep_tree()
     })
 }
 
