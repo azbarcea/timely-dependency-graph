@@ -22,4 +22,8 @@ gulp.task('serve', function() {
     ], ['logic', browserSync.reload]);
     gulp.watch('./src/viz/index.html', ['html', browserSync.reload]);
     gulp.watch('./data/**/*.json', ['data', browserSync.reload]);
+
+    // images
+    gulp.watch('./doc/images/**/*', ['images', browserSync.reload]);
+    gulp.watch('./assets/**/*', ['assets', browserSync.reload]);
 });
