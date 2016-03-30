@@ -221,14 +221,12 @@ function processModule(moduleObj) {
         processedModule.dates =
             _.chain(moduleObj.time)
             .omit(function(dateString, version) {
-                var versionIsWord = (version === 'created') || (version === 'modified')
-                var isD3VersionLt4 = (name === 'd3') ? (version[0] < '4') : false
-                var versionHasNoRelease = !_.has(moduleObj.versions, version)
-                // moduleObj.time can have {version, dateString}
-                // without a corresponding {version, release} in moduleObj.versions
-                // -> not|un-published modules?
-
-                return versionIsWord || isD3VersionLt4 || versionHasNoRelease
+                return (version === 'created') || (version === 'modified') ||   // versionIsWord
+                    ((name === 'd3') ? (version[0] < '4') : false) ||           // isD3VersionLt4
+                    !_.has(moduleObj.versions, version)                         // versionHasNoRelease
+                    // moduleObj.time can have {version, dateString}
+                    // without a corresponding {version, release} in moduleObj.versions
+                    // -> not|un-published modules?
             })
 
             // sort object keys (by version): to be used in threshold scales
