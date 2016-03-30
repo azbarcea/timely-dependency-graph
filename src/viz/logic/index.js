@@ -18,7 +18,7 @@ var REALTIME_DATA = true
 var REALTIME_DATA = false
 // @endif
 var MODULE_NAME = 'd3'
-var URL_BASE = REALTIME_DATA ? 'http://registry.npmjs.cf/' : './data/'
+var URL_BASE = REALTIME_DATA ? 'https://registry.npmjs.cf/' : './data/'
 var URL_EXTENSION = REALTIME_DATA ? '' : '.json'
 
 var LOG = {
