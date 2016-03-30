@@ -232,12 +232,12 @@ function processModule(moduleObj) {
             // sort object keys (by version): to be used in threshold scales
             .pairs()
             .sort(function(pairA, pairB) {
-                // pair = [version, release]
+                // pair = [version, dateString]
                 return semver.compare(pairA[0], pairB[0])
             })
             .object()
 
-            .mapObject(function(dateString, version, datesObj) {
+            .mapObject(function(dateString, version) {
                 var date = new Date(dateString)
 
                 // update the global minimum date
