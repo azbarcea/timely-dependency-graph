@@ -440,7 +440,15 @@ function updateXYGlobals() {
 }
 
 function initZoom() {
-    zoom = d3.behavior.zoom().on('zoom', applyZoom)
+    zoom =
+        d3.behavior.zoom()
+        .on('zoom', function() {
+            disableFocusEvents()
+            applyZoom()
+        })
+        .on('zoomend', function() {
+            enableFocusEvents();
+        })
 }
 
 function updateZoomGeometry() {
@@ -670,11 +678,15 @@ function enableChartInteractivity() {
         .on('mouseleave', function() {
             hideCursor()
             dispatch.cursor_date()
-            dispatch.target_change()
         })
 
+    enableFocusEvents()
+}
+
+function enableFocusEvents() {
     g_modules_sensor
         .on('mouseover', function() { dispatch.target_change() })
+        .on('mouseleave', function() { dispatch.target_change() })
 
     g_release_rect
         .on('mouseover', function(d) {
@@ -686,7 +698,7 @@ function enableChartInteractivity() {
                 d3.select(this).classed('focused', false)
             }
         })
-        .on('click', function(d) {
+        .on('mouseup', function(d) {
             dispatch.change_pin(d);
             d3.selectAll('.release rect.pinned').classed('pinned', false);
             d3.select(this).classed({
@@ -694,6 +706,16 @@ function enableChartInteractivity() {
                 focused: userFocus.isFree
             })
         })
+}
+
+function disableFocusEvents() {
+    g_modules_sensor
+        .on('mouseover', null)
+        .on('mouseleave', null)
+    g_release_rect
+        .on('mouseover', null)
+        .on('mouseout', null)
+        .on('mouseup', null)
 }
 
 /* resize */
