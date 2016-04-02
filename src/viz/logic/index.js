@@ -676,6 +676,7 @@ function enableChartInteractivity() {
         .on('mouseleave', function() {
             hideCursor()
             dispatch.cursor_date()
+            dispatch.target_change()
         })
 
     enableFocusEvents()
@@ -684,7 +685,6 @@ function enableChartInteractivity() {
 function enableFocusEvents() {
     g_modules_sensor
         .on('mouseover', function() { dispatch.target_change() })
-        .on('mouseleave', function() { dispatch.target_change() })
 
     g_release_rect
         .on('mouseover', function(d) {
@@ -1091,7 +1091,7 @@ function highlightYLabels() {
     if (_.size(depTree.nodes) === 0) {
         yLabel
             .classed('nodeYLabel', false)
-            .classed('underlined', false)
+            .classed('focusedReleaseYLabel', false)
             .style('font-size', null)
     } else {
         yLabel
@@ -1104,7 +1104,7 @@ function highlightYLabels() {
                 )
                 d3.select(this)
                     .classed('nodeYLabel', isNodeYLabel)
-                    .classed('underlined', isFocusedReleaseYLabel)
+                    .classed('focusedReleaseYLabel', isFocusedReleaseYLabel)
                     .style('font-size', isNodeYLabel ? newFontSize : null)
             })
     }
