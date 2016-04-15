@@ -65,7 +65,7 @@
       ],
       "dist": {
         "shasum": "d223d351c57628ffd8e82360d621c69e0b32be64",
-        "tarball": "http://registry.npmjs.cf/d3-collection/-/d3-collection-0.1.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-collection/-/d3-collection-0.1.0.tgz"
       },
       "directories": {}
     },
@@ -128,7 +128,7 @@
       ],
       "dist": {
         "shasum": "b7b1ee034ef97260a6c0f1a86515f29ed81c0223",
-        "tarball": "http://registry.npmjs.cf/d3-collection/-/d3-collection-0.1.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-collection/-/d3-collection-0.1.1.tgz"
       },
       "directories": {}
     },
@@ -185,7 +185,7 @@
       },
       "dist": {
         "shasum": "d1495f5720add3835117e1916607d2b05b186c5a",
-        "tarball": "http://registry.npmjs.cf/d3-collection/-/d3-collection-0.1.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-collection/-/d3-collection-0.1.2.tgz"
       },
       "maintainers": [
         {
@@ -237,27 +237,5 @@
   },
   "license": "BSD-3-Clause",
   "readmeFilename": "README.md",
-  "_attachments": {
-    "d3-collection-0.1.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-DBQoDUx2e6B2HegOCUOKxg==",
-      "length": 9524,
-      "stub": true
-    },
-    "d3-collection-0.1.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-FGgnlBvPs7cuSrFJGyiLDA==",
-      "length": 9740,
-      "stub": true
-    },
-    "d3-collection-0.1.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-lJdvxNIjd3Ub9Z3aDqGbUA==",
-      "length": 9737,
-      "stub": true
-    }
-  }
+  "_attachments": {}
 }

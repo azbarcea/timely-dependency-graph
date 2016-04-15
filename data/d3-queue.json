@@ -62,7 +62,7 @@
       ],
       "dist": {
         "shasum": "bb02ce198f85ecf8ace59b27e809eba0bc3ba429",
-        "tarball": "http://registry.npmjs.cf/d3-queue/-/d3-queue-1.2.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-queue/-/d3-queue-1.2.0.tgz"
       },
       "directories": {}
     },
@@ -121,7 +121,7 @@
       ],
       "dist": {
         "shasum": "7ef92969bbce4e8826129e1a15cfcc047360d14e",
-        "tarball": "http://registry.npmjs.cf/d3-queue/-/d3-queue-1.2.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-queue/-/d3-queue-1.2.1.tgz"
       },
       "directories": {}
     },
@@ -180,7 +180,7 @@
       ],
       "dist": {
         "shasum": "4459ede5b8b0e6c4a18f41a38d58611df2d8bb92",
-        "tarball": "http://registry.npmjs.cf/d3-queue/-/d3-queue-1.2.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-queue/-/d3-queue-1.2.2.tgz"
       },
       "directories": {}
     },
@@ -239,7 +239,7 @@
       ],
       "dist": {
         "shasum": "5cf0d7329a2c4a155d6dca8d5215d88fcbc30443",
-        "tarball": "http://registry.npmjs.cf/d3-queue/-/d3-queue-2.0.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-queue/-/d3-queue-2.0.0.tgz"
       },
       "directories": {}
     },
@@ -298,7 +298,7 @@
       ],
       "dist": {
         "shasum": "143a701cfa65fe021292f321c10d14e98abd491b",
-        "tarball": "http://registry.npmjs.cf/d3-queue/-/d3-queue-1.2.3.tgz"
+        "tarball": "https://registry.npmjs.org/d3-queue/-/d3-queue-1.2.3.tgz"
       },
       "directories": {}
     },
@@ -358,7 +358,7 @@
       ],
       "dist": {
         "shasum": "315bfc296c6913621b03205c731c4616a6c91358",
-        "tarball": "http://registry.npmjs.cf/d3-queue/-/d3-queue-2.0.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-queue/-/d3-queue-2.0.1.tgz"
       },
       "directories": {}
     },
@@ -418,7 +418,7 @@
       ],
       "dist": {
         "shasum": "6c82f568a523672fb7926e8a07357aaf315a9f42",
-        "tarball": "http://registry.npmjs.cf/d3-queue/-/d3-queue-2.0.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-queue/-/d3-queue-2.0.2.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-6-west.internal.npmjs.com",
@@ -482,7 +482,7 @@
       ],
       "dist": {
         "shasum": "07fbda3acae5358a9c5299aaf880adf0953ed2c2",
-        "tarball": "http://registry.npmjs.cf/d3-queue/-/d3-queue-2.0.3.tgz"
+        "tarball": "https://registry.npmjs.org/d3-queue/-/d3-queue-2.0.3.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-12-west.internal.npmjs.com",
@@ -530,62 +530,5 @@
   },
   "license": "BSD-3-Clause",
   "readmeFilename": "README.md",
-  "_attachments": {
-    "d3-queue-1.2.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-KasqP25v3wRZ2vx8BpE4dQ==",
-      "length": 6326,
-      "stub": true
-    },
-    "d3-queue-1.2.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-6Di/nFFLFg5Tqf77JM10Pg==",
-      "length": 6626,
-      "stub": true
-    },
-    "d3-queue-1.2.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-/CUgM2iUs4pDjodA/Dxcww==",
-      "length": 6646,
-      "stub": true
-    },
-    "d3-queue-2.0.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-BuBTABuus/dXa5nEomG+8Q==",
-      "length": 6694,
-      "stub": true
-    },
-    "d3-queue-1.2.3.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-wLBj0eIKbMy0SF+j72V3mw==",
-      "length": 7021,
-      "stub": true
-    },
-    "d3-queue-2.0.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-MM2B3JWX0OXB0xwnw6piFQ==",
-      "length": 7129,
-      "stub": true
-    },
-    "d3-queue-2.0.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-10bsQisByY2ifwf7gyAXLA==",
-      "length": 7515,
-      "stub": true
-    },
-    "d3-queue-2.0.3.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-lK56BrRMIvl9yTVn1Tgx1Q==",
-      "length": 7046,
-      "stub": true
-    }
-  }
+  "_attachments": {}
 }

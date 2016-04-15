@@ -59,7 +59,7 @@
       ],
       "dist": {
         "shasum": "b799d7d0ff4a606aa47c3c5af5124ee6e5d4bfd6",
-        "tarball": "http://registry.npmjs.cf/d3-polygon/-/d3-polygon-0.0.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-polygon/-/d3-polygon-0.0.1.tgz"
       },
       "directories": {}
     },
@@ -115,7 +115,7 @@
       ],
       "dist": {
         "shasum": "665c1647a4fc2253712c3b8e6d222c2a0ca7c1c7",
-        "tarball": "http://registry.npmjs.cf/d3-polygon/-/d3-polygon-0.0.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-polygon/-/d3-polygon-0.0.2.tgz"
       },
       "directories": {}
     },
@@ -171,7 +171,7 @@
       ],
       "dist": {
         "shasum": "46a722147708393421773bcacbe8fef7cf5b9338",
-        "tarball": "http://registry.npmjs.cf/d3-polygon/-/d3-polygon-0.0.3.tgz"
+        "tarball": "https://registry.npmjs.org/d3-polygon/-/d3-polygon-0.0.3.tgz"
       },
       "directories": {}
     },
@@ -227,7 +227,7 @@
       ],
       "dist": {
         "shasum": "636cf10c1efd94839399bc6b8379e46d36343200",
-        "tarball": "http://registry.npmjs.cf/d3-polygon/-/d3-polygon-0.0.4.tgz"
+        "tarball": "https://registry.npmjs.org/d3-polygon/-/d3-polygon-0.0.4.tgz"
       },
       "directories": {}
     },
@@ -283,7 +283,7 @@
       ],
       "dist": {
         "shasum": "de786e7d0041a3c4d2e3f73a534407b050578fc2",
-        "tarball": "http://registry.npmjs.cf/d3-polygon/-/d3-polygon-0.0.5.tgz"
+        "tarball": "https://registry.npmjs.org/d3-polygon/-/d3-polygon-0.0.5.tgz"
       },
       "directories": {}
     },
@@ -339,7 +339,7 @@
       ],
       "dist": {
         "shasum": "4421f4eb60a321ec067ea07a4d614080548612ba",
-        "tarball": "http://registry.npmjs.cf/d3-polygon/-/d3-polygon-0.1.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-polygon/-/d3-polygon-0.1.0.tgz"
       },
       "directories": {}
     },
@@ -392,7 +392,7 @@
       },
       "dist": {
         "shasum": "1627d0aa8392d5565f26685a62f9b14dd3db2c0f",
-        "tarball": "http://registry.npmjs.cf/d3-polygon/-/d3-polygon-0.2.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-polygon/-/d3-polygon-0.2.0.tgz"
       },
       "maintainers": [
         {
@@ -458,7 +458,7 @@
       ],
       "dist": {
         "shasum": "b03f3ca4f9cc282c2d18546e4f2140547070fcd1",
-        "tarball": "http://registry.npmjs.cf/d3-polygon/-/d3-polygon-0.2.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-polygon/-/d3-polygon-0.2.1.tgz"
       },
       "directories": {}
     }
@@ -503,62 +503,5 @@
   },
   "license": "BSD-3-Clause",
   "readmeFilename": "README.md",
-  "_attachments": {
-    "d3-polygon-0.0.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-k8g63uOnbdpSKYl3ykTpig==",
-      "length": 3299,
-      "stub": true
-    },
-    "d3-polygon-0.0.3.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-+KWV+9pdCgCSc752z0sbCQ==",
-      "length": 3393,
-      "stub": true
-    },
-    "d3-polygon-0.0.4.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-PMihd0P5oYBi9Sqzp/mzzw==",
-      "length": 3814,
-      "stub": true
-    },
-    "d3-polygon-0.0.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-8SbrYnNXSZG6Ma1DH5AyMA==",
-      "length": 2963,
-      "stub": true
-    },
-    "d3-polygon-0.1.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-bY4IqfSiLLewCr8FdrHlCQ==",
-      "length": 17064,
-      "stub": true
-    },
-    "d3-polygon-0.0.5.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-kGKTj4wJ+cIknqfzHm0NYw==",
-      "length": 16936,
-      "stub": true
-    },
-    "d3-polygon-0.2.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-BNi/9Kk2NSS5+9w7F97Ktg==",
-      "length": 17011,
-      "stub": true
-    },
-    "d3-polygon-0.2.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-AI2q+YthLQkQbpbF1lexLg==",
-      "length": 17287,
-      "stub": true
-    }
-  }
+  "_attachments": {}
 }

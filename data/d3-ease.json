@@ -1,6 +1,6 @@
 {
   "_id": "d3-ease",
-  "_rev": "14-89311b426e30252a6d974bc6d19cc598",
+  "_rev": "23-e9a197669e2cefed0e9322b29a8360d7",
   "name": "d3-ease",
   "description": "Easing functions for smooth animation.",
   "dist-tags": {
@@ -39,7 +39,7 @@
       "_id": "d3-ease@0.0.0",
       "dist": {
         "shasum": "3c1f59a6121b4163c017686bc3410615d3d338c3",
-        "tarball": "http://registry.npmjs.cf/d3-ease/-/d3-ease-0.0.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-ease/-/d3-ease-0.0.0.tgz"
       },
       "_from": ".",
       "_npmVersion": "1.4.6",
@@ -92,7 +92,7 @@
       },
       "dist": {
         "shasum": "9c4569f3a7d5be1d6f0f84e14a09aa4472966dd8",
-        "tarball": "http://registry.npmjs.cf/d3-ease/-/d3-ease-0.0.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-ease/-/d3-ease-0.0.1.tgz"
       },
       "maintainers": [
         {
@@ -138,7 +138,7 @@
       },
       "dist": {
         "shasum": "688806a982fa20026c2be6e2a6444c3e6e4f32c6",
-        "tarball": "http://registry.npmjs.cf/d3-ease/-/d3-ease-0.0.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-ease/-/d3-ease-0.0.2.tgz"
       },
       "maintainers": [
         {
@@ -197,7 +197,7 @@
       },
       "dist": {
         "shasum": "0be8c3bef726b8fcfd95e69167a3871c32adf66c",
-        "tarball": "http://registry.npmjs.cf/d3-ease/-/d3-ease-0.1.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-ease/-/d3-ease-0.1.0.tgz"
       },
       "maintainers": [
         {
@@ -256,7 +256,7 @@
       },
       "dist": {
         "shasum": "de5855d97bbf80521bb87a70e494d4addafb0d4f",
-        "tarball": "http://registry.npmjs.cf/d3-ease/-/d3-ease-0.1.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-ease/-/d3-ease-0.1.1.tgz"
       },
       "maintainers": [
         {
@@ -321,7 +321,7 @@
       ],
       "dist": {
         "shasum": "0c5fbb959d47f3465d73e15135a7ecd60b9d1d57",
-        "tarball": "http://registry.npmjs.cf/d3-ease/-/d3-ease-0.1.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-ease/-/d3-ease-0.1.2.tgz"
       },
       "directories": {}
     },
@@ -374,7 +374,7 @@
       },
       "dist": {
         "shasum": "d4a8fb5af84ebad5e75fcf0e0f84b40945a33bdc",
-        "tarball": "http://registry.npmjs.cf/d3-ease/-/d3-ease-0.1.3.tgz"
+        "tarball": "https://registry.npmjs.org/d3-ease/-/d3-ease-0.1.3.tgz"
       },
       "maintainers": [
         {
@@ -439,7 +439,7 @@
       ],
       "dist": {
         "shasum": "54f4ec8f6f1fe67659f54ac41bc5abbd6ed568b3",
-        "tarball": "http://registry.npmjs.cf/d3-ease/-/d3-ease-0.1.4.tgz"
+        "tarball": "https://registry.npmjs.org/d3-ease/-/d3-ease-0.1.4.tgz"
       },
       "directories": {}
     },
@@ -498,7 +498,7 @@
       ],
       "dist": {
         "shasum": "388824ef9f2b91ad07de612b7d651b5e7eaa08e2",
-        "tarball": "http://registry.npmjs.cf/d3-ease/-/d3-ease-0.1.5.tgz"
+        "tarball": "https://registry.npmjs.org/d3-ease/-/d3-ease-0.1.5.tgz"
       },
       "directories": {}
     },
@@ -557,7 +557,7 @@
       ],
       "dist": {
         "shasum": "e61643df845774c44bd123c96126362c9af43c6e",
-        "tarball": "http://registry.npmjs.cf/d3-ease/-/d3-ease-0.2.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-ease/-/d3-ease-0.2.0.tgz"
       },
       "directories": {}
     },
@@ -616,7 +616,7 @@
       ],
       "dist": {
         "shasum": "6ffddde0fd4d89aa3768e564acb18a83051c9b71",
-        "tarball": "http://registry.npmjs.cf/d3-ease/-/d3-ease-0.2.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-ease/-/d3-ease-0.2.1.tgz"
       },
       "directories": {}
     },
@@ -675,7 +675,7 @@
       ],
       "dist": {
         "shasum": "3d0cab15273e67dede5ee0bf6768c0d2e5468704",
-        "tarball": "http://registry.npmjs.cf/d3-ease/-/d3-ease-0.3.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-ease/-/d3-ease-0.3.0.tgz"
       },
       "directories": {}
     },
@@ -734,7 +734,7 @@
       ],
       "dist": {
         "shasum": "dbacdbae66df22693c93c9587c3140c0203b193c",
-        "tarball": "http://registry.npmjs.cf/d3-ease/-/d3-ease-0.3.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-ease/-/d3-ease-0.3.1.tgz"
       },
       "directories": {}
     },
@@ -793,7 +793,7 @@
       ],
       "dist": {
         "shasum": "855ce6c9f4cca9d6ce3604d0e11fd08eb31a6cc8",
-        "tarball": "http://registry.npmjs.cf/d3-ease/-/d3-ease-0.4.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-ease/-/d3-ease-0.4.0.tgz"
       },
       "directories": {}
     },
@@ -852,7 +852,7 @@
       ],
       "dist": {
         "shasum": "0de3bfa71b5a05fea4c3bd8636fd8c54b8f39bf7",
-        "tarball": "http://registry.npmjs.cf/d3-ease/-/d3-ease-0.5.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-ease/-/d3-ease-0.5.0.tgz"
       },
       "directories": {}
     },
@@ -911,7 +911,7 @@
       ],
       "dist": {
         "shasum": "81499fff8bc018c7647b4076287bf27b895afd3d",
-        "tarball": "http://registry.npmjs.cf/d3-ease/-/d3-ease-0.5.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-ease/-/d3-ease-0.5.1.tgz"
       },
       "directories": {}
     },
@@ -971,7 +971,7 @@
       ],
       "dist": {
         "shasum": "70d2fb4c40ff529e39a7d3490d92511a5097d93d",
-        "tarball": "http://registry.npmjs.cf/d3-ease/-/d3-ease-0.5.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-ease/-/d3-ease-0.5.2.tgz"
       },
       "directories": {}
     },
@@ -1031,7 +1031,7 @@
       ],
       "dist": {
         "shasum": "8807dc37bd4522d4a129c2b9306dbcb6854e27e7",
-        "tarball": "http://registry.npmjs.cf/d3-ease/-/d3-ease-0.6.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-ease/-/d3-ease-0.6.0.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-8-eu.internal.npmjs.com",
@@ -1095,7 +1095,7 @@
       ],
       "dist": {
         "shasum": "1aa5edf58e3d6e7bbd6a000c00a131a9e018103c",
-        "tarball": "http://registry.npmjs.cf/d3-ease/-/d3-ease-0.7.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-ease/-/d3-ease-0.7.0.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-9-west.internal.npmjs.com",
@@ -1155,139 +1155,5 @@
     "url": "http://bost.ocks.org/mike"
   },
   "license": "BSD-3-Clause",
-  "_attachments": {
-    "d3-ease-0.0.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-qhu3S92cQqp2K9Qzj0lX4A==",
-      "length": 6652,
-      "stub": true
-    },
-    "d3-ease-0.0.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-9DXIQ41+ZbxBaR3UEjGskw==",
-      "length": 2243,
-      "stub": true
-    },
-    "d3-ease-0.1.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-bi+lRwDLf8r5A514kcdOgg==",
-      "length": 7868,
-      "stub": true
-    },
-    "d3-ease-0.1.3.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-yy+/04msqodtwlGWqAz/Ag==",
-      "length": 7667,
-      "stub": true
-    },
-    "d3-ease-0.1.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-n0Dx+2e+VzE5qvwXO2S6Kw==",
-      "length": 6811,
-      "stub": true
-    },
-    "d3-ease-0.0.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-wRBxedZYjEwVbsgXk5Hw9w==",
-      "length": 4101,
-      "stub": true
-    },
-    "d3-ease-0.2.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-LEn7mkdJcWlXLvbeSAIhmA==",
-      "length": 8128,
-      "stub": true
-    },
-    "d3-ease-0.1.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-qG8BOme6U7oUuyWABsQIvQ==",
-      "length": 7695,
-      "stub": true
-    },
-    "d3-ease-0.1.4.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-iUolcqDT0h6rACcTDPAToQ==",
-      "length": 8022,
-      "stub": true
-    },
-    "d3-ease-0.2.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-DPa+tEIdJWVAunHm6MpX4Q==",
-      "length": 8221,
-      "stub": true
-    },
-    "d3-ease-0.1.5.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-ToM9ojJK/+q4LwPc+Je5LA==",
-      "length": 7819,
-      "stub": true
-    },
-    "d3-ease-0.3.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-8mz6pf7tdvwlPBhuPOtrCg==",
-      "length": 8329,
-      "stub": true
-    },
-    "d3-ease-0.5.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-VWlGyrOr8cSzbqc9VK29yg==",
-      "length": 371305,
-      "stub": true
-    },
-    "d3-ease-0.3.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-wyxAKNKYwY2HREqdys1F0w==",
-      "length": 371423,
-      "stub": true
-    },
-    "d3-ease-0.5.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-lUALmrtBtS36vobugbcW9w==",
-      "length": 371316,
-      "stub": true
-    },
-    "d3-ease-0.4.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-JfU/ORawu+lfshuxfx2FCw==",
-      "length": 371114,
-      "stub": true
-    },
-    "d3-ease-0.5.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-hX6JGqv3rH68ZL1FpmLBqQ==",
-      "length": 371615,
-      "stub": true
-    },
-    "d3-ease-0.6.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-p72vWHItTD9jb/LC8tYBXQ==",
-      "length": 372326,
-      "stub": true
-    },
-    "d3-ease-0.7.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-NtO9TPPU+HqtTHIYQ9n29Q==",
-      "length": 372520,
-      "stub": true
-    }
-  }
+  "_attachments": {}
 }

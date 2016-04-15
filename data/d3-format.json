@@ -1,6 +1,6 @@
 {
   "_id": "d3-format",
-  "_rev": "13-87b893f0111a51aea0aa99aad884c79e",
+  "_rev": "26-ba48511c4548f2ebe1d043345d1b3de5",
   "name": "d3-format",
   "description": "Format numbers for human consumption.",
   "dist-tags": {
@@ -40,7 +40,7 @@
       "_id": "d3-format@0.0.0",
       "dist": {
         "shasum": "feefb1309b555af45b3413ffc3e59cf2648aebe8",
-        "tarball": "http://registry.npmjs.cf/d3-format/-/d3-format-0.0.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-format/-/d3-format-0.0.0.tgz"
       },
       "_from": ".",
       "_npmVersion": "1.4.6",
@@ -108,7 +108,7 @@
       ],
       "dist": {
         "shasum": "93813299b8cfacc249d1b601d7d0e75b658c5efb",
-        "tarball": "http://registry.npmjs.cf/d3-format/-/d3-format-0.2.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-format/-/d3-format-0.2.1.tgz"
       },
       "directories": {}
     },
@@ -164,7 +164,7 @@
       ],
       "dist": {
         "shasum": "5aa7436cd63dcc24348653da5a570340a289470a",
-        "tarball": "http://registry.npmjs.cf/d3-format/-/d3-format-0.2.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-format/-/d3-format-0.2.2.tgz"
       },
       "directories": {}
     },
@@ -214,7 +214,7 @@
       },
       "dist": {
         "shasum": "f4f4abf0d28cda03e3790cb98babaf61c925dc7b",
-        "tarball": "http://registry.npmjs.cf/d3-format/-/d3-format-0.2.3.tgz"
+        "tarball": "https://registry.npmjs.org/d3-format/-/d3-format-0.2.3.tgz"
       },
       "maintainers": [
         {
@@ -276,7 +276,7 @@
       ],
       "dist": {
         "shasum": "072901f84ff1254bb12db8b36ea98710c1e442c1",
-        "tarball": "http://registry.npmjs.cf/d3-format/-/d3-format-0.3.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-format/-/d3-format-0.3.0.tgz"
       },
       "directories": {}
     },
@@ -332,7 +332,7 @@
       ],
       "dist": {
         "shasum": "412cfaf446dba12b3b8809fb9bb0f244b29585d4",
-        "tarball": "http://registry.npmjs.cf/d3-format/-/d3-format-0.3.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-format/-/d3-format-0.3.1.tgz"
       },
       "directories": {}
     },
@@ -388,7 +388,7 @@
       ],
       "dist": {
         "shasum": "c5713158c451653e829802814aa664db2c346b92",
-        "tarball": "http://registry.npmjs.cf/d3-format/-/d3-format-0.3.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-format/-/d3-format-0.3.2.tgz"
       },
       "directories": {}
     },
@@ -438,7 +438,7 @@
       },
       "dist": {
         "shasum": "97427fa23e9f209dfe4617279c7488b03ffb3e0d",
-        "tarball": "http://registry.npmjs.cf/d3-format/-/d3-format-0.3.3.tgz"
+        "tarball": "https://registry.npmjs.org/d3-format/-/d3-format-0.3.3.tgz"
       },
       "maintainers": [
         {
@@ -500,7 +500,7 @@
       ],
       "dist": {
         "shasum": "49c32719511a15d6b9f0dcef8a5866bac499ae0e",
-        "tarball": "http://registry.npmjs.cf/d3-format/-/d3-format-0.3.4.tgz"
+        "tarball": "https://registry.npmjs.org/d3-format/-/d3-format-0.3.4.tgz"
       },
       "directories": {}
     },
@@ -556,7 +556,7 @@
       ],
       "dist": {
         "shasum": "9c9bc43fefee9e654a5e524fbffb690aab2640b4",
-        "tarball": "http://registry.npmjs.cf/d3-format/-/d3-format-0.3.5.tgz"
+        "tarball": "https://registry.npmjs.org/d3-format/-/d3-format-0.3.5.tgz"
       },
       "directories": {}
     },
@@ -612,7 +612,7 @@
       ],
       "dist": {
         "shasum": "6beb8ed4398b11eba4e36fdd0eef0f5bc8d24f16",
-        "tarball": "http://registry.npmjs.cf/d3-format/-/d3-format-0.3.6.tgz"
+        "tarball": "https://registry.npmjs.org/d3-format/-/d3-format-0.3.6.tgz"
       },
       "directories": {}
     },
@@ -669,7 +669,7 @@
       ],
       "dist": {
         "shasum": "484df6c261da32dbbbc6965eeb52a6f3b81ddb1f",
-        "tarball": "http://registry.npmjs.cf/d3-format/-/d3-format-0.4.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-format/-/d3-format-0.4.0.tgz"
       },
       "directories": {}
     },
@@ -726,7 +726,7 @@
       ],
       "dist": {
         "shasum": "62d7a95603a7ee7808f6cd9ab1c488d01afa6f3c",
-        "tarball": "http://registry.npmjs.cf/d3-format/-/d3-format-0.4.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-format/-/d3-format-0.4.1.tgz"
       },
       "directories": {}
     },
@@ -783,7 +783,7 @@
       ],
       "dist": {
         "shasum": "aa759c1e5aae5fa8dabc9ab7819c502fc6b56875",
-        "tarball": "http://registry.npmjs.cf/d3-format/-/d3-format-0.4.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-format/-/d3-format-0.4.2.tgz"
       },
       "directories": {}
     },
@@ -840,7 +840,7 @@
       ],
       "dist": {
         "shasum": "8d53b9d7dce0490867cae8b5bd417c9f6ddd19ed",
-        "tarball": "http://registry.npmjs.cf/d3-format/-/d3-format-0.5.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-format/-/d3-format-0.5.0.tgz"
       },
       "directories": {}
     },
@@ -898,7 +898,7 @@
       ],
       "dist": {
         "shasum": "9447d7c95c84b15d34c138975dbf0489a412e405",
-        "tarball": "http://registry.npmjs.cf/d3-format/-/d3-format-0.5.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-format/-/d3-format-0.5.1.tgz"
       },
       "directories": {}
     }
@@ -955,118 +955,5 @@
   "users": {
     "vineus": true
   },
-  "_attachments": {
-    "d3-format-0.2.3.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-XhRJiEhqW2fKgLeuiCyJMQ==",
-      "length": 12774,
-      "stub": true
-    },
-    "d3-format-0.3.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-SiMUJ6l1PsavRVR8zX774A==",
-      "length": 14362,
-      "stub": true
-    },
-    "d3-format-0.0.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-M26ldR8C0oyCkeBmXZqAgw==",
-      "length": 6651,
-      "stub": true
-    },
-    "d3-format-0.2.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-rCQNwofo4VvhnrBR7j1n9A==",
-      "length": 12758,
-      "stub": true
-    },
-    "d3-format-0.3.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-1efipNgREbJHdfKc5+ofyQ==",
-      "length": 14490,
-      "stub": true
-    },
-    "d3-format-0.2.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-alNUfdoi3WHDhwXTqkPkXQ==",
-      "length": 13158,
-      "stub": true
-    },
-    "d3-format-0.3.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-WB7Esdx7suQd+MIB5Z4utg==",
-      "length": 14479,
-      "stub": true
-    },
-    "d3-format-0.3.3.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-lCfMi9VNNBLbd8L3Es3Gaw==",
-      "length": 13723,
-      "stub": true
-    },
-    "d3-format-0.3.5.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-csv+GDe2OsN4XEUou0cA4A==",
-      "length": 17584,
-      "stub": true
-    },
-    "d3-format-0.3.6.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-oPXRe6v9wNiE+aBLuCGPNA==",
-      "length": 16846,
-      "stub": true
-    },
-    "d3-format-0.3.4.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-+Nfsp7MKXGJXpSy3gqy56Q==",
-      "length": 17238,
-      "stub": true
-    },
-    "d3-format-0.4.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-suCXgllAgMHsal9V1kuSzA==",
-      "length": 16753,
-      "stub": true
-    },
-    "d3-format-0.4.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-ICJlEw2bl9/d5acR3Usjdg==",
-      "length": 16519,
-      "stub": true
-    },
-    "d3-format-0.4.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-iM7UmcdJKuJEDYNMt1ckLQ==",
-      "length": 16934,
-      "stub": true
-    },
-    "d3-format-0.5.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-XBbRkH/QZ87nhIgzL3kGqQ==",
-      "length": 15308,
-      "stub": true
-    },
-    "d3-format-0.5.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-H+YDwznZ5uOuV0Tgg5oyGw==",
-      "length": 17202,
-      "stub": true
-    }
-  }
+  "_attachments": {}
 }

@@ -60,7 +60,7 @@
       ],
       "dist": {
         "shasum": "bdb0b200a7a3df25818698656648fd665c97a6a0",
-        "tarball": "http://registry.npmjs.cf/d3-voronoi/-/d3-voronoi-0.0.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-voronoi/-/d3-voronoi-0.0.1.tgz"
       },
       "directories": {}
     },
@@ -117,7 +117,7 @@
       ],
       "dist": {
         "shasum": "82546e9ff1850d09383ea0c846ca32a4c82b3e5d",
-        "tarball": "http://registry.npmjs.cf/d3-voronoi/-/d3-voronoi-0.0.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-voronoi/-/d3-voronoi-0.0.2.tgz"
       },
       "directories": {}
     },
@@ -174,7 +174,7 @@
       ],
       "dist": {
         "shasum": "82b06014800056e631ffca7941b2ce3e54450077",
-        "tarball": "http://registry.npmjs.cf/d3-voronoi/-/d3-voronoi-0.0.3.tgz"
+        "tarball": "https://registry.npmjs.org/d3-voronoi/-/d3-voronoi-0.0.3.tgz"
       },
       "directories": {}
     },
@@ -231,7 +231,7 @@
       ],
       "dist": {
         "shasum": "36447da3c31b5d47015647f9c1ef0b8df42645ee",
-        "tarball": "http://registry.npmjs.cf/d3-voronoi/-/d3-voronoi-0.1.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-voronoi/-/d3-voronoi-0.1.0.tgz"
       },
       "directories": {}
     },
@@ -288,7 +288,7 @@
       ],
       "dist": {
         "shasum": "6b16d0df8593f0e67ce21881a947486082ca8d95",
-        "tarball": "http://registry.npmjs.cf/d3-voronoi/-/d3-voronoi-0.2.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-voronoi/-/d3-voronoi-0.2.0.tgz"
       },
       "directories": {}
     },
@@ -345,7 +345,7 @@
       ],
       "dist": {
         "shasum": "5eb4c5bfeb46ce8e42d15b925a00a2991c88afbd",
-        "tarball": "http://registry.npmjs.cf/d3-voronoi/-/d3-voronoi-0.2.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-voronoi/-/d3-voronoi-0.2.1.tgz"
       },
       "directories": {}
     },
@@ -402,7 +402,7 @@
       ],
       "dist": {
         "shasum": "d0ad9c5633a089b8c0901234e4159a2df89322b9",
-        "tarball": "http://registry.npmjs.cf/d3-voronoi/-/d3-voronoi-0.3.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-voronoi/-/d3-voronoi-0.3.0.tgz"
       },
       "directories": {}
     },
@@ -460,7 +460,7 @@
       ],
       "dist": {
         "shasum": "5bc77af4adbab36f3e026864fb33605d3bdfac2b",
-        "tarball": "http://registry.npmjs.cf/d3-voronoi/-/d3-voronoi-0.3.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-voronoi/-/d3-voronoi-0.3.1.tgz"
       },
       "directories": {}
     },
@@ -512,7 +512,7 @@
       },
       "dist": {
         "shasum": "b8acec654ed6af388096a43d957fc21cd2238682",
-        "tarball": "http://registry.npmjs.cf/d3-voronoi/-/d3-voronoi-0.3.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-voronoi/-/d3-voronoi-0.3.2.tgz"
       },
       "maintainers": [
         {
@@ -566,69 +566,5 @@
   },
   "license": "BSD-3-Clause",
   "readmeFilename": "README.md",
-  "_attachments": {
-    "d3-voronoi-0.0.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-fV03fM/2dq0Hf3PAXK66jw==",
-      "length": 17611,
-      "stub": true
-    },
-    "d3-voronoi-0.0.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-T1MwcDZcQWRNUyZn/An+UA==",
-      "length": 16847,
-      "stub": true
-    },
-    "d3-voronoi-0.1.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-mrAWNm2TUY8X2Fn0BeuJtA==",
-      "length": 16982,
-      "stub": true
-    },
-    "d3-voronoi-0.2.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-BwOW3B9MQgKevFFb6ALYdQ==",
-      "length": 17960,
-      "stub": true
-    },
-    "d3-voronoi-0.2.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-7jXnR9/7GQJfRuQuHCb5aw==",
-      "length": 17956,
-      "stub": true
-    },
-    "d3-voronoi-0.0.3.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-usodThYUicsrHal/g0+aTQ==",
-      "length": 16847,
-      "stub": true
-    },
-    "d3-voronoi-0.3.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-ab2agjvBl7Rj26EkcM1Iyw==",
-      "length": 17929,
-      "stub": true
-    },
-    "d3-voronoi-0.3.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-w0hmSJQgr4BxI3wxAn+QOg==",
-      "length": 18645,
-      "stub": true
-    },
-    "d3-voronoi-0.3.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-0FxHOTo/SUvk09nbFCrx5A==",
-      "length": 18005,
-      "stub": true
-    }
-  }
+  "_attachments": {}
 }

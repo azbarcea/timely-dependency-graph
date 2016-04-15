@@ -63,7 +63,7 @@
       ],
       "dist": {
         "shasum": "781eed5c1169a26c0946a0fb1aa4ca5a5820a225",
-        "tarball": "http://registry.npmjs.cf/d3-hierarchy/-/d3-hierarchy-0.0.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-hierarchy/-/d3-hierarchy-0.0.1.tgz"
       },
       "directories": {}
     },
@@ -123,7 +123,7 @@
       ],
       "dist": {
         "shasum": "b2d9c60b672ae51560d5e6976d81a90a30799708",
-        "tarball": "http://registry.npmjs.cf/d3-hierarchy/-/d3-hierarchy-0.0.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-hierarchy/-/d3-hierarchy-0.0.2.tgz"
       },
       "directories": {}
     },
@@ -186,7 +186,7 @@
       ],
       "dist": {
         "shasum": "8fea8d2efd5b7b47dcd54912aae9c3290b6df54b",
-        "tarball": "http://registry.npmjs.cf/d3-hierarchy/-/d3-hierarchy-0.1.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-hierarchy/-/d3-hierarchy-0.1.0.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-12-west.internal.npmjs.com",
@@ -253,7 +253,7 @@
       ],
       "dist": {
         "shasum": "4736a4087762deef81960ad41235471f5a7f2c91",
-        "tarball": "http://registry.npmjs.cf/d3-hierarchy/-/d3-hierarchy-0.2.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-hierarchy/-/d3-hierarchy-0.2.0.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-12-west.internal.npmjs.com",
@@ -299,34 +299,5 @@
   },
   "license": "BSD-3-Clause",
   "readmeFilename": "README.md",
-  "_attachments": {
-    "d3-hierarchy-0.0.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-2mf8cY7Uq2S4XSCbRFZClQ==",
-      "length": 21400,
-      "stub": true
-    },
-    "d3-hierarchy-0.0.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-Tp/DdRh1+0KlTdw/WIGFUQ==",
-      "length": 21463,
-      "stub": true
-    },
-    "d3-hierarchy-0.1.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-uCHUphrq3DCj+lzqi5IOig==",
-      "length": 100908,
-      "stub": true
-    },
-    "d3-hierarchy-0.2.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-o+IAT90zAoyq5Qqqsz2cfA==",
-      "length": 330894,
-      "stub": true
-    }
-  }
+  "_attachments": {}
 }

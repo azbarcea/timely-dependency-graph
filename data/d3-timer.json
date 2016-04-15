@@ -1,6 +1,6 @@
 {
   "_id": "d3-timer",
-  "_rev": "13-7ff6633116b35768ddb8c6df59d6855a",
+  "_rev": "15-5f99957a838b80d122a6b5070cf1bcbe",
   "name": "d3-timer",
   "description": "An efficient queue capable of managing thousands of concurrent animations.",
   "dist-tags": {
@@ -58,7 +58,7 @@
       },
       "dist": {
         "shasum": "de76bbb781b6af3d0136cd62b524e445e6324f54",
-        "tarball": "http://registry.npmjs.cf/d3-timer/-/d3-timer-0.0.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-timer/-/d3-timer-0.0.1.tgz"
       },
       "maintainers": [
         {
@@ -119,7 +119,7 @@
       },
       "dist": {
         "shasum": "d5dab39443a560052a12e429e60c8b39201cffba",
-        "tarball": "http://registry.npmjs.cf/d3-timer/-/d3-timer-0.0.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-timer/-/d3-timer-0.0.2.tgz"
       },
       "maintainers": [
         {
@@ -186,7 +186,7 @@
       ],
       "dist": {
         "shasum": "1ef4d73634c443ffede7bbf97c1cd73e566c5172",
-        "tarball": "http://registry.npmjs.cf/d3-timer/-/d3-timer-0.0.3.tgz"
+        "tarball": "https://registry.npmjs.org/d3-timer/-/d3-timer-0.0.3.tgz"
       },
       "directories": {}
     },
@@ -247,7 +247,7 @@
       ],
       "dist": {
         "shasum": "d565df353fd91b67f70ba3583bc9b579f87e6fd1",
-        "tarball": "http://registry.npmjs.cf/d3-timer/-/d3-timer-0.0.4.tgz"
+        "tarball": "https://registry.npmjs.org/d3-timer/-/d3-timer-0.0.4.tgz"
       },
       "directories": {}
     },
@@ -308,7 +308,7 @@
       ],
       "dist": {
         "shasum": "666467a04abf072a4242dc9a0a964f1092203165",
-        "tarball": "http://registry.npmjs.cf/d3-timer/-/d3-timer-0.0.5.tgz"
+        "tarball": "https://registry.npmjs.org/d3-timer/-/d3-timer-0.0.5.tgz"
       },
       "directories": {}
     },
@@ -369,7 +369,7 @@
       ],
       "dist": {
         "shasum": "cae2421d8add5d3c469e496c9afbef4140c7bab3",
-        "tarball": "http://registry.npmjs.cf/d3-timer/-/d3-timer-0.0.6.tgz"
+        "tarball": "https://registry.npmjs.org/d3-timer/-/d3-timer-0.0.6.tgz"
       },
       "directories": {}
     },
@@ -430,7 +430,7 @@
       ],
       "dist": {
         "shasum": "d9346e72c30f3a4e5dc33fac1d5efe5f5970248e",
-        "tarball": "http://registry.npmjs.cf/d3-timer/-/d3-timer-0.1.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-timer/-/d3-timer-0.1.0.tgz"
       },
       "directories": {}
     },
@@ -492,7 +492,7 @@
       ],
       "dist": {
         "shasum": "e2498f89078d3b6220de710c2dd7c8193c9a90a6",
-        "tarball": "http://registry.npmjs.cf/d3-timer/-/d3-timer-0.1.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-timer/-/d3-timer-0.1.1.tgz"
       },
       "directories": {}
     },
@@ -554,7 +554,7 @@
       ],
       "dist": {
         "shasum": "d87ee451e06f330f76e4c52ab4bd72d78280a829",
-        "tarball": "http://registry.npmjs.cf/d3-timer/-/d3-timer-0.1.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-timer/-/d3-timer-0.1.2.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-6-west.internal.npmjs.com",
@@ -620,7 +620,7 @@
       ],
       "dist": {
         "shasum": "130327fdf2dd0148264b2af6797e30a96dbc0f4e",
-        "tarball": "http://registry.npmjs.cf/d3-timer/-/d3-timer-0.2.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-timer/-/d3-timer-0.2.0.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-5-east.internal.npmjs.com",
@@ -686,7 +686,7 @@
       ],
       "dist": {
         "shasum": "e59a2e4bb129255bbd321dc37915a2505d8d6eda",
-        "tarball": "http://registry.npmjs.cf/d3-timer/-/d3-timer-0.3.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-timer/-/d3-timer-0.3.0.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-6-west.internal.npmjs.com",
@@ -752,7 +752,7 @@
       ],
       "dist": {
         "shasum": "1a8fcc0438b3adf1b7ed8b3cdd4facb3f9a9073f",
-        "tarball": "http://registry.npmjs.cf/d3-timer/-/d3-timer-0.3.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-timer/-/d3-timer-0.3.1.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-9-west.internal.npmjs.com",
@@ -818,7 +818,7 @@
       ],
       "dist": {
         "shasum": "17cfd4c9d2e2f278410f2db92cdaeedf6298f42e",
-        "tarball": "http://registry.npmjs.cf/d3-timer/-/d3-timer-0.3.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-timer/-/d3-timer-0.3.2.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-9-west.internal.npmjs.com",
@@ -884,7 +884,7 @@
       ],
       "dist": {
         "shasum": "7050ff60a52f4d8a6f182531acf7c81a8a3c5e38",
-        "tarball": "http://registry.npmjs.cf/d3-timer/-/d3-timer-0.4.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-timer/-/d3-timer-0.4.0.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-5-east.internal.npmjs.com",
@@ -944,7 +944,7 @@
       },
       "dist": {
         "shasum": "a2eac1f2c67e220aab6685325dfe599223f63c4c",
-        "tarball": "http://registry.npmjs.cf/d3-timer/-/d3-timer-0.4.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-timer/-/d3-timer-0.4.1.tgz"
       },
       "maintainers": [
         {
@@ -1008,111 +1008,5 @@
   },
   "license": "BSD-3-Clause",
   "readmeFilename": "README.md",
-  "_attachments": {
-    "d3-timer-0.0.4.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-OAqvdTsKj2z4Q9ZcUYxkGQ==",
-      "length": 5094,
-      "stub": true
-    },
-    "d3-timer-0.0.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-mcbryrHFnwRQBpTJszTAOg==",
-      "length": 4743,
-      "stub": true
-    },
-    "d3-timer-0.0.3.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-iTLIAS1uixYF5vTx77V3jg==",
-      "length": 5014,
-      "stub": true
-    },
-    "d3-timer-0.0.5.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-hkAjpQ9tCVrGibuLKHv7lA==",
-      "length": 5248,
-      "stub": true
-    },
-    "d3-timer-0.0.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-9TXQ/ybJPce0R9HMXAJmrA==",
-      "length": 4600,
-      "stub": true
-    },
-    "d3-timer-0.0.6.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-T6S1K+cQs2str+95srEEkg==",
-      "length": 5444,
-      "stub": true
-    },
-    "d3-timer-0.1.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-v/hBdyjS8x9Ew8lFKeRmMw==",
-      "length": 5411,
-      "stub": true
-    },
-    "d3-timer-0.1.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-m97mFuhM13qDMyjUF9zpVw==",
-      "length": 5650,
-      "stub": true
-    },
-    "d3-timer-0.1.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-3/zSNPN2OYQtpE/neW4OEw==",
-      "length": 5804,
-      "stub": true
-    },
-    "d3-timer-0.2.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-+McQ6klP959gUvkEbzTkQA==",
-      "length": 5659,
-      "stub": true
-    },
-    "d3-timer-0.3.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-mAQ1VPmybHb6KJtk416twA==",
-      "length": 5686,
-      "stub": true
-    },
-    "d3-timer-0.3.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-7T3JtlwF1JZmqBFnggJqPQ==",
-      "length": 5902,
-      "stub": true
-    },
-    "d3-timer-0.3.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-7pIjWRQxjvHGvWRfdN72hw==",
-      "length": 5954,
-      "stub": true
-    },
-    "d3-timer-0.4.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-JjK0t0ejZ0lqCQWPGQiS1A==",
-      "length": 6437,
-      "stub": true
-    },
-    "d3-timer-0.4.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-SSoArNlbuo1W44iPWw2icg==",
-      "length": 6456,
-      "stub": true
-    }
-  }
+  "_attachments": {}
 }

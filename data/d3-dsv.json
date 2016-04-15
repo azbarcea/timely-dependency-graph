@@ -1,6 +1,6 @@
 {
   "_id": "d3-dsv",
-  "_rev": "14-8d58924d571d16f102a13cf8f4eec25e",
+  "_rev": "20-cefd4fed70e86610883175f37734923d",
   "name": "d3-dsv",
   "description": "A parser and formatter for delimiter-separated values, such as CSV and TSV",
   "dist-tags": {
@@ -58,7 +58,7 @@
       },
       "dist": {
         "shasum": "7b2f1a114df46c00370750e89572bf6ede318a80",
-        "tarball": "http://registry.npmjs.cf/d3-dsv/-/d3-dsv-0.1.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-0.1.0.tgz"
       },
       "maintainers": [
         {
@@ -119,7 +119,7 @@
       },
       "dist": {
         "shasum": "11dd20f3fe1a95f147e8eecf663cf1a47632146c",
-        "tarball": "http://registry.npmjs.cf/d3-dsv/-/d3-dsv-0.1.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-0.1.1.tgz"
       },
       "maintainers": [
         {
@@ -186,7 +186,7 @@
       },
       "dist": {
         "shasum": "8b81155c0bf8f0913332a184e82f346652d55e34",
-        "tarball": "http://registry.npmjs.cf/d3-dsv/-/d3-dsv-0.1.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-0.1.2.tgz"
       },
       "maintainers": [
         {
@@ -250,7 +250,7 @@
       },
       "dist": {
         "shasum": "9deabf08552e7a56d7a65cc5039d0410e9c4713b",
-        "tarball": "http://registry.npmjs.cf/d3-dsv/-/d3-dsv-0.1.3.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-0.1.3.tgz"
       },
       "maintainers": [
         {
@@ -320,7 +320,7 @@
       ],
       "dist": {
         "shasum": "882e5eb557d98ecba6897d73540a846e036301da",
-        "tarball": "http://registry.npmjs.cf/d3-dsv/-/d3-dsv-0.1.5.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-0.1.5.tgz"
       },
       "directories": {}
     },
@@ -384,7 +384,7 @@
       ],
       "dist": {
         "shasum": "17aed56c32a7982d69409182b85208d400651bdb",
-        "tarball": "http://registry.npmjs.cf/d3-dsv/-/d3-dsv-0.1.6.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-0.1.6.tgz"
       },
       "directories": {}
     },
@@ -442,7 +442,7 @@
       },
       "dist": {
         "shasum": "0515a4a6f4325681816866ec8f2c3c5c7a9739bc",
-        "tarball": "http://registry.npmjs.cf/d3-dsv/-/d3-dsv-0.1.7.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-0.1.7.tgz"
       },
       "maintainers": [
         {
@@ -512,7 +512,7 @@
       ],
       "dist": {
         "shasum": "d1fe56c3ad473b6e0bfbab9c572e5a688ea797fa",
-        "tarball": "http://registry.npmjs.cf/d3-dsv/-/d3-dsv-0.1.8.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-0.1.8.tgz"
       },
       "directories": {}
     },
@@ -576,7 +576,7 @@
       ],
       "dist": {
         "shasum": "6b376840eb00e0a8ca7f9df27e9c44468f5e50aa",
-        "tarball": "http://registry.npmjs.cf/d3-dsv/-/d3-dsv-0.1.9.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-0.1.9.tgz"
       },
       "directories": {}
     },
@@ -640,7 +640,7 @@
       ],
       "dist": {
         "shasum": "fd4eb3190c97ace76e83fcecaf6dbc4b6510033c",
-        "tarball": "http://registry.npmjs.cf/d3-dsv/-/d3-dsv-0.1.10.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-0.1.10.tgz"
       },
       "directories": {}
     },
@@ -704,7 +704,7 @@
       ],
       "dist": {
         "shasum": "7fa1e1828f5519119b8a161893fa7968e042e4c4",
-        "tarball": "http://registry.npmjs.cf/d3-dsv/-/d3-dsv-0.1.11.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-0.1.11.tgz"
       },
       "directories": {}
     },
@@ -768,7 +768,7 @@
       ],
       "dist": {
         "shasum": "3dd15b52a5901c6501731b850b78bd13f11328b4",
-        "tarball": "http://registry.npmjs.cf/d3-dsv/-/d3-dsv-0.1.12.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-0.1.12.tgz"
       },
       "directories": {}
     },
@@ -832,7 +832,7 @@
       ],
       "dist": {
         "shasum": "c58cca3af114aebebe90ecd1e63dc18427e43ce9",
-        "tarball": "http://registry.npmjs.cf/d3-dsv/-/d3-dsv-0.1.13.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-0.1.13.tgz"
       },
       "directories": {}
     },
@@ -897,7 +897,7 @@
       ],
       "dist": {
         "shasum": "9833cd61a5a3e81e03263a1ce78f74de56a1dbb8",
-        "tarball": "http://registry.npmjs.cf/d3-dsv/-/d3-dsv-0.1.14.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-0.1.14.tgz"
       },
       "directories": {}
     },
@@ -965,7 +965,7 @@
       ],
       "dist": {
         "shasum": "70d8049f5b8c62b83e3e3483df89c7a2716dfb9e",
-        "tarball": "http://registry.npmjs.cf/d3-dsv/-/d3-dsv-0.2.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-0.2.0.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-9-west.internal.npmjs.com",
@@ -1037,7 +1037,7 @@
       ],
       "dist": {
         "shasum": "a82ca655cfc3dd0f1e6dac150299f0d7aa4f1860",
-        "tarball": "http://registry.npmjs.cf/d3-dsv/-/d3-dsv-0.3.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-0.3.0.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-9-west.internal.npmjs.com",
@@ -1109,7 +1109,7 @@
       ],
       "dist": {
         "shasum": "a301f76c85890db383f3b30f8bb9469fafb1ada8",
-        "tarball": "http://registry.npmjs.cf/d3-dsv/-/d3-dsv-0.3.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-0.3.1.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-13-west.internal.npmjs.com",
@@ -1181,7 +1181,7 @@
       ],
       "dist": {
         "shasum": "4699f8288d0252dcc671a909ab815ac633188d1d",
-        "tarball": "http://registry.npmjs.cf/d3-dsv/-/d3-dsv-0.3.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-0.3.2.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-13-west.internal.npmjs.com",
@@ -1240,132 +1240,5 @@
   },
   "license": "BSD-3-Clause",
   "readmeFilename": "README.md",
-  "_attachments": {
-    "d3-dsv-0.1.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-OPBHBFIvCLidILWde8wjzA==",
-      "length": 4293,
-      "stub": true
-    },
-    "d3-dsv-0.1.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-J+wwLBKN3zgR1R8kXfX/qA==",
-      "length": 4201,
-      "stub": true
-    },
-    "d3-dsv-0.1.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-Ygv3k2go94ulQ6EgJIhV4A==",
-      "length": 4435,
-      "stub": true
-    },
-    "d3-dsv-0.1.5.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-6fDR5vNd6NzSJkO9G4jCkA==",
-      "length": 6528,
-      "stub": true
-    },
-    "d3-dsv-0.1.3.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-G9oENkj53B/XWnaAaWByow==",
-      "length": 4657,
-      "stub": true
-    },
-    "d3-dsv-0.1.6.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-/Bb70ns+z+ZBGvUejLFDSg==",
-      "length": 6856,
-      "stub": true
-    },
-    "d3-dsv-0.1.9.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-jpgQi063TzdOEf9QVoe95w==",
-      "length": 6949,
-      "stub": true
-    },
-    "d3-dsv-0.1.10.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-tNBdy+eERg43ZD2s9eS9dQ==",
-      "length": 7276,
-      "stub": true
-    },
-    "d3-dsv-0.1.7.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-0nFzXHe4InSCK+rpEWIk8Q==",
-      "length": 6890,
-      "stub": true
-    },
-    "d3-dsv-0.1.8.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-vpSocjFmBYG7w4t98n66oQ==",
-      "length": 6931,
-      "stub": true
-    },
-    "d3-dsv-0.1.11.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-WjWKmlaCHhdoiAblvWVTrg==",
-      "length": 7447,
-      "stub": true
-    },
-    "d3-dsv-0.1.12.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-mhqt37xxnv3IcnYVV4irkg==",
-      "length": 7556,
-      "stub": true
-    },
-    "d3-dsv-0.1.13.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-ZvCA7kWhwrYfKcXV3TLOWA==",
-      "length": 7822,
-      "stub": true
-    },
-    "d3-dsv-0.1.14.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-4qixgls+c0WUPKsqaNtzHQ==",
-      "length": 8099,
-      "stub": true
-    },
-    "d3-dsv-0.2.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-l+p4yKfIqYA31+wTBmbWuQ==",
-      "length": 8400,
-      "stub": true
-    },
-    "d3-dsv-0.3.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-X0SVsb8bAYbuDqldpUm+PA==",
-      "length": 8403,
-      "stub": true
-    },
-    "d3-dsv-0.3.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-er6MM8aPxsmn1UAzYh/zPQ==",
-      "length": 8388,
-      "stub": true
-    },
-    "d3-dsv-0.3.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-mfkO6oD4A4F/wvSIcvP8eg==",
-      "length": 8604,
-      "stub": true
-    }
-  }
+  "_attachments": {}
 }
