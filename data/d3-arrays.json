@@ -1,6 +1,6 @@
 {
   "_id": "d3-arrays",
-  "_rev": "13-b2b2181a7b19672e8365c98f6e28792e",
+  "_rev": "24-589da8a68b10fc356aba4f2fa0716f98",
   "name": "d3-arrays",
   "description": "DEPRECATED; renamed to d3-array (singular).",
   "dist-tags": {
@@ -40,7 +40,7 @@
       "_id": "d3-arrays@0.0.0",
       "dist": {
         "shasum": "e5384fe62a7263620422f32275df65b0b94f1cee",
-        "tarball": "http://registry.npmjs.cf/d3-arrays/-/d3-arrays-0.0.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-arrays/-/d3-arrays-0.0.0.tgz"
       },
       "_from": ".",
       "_npmVersion": "1.4.6",
@@ -103,7 +103,7 @@
       },
       "dist": {
         "shasum": "f1d2ca01a3100c0176d98f5232c78ec6f475e0b3",
-        "tarball": "http://registry.npmjs.cf/d3-arrays/-/d3-arrays-0.0.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-arrays/-/d3-arrays-0.0.1.tgz"
       },
       "maintainers": [
         {
@@ -164,7 +164,7 @@
       },
       "dist": {
         "shasum": "539ce777cc9f2d9a4803b91155ef14664f58b398",
-        "tarball": "http://registry.npmjs.cf/d3-arrays/-/d3-arrays-0.0.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-arrays/-/d3-arrays-0.0.2.tgz"
       },
       "maintainers": [
         {
@@ -225,7 +225,7 @@
       },
       "dist": {
         "shasum": "d4703f3ad1ede60efab6cbe1e7b0430e3b62a697",
-        "tarball": "http://registry.npmjs.cf/d3-arrays/-/d3-arrays-0.0.3.tgz"
+        "tarball": "https://registry.npmjs.org/d3-arrays/-/d3-arrays-0.0.3.tgz"
       },
       "maintainers": [
         {
@@ -292,7 +292,7 @@
       ],
       "dist": {
         "shasum": "3491d59be82cf860e3118ff1036370d1c2847e88",
-        "tarball": "http://registry.npmjs.cf/d3-arrays/-/d3-arrays-0.0.4.tgz"
+        "tarball": "https://registry.npmjs.org/d3-arrays/-/d3-arrays-0.0.4.tgz"
       },
       "deprecated": "Renamed d3-array (singular).",
       "directories": {}
@@ -353,7 +353,7 @@
       ],
       "dist": {
         "shasum": "6ae3b19b4595cdd0533d9cc704326a0774f74432",
-        "tarball": "http://registry.npmjs.cf/d3-arrays/-/d3-arrays-0.1.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-arrays/-/d3-arrays-0.1.0.tgz"
       },
       "deprecated": "Renamed d3-array (singular).",
       "directories": {}
@@ -414,7 +414,7 @@
       ],
       "dist": {
         "shasum": "68382996ac9be5b68e6ec11ec7f475ea45f06dd3",
-        "tarball": "http://registry.npmjs.cf/d3-arrays/-/d3-arrays-0.1.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-arrays/-/d3-arrays-0.1.1.tgz"
       },
       "deprecated": "Renamed d3-array (singular).",
       "directories": {}
@@ -475,7 +475,7 @@
       ],
       "dist": {
         "shasum": "7ca84bf1798d24b23c86801b28a5b2e1912d4500",
-        "tarball": "http://registry.npmjs.cf/d3-arrays/-/d3-arrays-0.1.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-arrays/-/d3-arrays-0.1.2.tgz"
       },
       "deprecated": "Renamed d3-array (singular).",
       "directories": {}
@@ -536,7 +536,7 @@
       ],
       "dist": {
         "shasum": "e425b41f391c92078347641301eecb6c560215ca",
-        "tarball": "http://registry.npmjs.cf/d3-arrays/-/d3-arrays-0.2.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-arrays/-/d3-arrays-0.2.0.tgz"
       },
       "deprecated": "Renamed d3-array (singular).",
       "directories": {}
@@ -597,7 +597,7 @@
       ],
       "dist": {
         "shasum": "c81d15bc84255de400ce83b04d8b925ca81b4e6a",
-        "tarball": "http://registry.npmjs.cf/d3-arrays/-/d3-arrays-0.3.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-arrays/-/d3-arrays-0.3.0.tgz"
       },
       "deprecated": "Renamed d3-array (singular).",
       "directories": {}
@@ -658,7 +658,7 @@
       ],
       "dist": {
         "shasum": "3975026ff85c4c5e7b8034a4c044acebbd9222d2",
-        "tarball": "http://registry.npmjs.cf/d3-arrays/-/d3-arrays-0.3.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-arrays/-/d3-arrays-0.3.1.tgz"
       },
       "deprecated": "Renamed d3-array (singular).",
       "directories": {}
@@ -719,7 +719,7 @@
       ],
       "dist": {
         "shasum": "24c5dc5373e41d65cdcf43e46292f687550fe528",
-        "tarball": "http://registry.npmjs.cf/d3-arrays/-/d3-arrays-0.4.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-arrays/-/d3-arrays-0.4.0.tgz"
       },
       "deprecated": "Renamed d3-array (singular).",
       "directories": {}
@@ -780,7 +780,7 @@
       ],
       "dist": {
         "shasum": "3664b72ecca5b60cf57bb1a771692ed6cf6232a5",
-        "tarball": "http://registry.npmjs.cf/d3-arrays/-/d3-arrays-0.4.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-arrays/-/d3-arrays-0.4.1.tgz"
       },
       "deprecated": "Renamed d3-array (singular).",
       "directories": {}
@@ -835,97 +835,5 @@
     "cmpolis": true,
     "jaxelson": true
   },
-  "_attachments": {
-    "d3-arrays-0.0.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-OfUxUv8IOrCRH48N7ObVVw==",
-      "length": 8072,
-      "stub": true
-    },
-    "d3-arrays-0.0.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-rO1FRaafK6Wj3Aw6uUs/6A==",
-      "length": 3323,
-      "stub": true
-    },
-    "d3-arrays-0.0.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-8Eh+uDfaYXqYuvLDPGtlvg==",
-      "length": 3441,
-      "stub": true
-    },
-    "d3-arrays-0.0.4.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-2eJMY61/yQOaTu1MhHaNTg==",
-      "length": 14176,
-      "stub": true
-    },
-    "d3-arrays-0.0.3.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-r9cjl3Ed+cfS6w1Mqq3y0g==",
-      "length": 14290,
-      "stub": true
-    },
-    "d3-arrays-0.1.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-t6M5R65ejs4aWCKYhBf9Tw==",
-      "length": 17461,
-      "stub": true
-    },
-    "d3-arrays-0.2.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-HQLQ4yfgd1vaQNJka5wKmQ==",
-      "length": 17978,
-      "stub": true
-    },
-    "d3-arrays-0.1.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-08JURbNeYpfuPc3GTt5Mrw==",
-      "length": 17047,
-      "stub": true
-    },
-    "d3-arrays-0.3.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-YzAWLyc0e6aTWHjHtgCRig==",
-      "length": 17904,
-      "stub": true
-    },
-    "d3-arrays-0.1.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-CoZv2S3hEgVxLfpSeNfF1A==",
-      "length": 18089,
-      "stub": true
-    },
-    "d3-arrays-0.4.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-fxjCoBgYottKDfH7N/9TIg==",
-      "length": 11959,
-      "stub": true
-    },
-    "d3-arrays-0.3.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-/rIATiZFjyMq/HiHidJVOg==",
-      "length": 18479,
-      "stub": true
-    },
-    "d3-arrays-0.4.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-1BwIdK2hrlO+Eqg9iAaLKw==",
-      "length": 17933,
-      "stub": true
-    }
-  }
+  "_attachments": {}
 }

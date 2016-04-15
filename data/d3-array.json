@@ -63,7 +63,7 @@
       ],
       "dist": {
         "shasum": "7a488df56c73ab2c33df9a04587a2cbb0408e831",
-        "tarball": "http://registry.npmjs.cf/d3-array/-/d3-array-0.5.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-array/-/d3-array-0.5.0.tgz"
       },
       "directories": {}
     },
@@ -123,7 +123,7 @@
       ],
       "dist": {
         "shasum": "cac40bad0e43fe980420f14866faea0a8ab8e1b1",
-        "tarball": "http://registry.npmjs.cf/d3-array/-/d3-array-0.5.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-array/-/d3-array-0.5.1.tgz"
       },
       "directories": {}
     },
@@ -183,7 +183,7 @@
       ],
       "dist": {
         "shasum": "96e0c37058a4c9d9f160cc6a90cd8d5a9e4a8d90",
-        "tarball": "http://registry.npmjs.cf/d3-array/-/d3-array-0.5.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-array/-/d3-array-0.5.2.tgz"
       },
       "directories": {}
     },
@@ -243,7 +243,7 @@
       ],
       "dist": {
         "shasum": "a388f6c486776c5d8458aec3b9118bdd5467f7b7",
-        "tarball": "http://registry.npmjs.cf/d3-array/-/d3-array-0.6.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-array/-/d3-array-0.6.0.tgz"
       },
       "directories": {}
     },
@@ -307,7 +307,7 @@
       ],
       "dist": {
         "shasum": "e4d58e009befbc3fee6dae7f39e958eba832d4ab",
-        "tarball": "http://registry.npmjs.cf/d3-array/-/d3-array-0.6.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-array/-/d3-array-0.6.1.tgz"
       },
       "directories": {}
     },
@@ -371,7 +371,7 @@
       ],
       "dist": {
         "shasum": "1c30667b3b6d26b7934dcedfbb41af27fab34eab",
-        "tarball": "http://registry.npmjs.cf/d3-array/-/d3-array-0.6.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-array/-/d3-array-0.6.2.tgz"
       },
       "directories": {}
     },
@@ -434,7 +434,7 @@
       ],
       "dist": {
         "shasum": "b8aaa6a5792ef793af74870fc5ba6e21328c38dc",
-        "tarball": "http://registry.npmjs.cf/d3-array/-/d3-array-0.7.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-array/-/d3-array-0.7.0.tgz"
       },
       "directories": {}
     },
@@ -498,7 +498,7 @@
       ],
       "dist": {
         "shasum": "a321c21558459d994eb4ad47b478240e64933942",
-        "tarball": "http://registry.npmjs.cf/d3-array/-/d3-array-0.7.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-array/-/d3-array-0.7.1.tgz"
       },
       "directories": {}
     }
@@ -546,62 +546,5 @@
   },
   "license": "BSD-3-Clause",
   "readmeFilename": "README.md",
-  "_attachments": {
-    "d3-array-0.5.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-osnTqFHX4WOKOyih9H0zxg==",
-      "length": 32041,
-      "stub": true
-    },
-    "d3-array-0.6.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-LrKVUfXypHAj3Une2WDGyQ==",
-      "length": 32963,
-      "stub": true
-    },
-    "d3-array-0.5.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-dv6F4u9Zvv6Be3mx4IJxaw==",
-      "length": 32040,
-      "stub": true
-    },
-    "d3-array-0.6.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-lW8WiUpyBMCV31S8/JEJOA==",
-      "length": 32985,
-      "stub": true
-    },
-    "d3-array-0.6.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-xgNY4otajwAdUniabDwtIg==",
-      "length": 32629,
-      "stub": true
-    },
-    "d3-array-0.5.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-ccXhlcmGuusMNpZORdPA2A==",
-      "length": 32019,
-      "stub": true
-    },
-    "d3-array-0.7.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-I8h9xMIP3ft87XNoqoRwEg==",
-      "length": 25413,
-      "stub": true
-    },
-    "d3-array-0.7.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-aYtf3ZaRcRZZbhQpCh2OYQ==",
-      "length": 26673,
-      "stub": true
-    }
-  }
+  "_attachments": {}
 }

@@ -65,7 +65,7 @@
       ],
       "dist": {
         "shasum": "d303fef08d3c1fc943fcf1f0647473fc791ab17e",
-        "tarball": "http://registry.npmjs.cf/d3-shape/-/d3-shape-0.0.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-shape/-/d3-shape-0.0.1.tgz"
       },
       "directories": {}
     },
@@ -127,7 +127,7 @@
       ],
       "dist": {
         "shasum": "efed4cde34b81ae88c1f3d1a1840d09ee489915b",
-        "tarball": "http://registry.npmjs.cf/d3-shape/-/d3-shape-0.0.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-shape/-/d3-shape-0.0.2.tgz"
       },
       "directories": {}
     },
@@ -189,7 +189,7 @@
       ],
       "dist": {
         "shasum": "c85a650d2c3773e7fae4e8e888c609acf7b8c045",
-        "tarball": "http://registry.npmjs.cf/d3-shape/-/d3-shape-0.0.3.tgz"
+        "tarball": "https://registry.npmjs.org/d3-shape/-/d3-shape-0.0.3.tgz"
       },
       "directories": {}
     },
@@ -251,7 +251,7 @@
       ],
       "dist": {
         "shasum": "6f253c39c6df546566fbee7a13083552675db7fc",
-        "tarball": "http://registry.npmjs.cf/d3-shape/-/d3-shape-0.1.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-shape/-/d3-shape-0.1.0.tgz"
       },
       "directories": {}
     },
@@ -314,7 +314,7 @@
       ],
       "dist": {
         "shasum": "0c6b18b657cca6c0f0ca870ee3b0a4931a6e43c8",
-        "tarball": "http://registry.npmjs.cf/d3-shape/-/d3-shape-0.2.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-shape/-/d3-shape-0.2.0.tgz"
       },
       "directories": {}
     },
@@ -377,7 +377,7 @@
       ],
       "dist": {
         "shasum": "c11aeadeb490132c444ebb282ec5a0171dbf3412",
-        "tarball": "http://registry.npmjs.cf/d3-shape/-/d3-shape-0.2.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-shape/-/d3-shape-0.2.1.tgz"
       },
       "directories": {}
     },
@@ -440,7 +440,7 @@
       ],
       "dist": {
         "shasum": "96a8ed6a4ca2fb5168394d2016afdd9bdfa748b9",
-        "tarball": "http://registry.npmjs.cf/d3-shape/-/d3-shape-0.2.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-shape/-/d3-shape-0.2.2.tgz"
       },
       "directories": {}
     },
@@ -503,7 +503,7 @@
       ],
       "dist": {
         "shasum": "e89f9d35c5653aac69ab591563dcc834f3369f47",
-        "tarball": "http://registry.npmjs.cf/d3-shape/-/d3-shape-0.3.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-shape/-/d3-shape-0.3.0.tgz"
       },
       "directories": {}
     },
@@ -566,7 +566,7 @@
       ],
       "dist": {
         "shasum": "761f9b99269643d32e1382d557342087590402f9",
-        "tarball": "http://registry.npmjs.cf/d3-shape/-/d3-shape-0.4.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-shape/-/d3-shape-0.4.0.tgz"
       },
       "directories": {}
     },
@@ -629,7 +629,7 @@
       ],
       "dist": {
         "shasum": "61ee0c37645a9c3f347d885c6e427e79fd27be70",
-        "tarball": "http://registry.npmjs.cf/d3-shape/-/d3-shape-0.5.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-shape/-/d3-shape-0.5.0.tgz"
       },
       "directories": {}
     },
@@ -693,7 +693,7 @@
       ],
       "dist": {
         "shasum": "8fa06b08ab07276168d51e24c7cbf1a57287c2bf",
-        "tarball": "http://registry.npmjs.cf/d3-shape/-/d3-shape-0.5.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-shape/-/d3-shape-0.5.1.tgz"
       },
       "directories": {}
     },
@@ -757,7 +757,7 @@
       ],
       "dist": {
         "shasum": "99da3cdb23f46bdc9d049f080ed9e3d99d1a5595",
-        "tarball": "http://registry.npmjs.cf/d3-shape/-/d3-shape-0.6.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-shape/-/d3-shape-0.6.0.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-13-west.internal.npmjs.com",
@@ -810,90 +810,5 @@
   },
   "license": "BSD-3-Clause",
   "readmeFilename": "README.md",
-  "_attachments": {
-    "d3-shape-0.0.3.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-aOamoX48+236Wwz28wBDzQ==",
-      "length": 22490,
-      "stub": true
-    },
-    "d3-shape-0.0.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-7mjSHOwOSc/UrqAvnVStSg==",
-      "length": 10879,
-      "stub": true
-    },
-    "d3-shape-0.0.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-2SjsOa935Yaj1ilDgojiHA==",
-      "length": 8011,
-      "stub": true
-    },
-    "d3-shape-0.2.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-O9hNY18rjDDjcVY29YBMyA==",
-      "length": 690863,
-      "stub": true
-    },
-    "d3-shape-0.1.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-57liKE4bgA3CSqu6BKW9SA==",
-      "length": 669780,
-      "stub": true
-    },
-    "d3-shape-0.2.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-76C8VGdd4kHf5kyISnKvsQ==",
-      "length": 691212,
-      "stub": true
-    },
-    "d3-shape-0.3.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-2xxYBIr+5+IcguF64rbeVA==",
-      "length": 749784,
-      "stub": true
-    },
-    "d3-shape-0.2.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-9+h3+A1NrdaEeWio5bx1LA==",
-      "length": 690963,
-      "stub": true
-    },
-    "d3-shape-0.4.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-oWMM5HkcX+if31FP4jehsw==",
-      "length": 604621,
-      "stub": true
-    },
-    "d3-shape-0.5.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-coa7AdhFZzupfsB/u+M3rQ==",
-      "length": 613351,
-      "stub": true
-    },
-    "d3-shape-0.5.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-xXjNiku7b8NL/WTiQ4k4Iw==",
-      "length": 613463,
-      "stub": true
-    },
-    "d3-shape-0.6.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-Xa6NBHXV7cn0knVqxINOqA==",
-      "length": 613436,
-      "stub": true
-    }
-  }
+  "_attachments": {}
 }

@@ -66,7 +66,7 @@
       ],
       "dist": {
         "shasum": "6f412990135bf1b3b65632843f09485f7896eeb7",
-        "tarball": "http://registry.npmjs.cf/d3-request/-/d3-request-0.2.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-request/-/d3-request-0.2.0.tgz"
       },
       "directories": {}
     },
@@ -129,7 +129,7 @@
       ],
       "dist": {
         "shasum": "e5fdd01150e430603359f9445ef75f9ba77e6d97",
-        "tarball": "http://registry.npmjs.cf/d3-request/-/d3-request-0.2.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-request/-/d3-request-0.2.1.tgz"
       },
       "directories": {}
     },
@@ -192,7 +192,7 @@
       ],
       "dist": {
         "shasum": "21df54f93ed612e09031b792d70dacbb19ef30d9",
-        "tarball": "http://registry.npmjs.cf/d3-request/-/d3-request-0.2.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-request/-/d3-request-0.2.2.tgz"
       },
       "directories": {}
     },
@@ -255,7 +255,7 @@
       ],
       "dist": {
         "shasum": "2b72a06376f1faa9be6d23d3c540b2570d266eac",
-        "tarball": "http://registry.npmjs.cf/d3-request/-/d3-request-0.2.3.tgz"
+        "tarball": "https://registry.npmjs.org/d3-request/-/d3-request-0.2.3.tgz"
       },
       "directories": {}
     },
@@ -318,7 +318,7 @@
       ],
       "dist": {
         "shasum": "921d80287c0d16045bc5de3acf4f4e824402cc15",
-        "tarball": "http://registry.npmjs.cf/d3-request/-/d3-request-0.2.4.tgz"
+        "tarball": "https://registry.npmjs.org/d3-request/-/d3-request-0.2.4.tgz"
       },
       "directories": {}
     },
@@ -381,7 +381,7 @@
       ],
       "dist": {
         "shasum": "4bc9675cad384ba591f4baa8b76abd3507ccb3c8",
-        "tarball": "http://registry.npmjs.cf/d3-request/-/d3-request-0.2.5.tgz"
+        "tarball": "https://registry.npmjs.org/d3-request/-/d3-request-0.2.5.tgz"
       },
       "directories": {}
     },
@@ -444,7 +444,7 @@
       ],
       "dist": {
         "shasum": "99c11c3c8fdedb363cdbe2fe028539fab4ca4069",
-        "tarball": "http://registry.npmjs.cf/d3-request/-/d3-request-0.2.6.tgz"
+        "tarball": "https://registry.npmjs.org/d3-request/-/d3-request-0.2.6.tgz"
       },
       "directories": {}
     },
@@ -507,7 +507,7 @@
       ],
       "dist": {
         "shasum": "6f6bf532bdd08c3a22336860659ce753fa6d81b3",
-        "tarball": "http://registry.npmjs.cf/d3-request/-/d3-request-0.3.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-request/-/d3-request-0.3.0.tgz"
       },
       "directories": {}
     },
@@ -570,7 +570,7 @@
       ],
       "dist": {
         "shasum": "dd39e11940c359aa74bc823dc366aa1a383edbc8",
-        "tarball": "http://registry.npmjs.cf/d3-request/-/d3-request-0.3.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-request/-/d3-request-0.3.1.tgz"
       },
       "directories": {}
     },
@@ -634,7 +634,7 @@
       ],
       "dist": {
         "shasum": "ae87559554550e3a682ca6c01ad6c8ab2eba2c9a",
-        "tarball": "http://registry.npmjs.cf/d3-request/-/d3-request-0.3.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-request/-/d3-request-0.3.2.tgz"
       },
       "directories": {}
     },
@@ -698,7 +698,7 @@
       ],
       "dist": {
         "shasum": "09a1369942faf3a036b8884f22f307f769c90b50",
-        "tarball": "http://registry.npmjs.cf/d3-request/-/d3-request-0.4.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-request/-/d3-request-0.4.0.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-5-east.internal.npmjs.com",
@@ -766,7 +766,7 @@
       ],
       "dist": {
         "shasum": "90db5970bef055d1fbf6e218afb8ca6e9b1b358a",
-        "tarball": "http://registry.npmjs.cf/d3-request/-/d3-request-0.4.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-request/-/d3-request-0.4.1.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-9-west.internal.npmjs.com",
@@ -834,7 +834,7 @@
       ],
       "dist": {
         "shasum": "9dfd75a1403ac93950f3fa936678beb4b349ab79",
-        "tarball": "http://registry.npmjs.cf/d3-request/-/d3-request-0.4.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-request/-/d3-request-0.4.2.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-5-east.internal.npmjs.com",
@@ -898,7 +898,7 @@
       },
       "dist": {
         "shasum": "5495a3ad42c0ca76d11f1e1fbcad45406c2691eb",
-        "tarball": "http://registry.npmjs.cf/d3-request/-/d3-request-0.4.3.tgz"
+        "tarball": "https://registry.npmjs.org/d3-request/-/d3-request-0.4.3.tgz"
       },
       "maintainers": [
         {
@@ -974,7 +974,7 @@
       ],
       "dist": {
         "shasum": "bd271933e53e1d8d4e7752005666cf35ef3fe442",
-        "tarball": "http://registry.npmjs.cf/d3-request/-/d3-request-0.4.4.tgz"
+        "tarball": "https://registry.npmjs.org/d3-request/-/d3-request-0.4.4.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-9-west.internal.npmjs.com",
@@ -1044,7 +1044,7 @@
       ],
       "dist": {
         "shasum": "c2510816c938c3cab6e91df853d9aafc8790efe1",
-        "tarball": "http://registry.npmjs.cf/d3-request/-/d3-request-0.4.5.tgz"
+        "tarball": "https://registry.npmjs.org/d3-request/-/d3-request-0.4.5.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-11-east.internal.npmjs.com",
@@ -1103,118 +1103,5 @@
   "users": {
     "jaxelson": true
   },
-  "_attachments": {
-    "d3-request-0.2.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-aLv7oS7kjkN6b+soM2jVAQ==",
-      "length": 8138,
-      "stub": true
-    },
-    "d3-request-0.2.3.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-VtKIMeBTZ+hQ5PeNqNET6w==",
-      "length": 8190,
-      "stub": true
-    },
-    "d3-request-0.2.4.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-kcG/03pwOI6YPv8ZBKJLpg==",
-      "length": 8335,
-      "stub": true
-    },
-    "d3-request-0.2.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-D2e2bMJ/IQVMXtZhJwhX/w==",
-      "length": 8192,
-      "stub": true
-    },
-    "d3-request-0.2.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-Zq1U3wm7VfLUIJJSQjp8oA==",
-      "length": 11762,
-      "stub": true
-    },
-    "d3-request-0.2.6.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-xzav0zXmhYgrrGjijM4fKg==",
-      "length": 8461,
-      "stub": true
-    },
-    "d3-request-0.2.5.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-kElamXPPL9pV2kRcV4a39w==",
-      "length": 8463,
-      "stub": true
-    },
-    "d3-request-0.3.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-evLbQkj4CH26kASHW6vSoQ==",
-      "length": 8499,
-      "stub": true
-    },
-    "d3-request-0.3.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-gWK+74mUgELh/XjR1EZ8CQ==",
-      "length": 8630,
-      "stub": true
-    },
-    "d3-request-0.3.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-FkDiySbE3i4R3klYhqRFYQ==",
-      "length": 8755,
-      "stub": true
-    },
-    "d3-request-0.4.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-a5XS1pHX1UC93Rs9gzmlAg==",
-      "length": 8668,
-      "stub": true
-    },
-    "d3-request-0.4.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-kwLfYyoUSYuC6ZfYwA4QXg==",
-      "length": 8670,
-      "stub": true
-    },
-    "d3-request-0.4.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-6JpI51X7OQ0U/9NMbVt/KQ==",
-      "length": 8679,
-      "stub": true
-    },
-    "d3-request-0.4.3.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-P15A3noWo3hBO3TXbbSAhA==",
-      "length": 8963,
-      "stub": true
-    },
-    "d3-request-0.4.4.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-aWsCluRBrGmr/Vf3xp1G8w==",
-      "length": 8970,
-      "stub": true
-    },
-    "d3-request-0.4.5.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-dTK+LZ2bw2GOmkkGxmrUtA==",
-      "length": 9294,
-      "stub": true
-    }
-  }
+  "_attachments": {}
 }

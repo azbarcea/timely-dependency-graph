@@ -1,6 +1,6 @@
 {
   "_id": "d3-scale",
-  "_rev": "22-0b5cf783df0fded3dc5a31de31d26020",
+  "_rev": "29-5bf15dc43f3185b1bf2edcdff6e4c9ff",
   "name": "d3-scale",
   "description": "Encodings that map abstract data to visual representation.",
   "dist-tags": {
@@ -40,7 +40,7 @@
       "_id": "d3-scale@0.0.0",
       "dist": {
         "shasum": "8dac92144b0c9e293c57435c5e9b3f8725fbbfd1",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.0.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.0.0.tgz"
       },
       "_from": ".",
       "_npmVersion": "1.4.6",
@@ -107,7 +107,7 @@
       },
       "dist": {
         "shasum": "b06c35f41ad4ef10e80e93dde83945ce2c8b6662",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.0.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.0.1.tgz"
       },
       "maintainers": [
         {
@@ -168,7 +168,7 @@
       },
       "dist": {
         "shasum": "33a29aa06f64a3d87193f73e8e8ccc79aca0d72c",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.0.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.0.2.tgz"
       },
       "maintainers": [
         {
@@ -237,7 +237,7 @@
       ],
       "dist": {
         "shasum": "e667ca4732b4c25a8c4aa570d68f6017809dacfc",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.1.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.1.0.tgz"
       },
       "directories": {}
     },
@@ -300,7 +300,7 @@
       ],
       "dist": {
         "shasum": "8dde1a4ec2cc03f84688410819a14eabc88e8d5c",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.1.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.1.1.tgz"
       },
       "directories": {}
     },
@@ -363,7 +363,7 @@
       ],
       "dist": {
         "shasum": "4e40a3fdbce4f069a63ec205fa931e32fbee6928",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.1.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.1.2.tgz"
       },
       "directories": {}
     },
@@ -428,7 +428,7 @@
       ],
       "dist": {
         "shasum": "fe38ec69bb6ea61ff3edfab8a440b032b09e1b92",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.1.3.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.1.3.tgz"
       },
       "directories": {}
     },
@@ -493,7 +493,7 @@
       ],
       "dist": {
         "shasum": "72375b445aa64237fc9907ab1a0b6ec6507b68ca",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.1.4.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.1.4.tgz"
       },
       "directories": {}
     },
@@ -558,7 +558,7 @@
       ],
       "dist": {
         "shasum": "6dd3922ad3ebf0b1949d3d035a23a1b5b8d3e185",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.1.5.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.1.5.tgz"
       },
       "directories": {}
     },
@@ -623,7 +623,7 @@
       ],
       "dist": {
         "shasum": "8c1b3ede7b0da40bdb2dbef0e63157f2bc5bb5f5",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.2.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.2.0.tgz"
       },
       "directories": {}
     },
@@ -688,7 +688,7 @@
       ],
       "dist": {
         "shasum": "736caa6d7e805ae2ae7eab8501f89facb6f85f27",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.3.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.3.0.tgz"
       },
       "directories": {}
     },
@@ -753,7 +753,7 @@
       ],
       "dist": {
         "shasum": "21970057ccee419f0b3a1f85ba572fddab4db1c3",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.4.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.4.0.tgz"
       },
       "directories": {}
     },
@@ -819,7 +819,7 @@
       ],
       "dist": {
         "shasum": "62af8a6c64df35fd9956a1cd0c88a25d8d466095",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.4.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.4.1.tgz"
       },
       "directories": {}
     },
@@ -885,7 +885,7 @@
       ],
       "dist": {
         "shasum": "b17506a4a9508e9118b55591b9ee1cc06e96293f",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.5.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.5.0.tgz"
       },
       "directories": {}
     },
@@ -951,7 +951,7 @@
       ],
       "dist": {
         "shasum": "b15e6a43affa9547f169fcf7a868e844ab63b015",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.5.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.5.1.tgz"
       },
       "directories": {}
     },
@@ -1017,7 +1017,7 @@
       ],
       "dist": {
         "shasum": "55791079de160da75c80dffbf3cc5f6c190a7852",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.5.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.5.2.tgz"
       },
       "directories": {}
     },
@@ -1084,7 +1084,7 @@
       ],
       "dist": {
         "shasum": "12720fd8e35a399f5c8abc4a296a35037d8fa936",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.5.3.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.5.3.tgz"
       },
       "directories": {}
     },
@@ -1151,7 +1151,7 @@
       ],
       "dist": {
         "shasum": "21646a25fc1c798c77ffef29f1c51c2e2e56e824",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.6.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.6.0.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-9-west.internal.npmjs.com",
@@ -1222,7 +1222,7 @@
       ],
       "dist": {
         "shasum": "9b19461dcfa7209b1d247e4446a550114a5f1460",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.6.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.6.1.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-6-west.internal.npmjs.com",
@@ -1293,7 +1293,7 @@
       ],
       "dist": {
         "shasum": "dc09a951a3ccbe44698d259b1c85dddd0ba1417a",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.6.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.6.2.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-6-west.internal.npmjs.com",
@@ -1364,7 +1364,7 @@
       ],
       "dist": {
         "shasum": "c7e479d9d0f135d0fa7a488ecf427929d6a31dfb",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.6.3.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.6.3.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-5-east.internal.npmjs.com",
@@ -1435,7 +1435,7 @@
       ],
       "dist": {
         "shasum": "e398e146fa53dec5370ed1f045ef0426c1a3fd90",
-        "tarball": "http://registry.npmjs.cf/d3-scale/-/d3-scale-0.6.4.tgz"
+        "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-0.6.4.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-5-east.internal.npmjs.com",
@@ -1501,160 +1501,5 @@
     "jaxelson": true,
     "briantrice": true
   },
-  "_attachments": {
-    "d3-scale-0.0.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-liHYB8v7hv43Xe9eN67J0g==",
-      "length": 16218,
-      "stub": true
-    },
-    "d3-scale-0.0.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-HAINYNv4EKU8VKDhWY6jbg==",
-      "length": 49524,
-      "stub": true
-    },
-    "d3-scale-0.0.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-8dVT/TiSuTBHQiUbFbSg5w==",
-      "length": 48291,
-      "stub": true
-    },
-    "d3-scale-0.1.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-kWahVglISjf4JADWYVBEQg==",
-      "length": 51529,
-      "stub": true
-    },
-    "d3-scale-0.1.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-QxvrLOGmUM3Z6AT8FxwICg==",
-      "length": 51164,
-      "stub": true
-    },
-    "d3-scale-0.1.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-6UiLYzQRtTJxSloeVnMTYw==",
-      "length": 57564,
-      "stub": true
-    },
-    "d3-scale-0.1.3.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-7Whuw4BXS0xKQuEE5hcfZQ==",
-      "length": 61970,
-      "stub": true
-    },
-    "d3-scale-0.2.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-Tumy4mmBrlcW1wkR9yRmaQ==",
-      "length": 30168,
-      "stub": true
-    },
-    "d3-scale-0.1.4.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-D4bGnkS0efxQd/4SUX6lfg==",
-      "length": 61981,
-      "stub": true
-    },
-    "d3-scale-0.1.5.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-Mpbu7bYZLkCFWploR1CPcQ==",
-      "length": 32213,
-      "stub": true
-    },
-    "d3-scale-0.3.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-vlCadudrwTqy2+icjqmnpg==",
-      "length": 50318,
-      "stub": true
-    },
-    "d3-scale-0.4.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-Trofo6dxytrvm7CaygPIZA==",
-      "length": 69963,
-      "stub": true
-    },
-    "d3-scale-0.5.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-nqB69eDcntpGR4QpjvYOag==",
-      "length": 70140,
-      "stub": true
-    },
-    "d3-scale-0.5.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-7+gffF02Yp550Xu4xYBATw==",
-      "length": 71096,
-      "stub": true
-    },
-    "d3-scale-0.4.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-uPypxMr1Rbf42akqEEF5Zw==",
-      "length": 69409,
-      "stub": true
-    },
-    "d3-scale-0.5.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-r1dHhCbFZxn3wMYOD0kEyw==",
-      "length": 70770,
-      "stub": true
-    },
-    "d3-scale-0.5.3.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-3C76QosUe+Yyzl6wsnLHtw==",
-      "length": 70917,
-      "stub": true
-    },
-    "d3-scale-0.6.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-kP+Cx/hojDsLTU1eQzi3Vw==",
-      "length": 70901,
-      "stub": true
-    },
-    "d3-scale-0.6.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-nCwfnWpbJd5NtAbvKAMGOQ==",
-      "length": 70918,
-      "stub": true
-    },
-    "d3-scale-0.6.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-4FHgOjd/AH+quVk09bAg4Q==",
-      "length": 70765,
-      "stub": true
-    },
-    "d3-scale-0.6.3.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-0NUdIDt6XsD5dp/EjTF7Yw==",
-      "length": 70769,
-      "stub": true
-    },
-    "d3-scale-0.6.4.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-whm44c+tn3q3L1N5N/glng==",
-      "length": 70769,
-      "stub": true
-    }
-  }
+  "_attachments": {}
 }

@@ -65,7 +65,7 @@
       ],
       "dist": {
         "shasum": "4dd2a96d2c307050c8411fd9a8ca5a7cbbfeeb5b",
-        "tarball": "http://registry.npmjs.cf/d3-axis/-/d3-axis-0.0.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-axis/-/d3-axis-0.0.1.tgz"
       },
       "directories": {}
     },
@@ -127,7 +127,7 @@
       ],
       "dist": {
         "shasum": "1bbe85f42d3196b122208aedb336e7fe790bca66",
-        "tarball": "http://registry.npmjs.cf/d3-axis/-/d3-axis-0.1.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-axis/-/d3-axis-0.1.0.tgz"
       },
       "directories": {}
     },
@@ -189,7 +189,7 @@
       ],
       "dist": {
         "shasum": "7c9fe10d924a06381a62030f2778064afd3c3eff",
-        "tarball": "http://registry.npmjs.cf/d3-axis/-/d3-axis-0.2.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-axis/-/d3-axis-0.2.0.tgz"
       },
       "directories": {}
     },
@@ -251,7 +251,7 @@
       ],
       "dist": {
         "shasum": "1de8c685aff9f153006416541a2f8ac42c9cb691",
-        "tarball": "http://registry.npmjs.cf/d3-axis/-/d3-axis-0.2.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-axis/-/d3-axis-0.2.1.tgz"
       },
       "directories": {}
     },
@@ -314,7 +314,7 @@
       ],
       "dist": {
         "shasum": "27d64f606bc55fba1bfdc7bbbdd61c914b3e4181",
-        "tarball": "http://registry.npmjs.cf/d3-axis/-/d3-axis-0.2.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-axis/-/d3-axis-0.2.2.tgz"
       },
       "directories": {}
     },
@@ -377,7 +377,7 @@
       ],
       "dist": {
         "shasum": "1495b343d2fc428988129425bd3a7288da84d9e2",
-        "tarball": "http://registry.npmjs.cf/d3-axis/-/d3-axis-0.2.3.tgz"
+        "tarball": "https://registry.npmjs.org/d3-axis/-/d3-axis-0.2.3.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-5-east.internal.npmjs.com",
@@ -445,7 +445,7 @@
       ],
       "dist": {
         "shasum": "223eeab1cf6f275d3ce372acfb7c214e251f793d",
-        "tarball": "http://registry.npmjs.cf/d3-axis/-/d3-axis-0.3.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-axis/-/d3-axis-0.3.0.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-9-west.internal.npmjs.com",
@@ -492,55 +492,5 @@
   },
   "license": "BSD-3-Clause",
   "readmeFilename": "README.md",
-  "_attachments": {
-    "d3-axis-0.0.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-vMYGNnrBHLKO2faIkbDYmw==",
-      "length": 5914,
-      "stub": true
-    },
-    "d3-axis-0.2.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-si4expM/hrQGRD0fTLMYAg==",
-      "length": 7151,
-      "stub": true
-    },
-    "d3-axis-0.1.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-ptESP3eSHU+DiBGR7R7+MA==",
-      "length": 7213,
-      "stub": true
-    },
-    "d3-axis-0.2.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-SJLcn+2jWNzJ+JOjppC21w==",
-      "length": 6775,
-      "stub": true
-    },
-    "d3-axis-0.2.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-SOzK5iRElJSmb4U0TeQCFg==",
-      "length": 7009,
-      "stub": true
-    },
-    "d3-axis-0.2.3.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-/pHpv8rExY7L/vFdmgeJRg==",
-      "length": 6991,
-      "stub": true
-    },
-    "d3-axis-0.3.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-BR0V4QlwBq4CwAEpE3IemQ==",
-      "length": 7305,
-      "stub": true
-    }
-  }
+  "_attachments": {}
 }

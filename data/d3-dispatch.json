@@ -1,6 +1,6 @@
 {
   "_id": "d3-dispatch",
-  "_rev": "12-eb4ad0765e63b2463beb9a2399766b08",
+  "_rev": "20-650f0210ecd7b90866ba98f8f1e95745",
   "name": "d3-dispatch",
   "description": "Register named callbacks and call them with arguments.",
   "dist-tags": {
@@ -39,7 +39,7 @@
       "_id": "d3-dispatch@0.0.0",
       "dist": {
         "shasum": "dbd7d7dfcd547a8a80743b4b3b06ced960f21bb1",
-        "tarball": "http://registry.npmjs.cf/d3-dispatch/-/d3-dispatch-0.0.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dispatch/-/d3-dispatch-0.0.0.tgz"
       },
       "_from": ".",
       "_npmVersion": "1.4.6",
@@ -103,7 +103,7 @@
       },
       "dist": {
         "shasum": "212f03712b17ef8e78e4d83cd28a2ce3f71cf573",
-        "tarball": "http://registry.npmjs.cf/d3-dispatch/-/d3-dispatch-0.0.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dispatch/-/d3-dispatch-0.0.1.tgz"
       },
       "maintainers": [
         {
@@ -161,7 +161,7 @@
       },
       "dist": {
         "shasum": "d363344cad91a3d71e18571083ead23330fc3f64",
-        "tarball": "http://registry.npmjs.cf/d3-dispatch/-/d3-dispatch-0.0.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dispatch/-/d3-dispatch-0.0.2.tgz"
       },
       "maintainers": [
         {
@@ -219,7 +219,7 @@
       },
       "dist": {
         "shasum": "b9a33650986f6208254f91e7d0c7bf70ee3c0805",
-        "tarball": "http://registry.npmjs.cf/d3-dispatch/-/d3-dispatch-0.1.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dispatch/-/d3-dispatch-0.1.0.tgz"
       },
       "maintainers": [
         {
@@ -277,7 +277,7 @@
       },
       "dist": {
         "shasum": "880bff703310f368e06a0992217e3a3499ca8c0f",
-        "tarball": "http://registry.npmjs.cf/d3-dispatch/-/d3-dispatch-0.2.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dispatch/-/d3-dispatch-0.2.0.tgz"
       },
       "maintainers": [
         {
@@ -341,7 +341,7 @@
       ],
       "dist": {
         "shasum": "827ff45eabd0511a81b9c304bc2d281cc2f7c8b6",
-        "tarball": "http://registry.npmjs.cf/d3-dispatch/-/d3-dispatch-0.2.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dispatch/-/d3-dispatch-0.2.1.tgz"
       },
       "directories": {}
     },
@@ -399,7 +399,7 @@
       ],
       "dist": {
         "shasum": "cc982396f3107ce4160b82983937a93d6e5d7ad4",
-        "tarball": "http://registry.npmjs.cf/d3-dispatch/-/d3-dispatch-0.2.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dispatch/-/d3-dispatch-0.2.2.tgz"
       },
       "directories": {}
     },
@@ -457,7 +457,7 @@
       ],
       "dist": {
         "shasum": "703ebacec2e2a75517aa34d42d5af6038c0ce096",
-        "tarball": "http://registry.npmjs.cf/d3-dispatch/-/d3-dispatch-0.2.3.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dispatch/-/d3-dispatch-0.2.3.tgz"
       },
       "directories": {}
     },
@@ -515,7 +515,7 @@
       ],
       "dist": {
         "shasum": "036f7b82369a1ac35528bcaf8af02a62bc66ff52",
-        "tarball": "http://registry.npmjs.cf/d3-dispatch/-/d3-dispatch-0.2.4.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dispatch/-/d3-dispatch-0.2.4.tgz"
       },
       "directories": {}
     },
@@ -573,7 +573,7 @@
       ],
       "dist": {
         "shasum": "61d1def321db4bf05a51da000ccbfe2a3f763b85",
-        "tarball": "http://registry.npmjs.cf/d3-dispatch/-/d3-dispatch-0.2.5.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dispatch/-/d3-dispatch-0.2.5.tgz"
       },
       "directories": {}
     },
@@ -632,7 +632,7 @@
       ],
       "dist": {
         "shasum": "e57df25906cdce5badeae79809ec0f73bbb184ab",
-        "tarball": "http://registry.npmjs.cf/d3-dispatch/-/d3-dispatch-0.2.6.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dispatch/-/d3-dispatch-0.2.6.tgz"
       },
       "directories": {}
     },
@@ -691,7 +691,7 @@
       ],
       "dist": {
         "shasum": "80855910e0a11827b45f9263614644c488757125",
-        "tarball": "http://registry.npmjs.cf/d3-dispatch/-/d3-dispatch-0.3.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dispatch/-/d3-dispatch-0.3.0.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-6-west.internal.npmjs.com",
@@ -754,7 +754,7 @@
       ],
       "dist": {
         "shasum": "accc3a21e4fdb8972fd6e1ad82436b60c065b09f",
-        "tarball": "http://registry.npmjs.cf/d3-dispatch/-/d3-dispatch-0.4.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dispatch/-/d3-dispatch-0.4.0.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-5-east.internal.npmjs.com",
@@ -817,7 +817,7 @@
       ],
       "dist": {
         "shasum": "5bf3f94b29b8d17c798d585b57533f4ebb3e144c",
-        "tarball": "http://registry.npmjs.cf/d3-dispatch/-/d3-dispatch-0.4.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dispatch/-/d3-dispatch-0.4.1.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-5-east.internal.npmjs.com",
@@ -874,7 +874,7 @@
       },
       "dist": {
         "shasum": "0871241fd5be5c5746e247580353ec7a0ff13eb2",
-        "tarball": "http://registry.npmjs.cf/d3-dispatch/-/d3-dispatch-0.4.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dispatch/-/d3-dispatch-0.4.2.tgz"
       },
       "maintainers": [
         {
@@ -943,7 +943,7 @@
       ],
       "dist": {
         "shasum": "da694957d68a694d0834cd6e5423f40538774e4e",
-        "tarball": "http://registry.npmjs.cf/d3-dispatch/-/d3-dispatch-0.4.3.tgz"
+        "tarball": "https://registry.npmjs.org/d3-dispatch/-/d3-dispatch-0.4.3.tgz"
       },
       "_npmOperationalInternal": {
         "host": "packages-13-west.internal.npmjs.com",
@@ -1002,118 +1002,5 @@
   "users": {
     "jaxelson": true
   },
-  "_attachments": {
-    "d3-dispatch-0.1.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-vdy5NX/I3xixq1HhP5el1A==",
-      "length": 4726,
-      "stub": true
-    },
-    "d3-dispatch-0.0.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-bKaag8kM/hNueCyPVxRmcQ==",
-      "length": 3807,
-      "stub": true
-    },
-    "d3-dispatch-0.0.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-d8Gma7ZYGuwgQcXoGrXqJg==",
-      "length": 3811,
-      "stub": true
-    },
-    "d3-dispatch-0.2.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-mrH6WcNw8fU6IrYM9WRA3Q==",
-      "length": 4739,
-      "stub": true
-    },
-    "d3-dispatch-0.0.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-9a+Bml+n4DZh31g+GtFLgg==",
-      "length": 1645,
-      "stub": true
-    },
-    "d3-dispatch-0.2.3.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-6S0BU7gWHxC9EHdKvayfiw==",
-      "length": 4895,
-      "stub": true
-    },
-    "d3-dispatch-0.2.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-QLyG0bN80n6CnR6c9dd+Lw==",
-      "length": 4891,
-      "stub": true
-    },
-    "d3-dispatch-0.2.4.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-FI9+I1Jslmj5oGhsCexlCA==",
-      "length": 5019,
-      "stub": true
-    },
-    "d3-dispatch-0.2.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-p23m1Hu9mumk7bNmvv0ajQ==",
-      "length": 4746,
-      "stub": true
-    },
-    "d3-dispatch-0.2.5.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-AB9lpzPydv8c0WhIWClZyQ==",
-      "length": 5003,
-      "stub": true
-    },
-    "d3-dispatch-0.2.6.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-gUKowzwykcFyIUeOGTmeZQ==",
-      "length": 5297,
-      "stub": true
-    },
-    "d3-dispatch-0.3.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-A+is3WThoZljh9Q5Y2NuyA==",
-      "length": 5373,
-      "stub": true
-    },
-    "d3-dispatch-0.4.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-AFa/SQF58BA+QEve8kvtlA==",
-      "length": 5584,
-      "stub": true
-    },
-    "d3-dispatch-0.4.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-X4D8+27dKbppmTNwAU83ng==",
-      "length": 5623,
-      "stub": true
-    },
-    "d3-dispatch-0.4.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-qBnLwrkYr18A5AgJVqiV6g==",
-      "length": 5646,
-      "stub": true
-    },
-    "d3-dispatch-0.4.3.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-EJDIBfLGASPmbQPzVGuH/A==",
-      "length": 5633,
-      "stub": true
-    }
-  }
+  "_attachments": {}
 }

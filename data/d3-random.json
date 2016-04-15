@@ -1,6 +1,6 @@
 {
   "_id": "d3-random",
-  "_rev": "7-fed7c50bfd2ab34cdd30fa2f745ff84e",
+  "_rev": "12-9fa2db5311e6fc855b9ca2a580645c8a",
   "name": "d3-random",
   "description": "Generate random numbers from various distributions.",
   "dist-tags": {
@@ -39,7 +39,7 @@
       "_id": "d3-random@0.0.0",
       "dist": {
         "shasum": "d9a7a2e3c2a971236e89f3595f15f971c952ef43",
-        "tarball": "http://registry.npmjs.cf/d3-random/-/d3-random-0.0.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-random/-/d3-random-0.0.0.tgz"
       },
       "_from": ".",
       "_npmVersion": "1.4.6",
@@ -104,7 +104,7 @@
       },
       "dist": {
         "shasum": "97db085390c3516f078bede09ac05863d8fce7d3",
-        "tarball": "http://registry.npmjs.cf/d3-random/-/d3-random-0.0.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-random/-/d3-random-0.0.1.tgz"
       },
       "maintainers": [
         {
@@ -169,7 +169,7 @@
       ],
       "dist": {
         "shasum": "0a70161e3ce7addd3c0c8d1dcd312329b1b9dd16",
-        "tarball": "http://registry.npmjs.cf/d3-random/-/d3-random-0.0.2.tgz"
+        "tarball": "https://registry.npmjs.org/d3-random/-/d3-random-0.0.2.tgz"
       },
       "directories": {}
     },
@@ -228,7 +228,7 @@
       ],
       "dist": {
         "shasum": "a4e60a45c21b4ad91e45d28a0a6d7f65b2668e2b",
-        "tarball": "http://registry.npmjs.cf/d3-random/-/d3-random-0.0.3.tgz"
+        "tarball": "https://registry.npmjs.org/d3-random/-/d3-random-0.0.3.tgz"
       },
       "directories": {}
     },
@@ -287,7 +287,7 @@
       ],
       "dist": {
         "shasum": "99c95d9c3ed6f390f978b2a404bd2ee627adca83",
-        "tarball": "http://registry.npmjs.cf/d3-random/-/d3-random-0.0.4.tgz"
+        "tarball": "https://registry.npmjs.org/d3-random/-/d3-random-0.0.4.tgz"
       },
       "directories": {}
     },
@@ -346,7 +346,7 @@
       ],
       "dist": {
         "shasum": "fab7aa3f34d87d96990b7a6c9a0620601044eb90",
-        "tarball": "http://registry.npmjs.cf/d3-random/-/d3-random-0.1.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-random/-/d3-random-0.1.0.tgz"
       },
       "directories": {}
     },
@@ -405,7 +405,7 @@
       ],
       "dist": {
         "shasum": "6f68342c0f585eb8cb67bcd60b21dca846985614",
-        "tarball": "http://registry.npmjs.cf/d3-random/-/d3-random-0.1.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-random/-/d3-random-0.1.1.tgz"
       },
       "directories": {}
     },
@@ -464,7 +464,7 @@
       ],
       "dist": {
         "shasum": "daf13ab9ec60c028271a0f3cc42bedfa1a617b54",
-        "tarball": "http://registry.npmjs.cf/d3-random/-/d3-random-0.2.0.tgz"
+        "tarball": "https://registry.npmjs.org/d3-random/-/d3-random-0.2.0.tgz"
       },
       "directories": {}
     },
@@ -524,7 +524,7 @@
       ],
       "dist": {
         "shasum": "6141837199e6e7dbf13125e01e44b2c83e5e483f",
-        "tarball": "http://registry.npmjs.cf/d3-random/-/d3-random-0.2.1.tgz"
+        "tarball": "https://registry.npmjs.org/d3-random/-/d3-random-0.2.1.tgz"
       },
       "directories": {}
     }
@@ -568,69 +568,5 @@
   },
   "license": "BSD-3-Clause",
   "readmeFilename": "README.md",
-  "_attachments": {
-    "d3-random-0.0.3.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-R7pGP/W+cHzfrBBESnE+zA==",
-      "length": 3631,
-      "stub": true
-    },
-    "d3-random-0.0.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-R/hrFts1w0Iw37Q0GbLbig==",
-      "length": 3672,
-      "stub": true
-    },
-    "d3-random-0.0.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-fCbs7RNIK05q9RIArR2MqA==",
-      "length": 909,
-      "stub": true
-    },
-    "d3-random-0.0.4.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-TKJhEN9OFNmyeoxgIglctg==",
-      "length": 3731,
-      "stub": true
-    },
-    "d3-random-0.1.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-NuJA48TTw5oLPEyGtGLzHQ==",
-      "length": 3991,
-      "stub": true
-    },
-    "d3-random-0.2.0.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-2Sg01gucre/k0bFeyIfFJA==",
-      "length": 4161,
-      "stub": true
-    },
-    "d3-random-0.1.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-MryCJzV7FRHJK6tkF+GNhA==",
-      "length": 4146,
-      "stub": true
-    },
-    "d3-random-0.0.2.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-Tjv6JXlN6I9VnHhUSykYrw==",
-      "length": 3459,
-      "stub": true
-    },
-    "d3-random-0.2.1.tgz": {
-      "content_type": "application/octet-stream",
-      "revpos": 0,
-      "digest": "md5-q5phOLg8FBIU1gazlk6U2g==",
-      "length": 4534,
-      "stub": true
-    }
-  }
+  "_attachments": {}
 }
