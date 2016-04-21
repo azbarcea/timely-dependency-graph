@@ -11,15 +11,12 @@ var semver = require('semver')
 var parseVersion = require('./utils/semver').parseVersion
 var domUtils = require('./utils/dom')
 
-/*
 // @if PRODUCTION=true
 var REALTIME_DATA = true
 // @endif
 // @if PRODUCTION=false
 var REALTIME_DATA = false
 // @endif
-*/
-var REALTIME_DATA = false
 var MODULE_NAME = 'd3'
 var URL_BASE = REALTIME_DATA ? 'https://registry.npmjs.cf/' : './data/'
 var URL_EXTENSION = REALTIME_DATA ? '' : '.json'
