@@ -1,6 +1,6 @@
 {
   "_id": "d3-scale",
-  "_rev": "29-5bf15dc43f3185b1bf2edcdff6e4c9ff",
+  "_rev": "30-54e8484f6d929ee295bb18d4feae69c5",
   "name": "d3-scale",
   "description": "Encodings that map abstract data to visual representation.",
   "dist-tags": {
@@ -1499,7 +1499,8 @@
   "users": {
     "cmpolis": true,
     "jaxelson": true,
-    "briantrice": true
+    "briantrice": true,
+    "martinspinks": true
   },
   "_attachments": {}
 }
