@@ -1,5 +1,4 @@
-// read and export command line options
-
+// command line options
 var minimist = require('minimist');
 module.exports = minimist(process.argv.slice(2), {
     boolean: [
@@ -11,6 +10,5 @@ module.exports = minimist(process.argv.slice(2), {
 });
 
 // require all tasks
-
 var requireDir = require('require-dir');
-requireDir('./gulptasks', {recurse: true});
+requireDir('./gulp/tasks', {recurse: true});

@@ -7,7 +7,7 @@ const gulpif = require('gulp-if');
 const uglify = require('gulp-uglify');
 const preprocess = require('gulp-preprocess');
 
-const cliOptions = require('../gulpfile');
+const cliOptions = require('../../gulpfile');
 var isProductionBuild = cliOptions.p;
 
 gulp.task('logic', function() {
