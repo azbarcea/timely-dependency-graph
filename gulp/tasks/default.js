@@ -1,4 +1,3 @@
-const gulp = require('gulp');
-const runSequence = require('run-sequence');
-
-gulp.task('default', function() { runSequence('build', 'serve') });
+import { default as gulp } from 'gulp'
+import { default as runSequence } from 'run-sequence'
+gulp.task('default', () => { runSequence('build', 'serve') })

@@ -1,10 +1,9 @@
-const
-    path = require('path'),
-    gulp = require('gulp'),
-    gutil = require('gulp-util'),
-    less = require('gulp-less'),
-    cssnano = require('gulp-cssnano'),
-    browserSync = require('browser-sync');
+import { default as path } from 'path'
+import { default as gulp } from 'gulp'
+import { default as gutil } from 'gulp-util'
+import { default as less } from 'gulp-less'
+import { default as cssnano } from 'gulp-cssnano'
+import { default as browserSync } from 'browser-sync'
 
 var cssnanoOptions = {
 
@@ -45,7 +44,7 @@ var cssnanoOptions = {
     reduceIdents: true,
 };
 
-gulp.task('style', function() {
+gulp.task('style', () => {
     return gulp.src('./src/viz/style/index.less')
         .pipe(less({paths: ['./src/viz/style']}).on('error', gutil.log))
         .pipe(gulp.dest('./build/dev'))

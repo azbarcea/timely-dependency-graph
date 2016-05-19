@@ -1,8 +1,7 @@
-const
-    gulp = require('gulp'),
-    browserSync = require('browser-sync');
+import { default as gulp } from 'gulp'
+import { default as browserSync } from 'browser-sync'
 
-gulp.task('serve', function() {
+gulp.task('serve', () => {
     browserSync.init({
         server: {
             baseDir: './build/dev',
