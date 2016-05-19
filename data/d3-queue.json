@@ -1,6 +1,6 @@
 {
   "_id": "d3-queue",
-  "_rev": "9-c9dfef9aabc5bb5dd23c35a65eb79fbc",
+  "_rev": "10-c2e92c745bb7a9b6f93db796cae23b15",
   "name": "d3-queue",
   "description": "Evaluate asynchronous tasks with configurable concurrency.",
   "dist-tags": {
@@ -530,5 +530,8 @@
   },
   "license": "BSD-3-Clause",
   "readmeFilename": "README.md",
+  "users": {
+    "babenzele": true
+  },
   "_attachments": {}
 }

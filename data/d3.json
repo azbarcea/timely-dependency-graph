@@ -1,11 +1,11 @@
 {
   "_id": "d3",
-  "_rev": "345-3a7b739507b867fef6f2f64a513f7e8e",
+  "_rev": "350-a416d865bd97b1501b0eb70ecd61132f",
   "name": "d3",
   "description": "A JavaScript visualization library for HTML and SVG.",
   "dist-tags": {
     "latest": "3.5.17",
-    "next": "4.0.0-alpha.35"
+    "next": "4.0.0-alpha.40"
   },
   "versions": {
     "1.29.5": {
@@ -10966,6 +10966,511 @@
         "tmp": "tmp/d3-3.5.17.tgz_1462408194546_0.654020820511505"
       },
       "directories": {}
+    },
+    "4.0.0-alpha.36": {
+      "name": "d3",
+      "version": "4.0.0-alpha.36",
+      "publishConfig": {
+        "tag": "next"
+      },
+      "description": "Data-Driven Documents",
+      "keywords": [
+        "dom",
+        "visualization",
+        "svg",
+        "animation",
+        "canvas"
+      ],
+      "homepage": "https://github.com/mbostock/d3",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/d3.node.js",
+      "browser": "build/d3.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbostock/d3.git"
+      },
+      "scripts": {
+        "pretest": "rm -rf build && mkdir build && json2module package.json > build/package.js && bin/rollup-node",
+        "test": "tape 'test/**/*-test.js'",
+        "prepublish": "npm run test && bin/rollup && uglifyjs build/d3.js -c -m -o build/d3.min.js",
+        "postpublish": "VERSION=`node -e 'console.log(require(\"./package.json\").version)'`; git push && cp -v build/d3.js ../d3.github.com/d3.v${VERSION}.js && cp -v build/d3.min.js ../d3.github.com/d3.v${VERSION}.min.js && cd ../d3.github.com && git add d3.v${VERSION}.js d3.v${VERSION}.min.js && git commit -m \"d3 ${VERSION}\" && git push && cd - && zip -j build/d3.zip -- LICENSE README.md build/d3.js build/d3.min.js"
+      },
+      "devDependencies": {
+        "json2module": "0.0",
+        "rollup": "0.26",
+        "rollup-plugin-node-resolve": "1",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "dependencies": {
+        "d3-array": "0.7.1",
+        "d3-axis": "0.3.1",
+        "d3-collection": "0.1.2",
+        "d3-color": "0.4.2",
+        "d3-dispatch": "0.4.3",
+        "d3-drag": "0.1.1",
+        "d3-dsv": "0.3.2",
+        "d3-ease": "0.7.0",
+        "d3-force": "0.6.0",
+        "d3-format": "0.5.1",
+        "d3-hierarchy": "0.2.2",
+        "d3-interpolate": "0.7.0",
+        "d3-path": "0.1.5",
+        "d3-polygon": "0.2.1",
+        "d3-quadtree": "0.7.2",
+        "d3-queue": "2.0.3",
+        "d3-random": "0.2.1",
+        "d3-request": "0.4.6",
+        "d3-scale": "0.7.0",
+        "d3-selection": "0.7.2",
+        "d3-shape": "0.6.0",
+        "d3-time": "0.2.5",
+        "d3-time-format": "0.3.2",
+        "d3-timer": "0.4.3",
+        "d3-transition": "0.2.8",
+        "d3-voronoi": "0.3.2"
+      },
+      "gitHead": "c77c2b7f4302c14b227af9ca397143e3cd235550",
+      "bugs": {
+        "url": "https://github.com/mbostock/d3/issues"
+      },
+      "_id": "d3@4.0.0-alpha.36",
+      "_shasum": "73d79a9571e64cb57d3f23255f3ac7f8b22a58bb",
+      "_from": ".",
+      "_npmVersion": "3.6.0",
+      "_nodeVersion": "5.7.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mbostock@gmail.com"
+        },
+        {
+          "name": "jasondavies",
+          "email": "jason@jasondavies.com"
+        }
+      ],
+      "dist": {
+        "shasum": "73d79a9571e64cb57d3f23255f3ac7f8b22a58bb",
+        "tarball": "https://registry.npmjs.org/d3/-/d3-4.0.0-alpha.36.tgz"
+      },
+      "_npmOperationalInternal": {
+        "host": "packages-16-east.internal.npmjs.com",
+        "tmp": "tmp/d3-4.0.0-alpha.36.tgz_1462981491167_0.9578479204792529"
+      },
+      "directories": {}
+    },
+    "4.0.0-alpha.37": {
+      "name": "d3",
+      "version": "4.0.0-alpha.37",
+      "publishConfig": {
+        "tag": "next"
+      },
+      "description": "Data-Driven Documents",
+      "keywords": [
+        "dom",
+        "visualization",
+        "svg",
+        "animation",
+        "canvas"
+      ],
+      "homepage": "https://github.com/mbostock/d3",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/d3.node.js",
+      "browser": "build/d3.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbostock/d3.git"
+      },
+      "scripts": {
+        "pretest": "rm -rf build && mkdir build && json2module package.json > build/package.js && bin/rollup-node",
+        "test": "tape 'test/**/*-test.js'",
+        "prepublish": "npm run test && bin/rollup && uglifyjs build/d3.js -c -m -o build/d3.min.js",
+        "postpublish": "VERSION=`node -e 'console.log(require(\"./package.json\").version)'`; git push && cp -v build/d3.js ../d3.github.com/d3.v${VERSION}.js && cp -v build/d3.min.js ../d3.github.com/d3.v${VERSION}.min.js && cd ../d3.github.com && git add d3.v${VERSION}.js d3.v${VERSION}.min.js && git commit -m \"d3 ${VERSION}\" && git push && cd - && zip -j build/d3.zip -- LICENSE README.md build/d3.js build/d3.min.js"
+      },
+      "devDependencies": {
+        "json2module": "0.0",
+        "rollup": "0.26",
+        "rollup-plugin-node-resolve": "1",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "dependencies": {
+        "d3-array": "0.7.1",
+        "d3-axis": "0.3.1",
+        "d3-collection": "0.1.2",
+        "d3-color": "0.4.2",
+        "d3-dispatch": "0.4.3",
+        "d3-drag": "0.1.1",
+        "d3-dsv": "0.3.2",
+        "d3-ease": "0.7.0",
+        "d3-force": "0.6.0",
+        "d3-format": "0.5.1",
+        "d3-hierarchy": "0.2.2",
+        "d3-interpolate": "0.7.0",
+        "d3-path": "0.1.5",
+        "d3-polygon": "0.2.1",
+        "d3-quadtree": "0.7.2",
+        "d3-queue": "2.0.3",
+        "d3-random": "0.2.1",
+        "d3-request": "0.4.6",
+        "d3-scale": "0.7.0",
+        "d3-selection": "0.7.2",
+        "d3-shape": "0.6.0",
+        "d3-time": "0.2.5",
+        "d3-time-format": "0.3.2",
+        "d3-timer": "0.4.3",
+        "d3-transition": "0.2.8",
+        "d3-voronoi": "0.3.2"
+      },
+      "gitHead": "6e5c47cf42246f2b412f9dee1ffdea2875219302",
+      "bugs": {
+        "url": "https://github.com/mbostock/d3/issues"
+      },
+      "_id": "d3@4.0.0-alpha.37",
+      "_shasum": "52fe10fd845e740cdaf9cc145ddec71549f4a4d9",
+      "_from": ".",
+      "_npmVersion": "3.6.0",
+      "_nodeVersion": "5.7.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mbostock@gmail.com"
+        },
+        {
+          "name": "jasondavies",
+          "email": "jason@jasondavies.com"
+        }
+      ],
+      "dist": {
+        "shasum": "52fe10fd845e740cdaf9cc145ddec71549f4a4d9",
+        "tarball": "https://registry.npmjs.org/d3/-/d3-4.0.0-alpha.37.tgz"
+      },
+      "_npmOperationalInternal": {
+        "host": "packages-12-west.internal.npmjs.com",
+        "tmp": "tmp/d3-4.0.0-alpha.37.tgz_1462981899613_0.3366183827165514"
+      },
+      "directories": {}
+    },
+    "4.0.0-alpha.38": {
+      "name": "d3",
+      "version": "4.0.0-alpha.38",
+      "publishConfig": {
+        "tag": "next"
+      },
+      "description": "Data-Driven Documents",
+      "keywords": [
+        "dom",
+        "visualization",
+        "svg",
+        "animation",
+        "canvas"
+      ],
+      "homepage": "https://github.com/mbostock/d3",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/d3.node.js",
+      "browser": "build/d3.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbostock/d3.git"
+      },
+      "scripts": {
+        "pretest": "rm -rf build && mkdir build && json2module package.json > build/package.js && bin/rollup-node",
+        "test": "tape 'test/**/*-test.js'",
+        "prepublish": "npm run test && bin/rollup && uglifyjs build/d3.js -c -m -o build/d3.min.js",
+        "postpublish": "VERSION=`node -e 'console.log(require(\"./package.json\").version)'`; git push && cp -v build/d3.js ../d3.github.com/d3.v${VERSION}.js && cp -v build/d3.min.js ../d3.github.com/d3.v${VERSION}.min.js && cd ../d3.github.com && git add d3.v${VERSION}.js d3.v${VERSION}.min.js && git commit -m \"d3 ${VERSION}\" && git push && cd - && zip -j build/d3.zip -- LICENSE README.md build/d3.js build/d3.min.js"
+      },
+      "devDependencies": {
+        "json2module": "0.0",
+        "rollup": "0.26",
+        "rollup-plugin-node-resolve": "1",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "dependencies": {
+        "d3-array": "0.7.1",
+        "d3-axis": "0.3.1",
+        "d3-collection": "0.1.2",
+        "d3-color": "0.4.2",
+        "d3-dispatch": "0.4.3",
+        "d3-drag": "0.1.2",
+        "d3-dsv": "0.3.2",
+        "d3-ease": "0.7.0",
+        "d3-force": "0.6.0",
+        "d3-format": "0.5.1",
+        "d3-hierarchy": "0.2.2",
+        "d3-interpolate": "0.7.0",
+        "d3-path": "0.1.5",
+        "d3-polygon": "0.2.1",
+        "d3-quadtree": "0.7.2",
+        "d3-queue": "2.0.3",
+        "d3-random": "0.2.1",
+        "d3-request": "0.4.6",
+        "d3-scale": "0.7.0",
+        "d3-selection": "0.7.2",
+        "d3-shape": "0.6.0",
+        "d3-time": "0.2.5",
+        "d3-time-format": "0.3.2",
+        "d3-timer": "0.4.3",
+        "d3-transition": "0.2.8",
+        "d3-voronoi": "0.3.2"
+      },
+      "gitHead": "aa47c28816ff6e02a866277ee0dc9d554a2bb557",
+      "bugs": {
+        "url": "https://github.com/mbostock/d3/issues"
+      },
+      "_id": "d3@4.0.0-alpha.38",
+      "_shasum": "ee3bf12ced43e755ff57d266220081b05a5076b9",
+      "_from": ".",
+      "_npmVersion": "3.6.0",
+      "_nodeVersion": "5.7.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mbostock@gmail.com"
+        },
+        {
+          "name": "jasondavies",
+          "email": "jason@jasondavies.com"
+        }
+      ],
+      "dist": {
+        "shasum": "ee3bf12ced43e755ff57d266220081b05a5076b9",
+        "tarball": "https://registry.npmjs.org/d3/-/d3-4.0.0-alpha.38.tgz"
+      },
+      "_npmOperationalInternal": {
+        "host": "packages-16-east.internal.npmjs.com",
+        "tmp": "tmp/d3-4.0.0-alpha.38.tgz_1463010414975_0.46792886033654213"
+      },
+      "directories": {}
+    },
+    "4.0.0-alpha.39": {
+      "name": "d3",
+      "version": "4.0.0-alpha.39",
+      "publishConfig": {
+        "tag": "next"
+      },
+      "description": "Data-Driven Documents",
+      "keywords": [
+        "dom",
+        "visualization",
+        "svg",
+        "animation",
+        "canvas"
+      ],
+      "homepage": "https://github.com/mbostock/d3",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "http://bost.ocks.org/mike"
+      },
+      "main": "build/d3.node.js",
+      "browser": "build/d3.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbostock/d3.git"
+      },
+      "scripts": {
+        "pretest": "rm -rf build && mkdir build && json2module package.json > build/package.js && bin/rollup-node",
+        "test": "tape 'test/**/*-test.js'",
+        "prepublish": "npm run test && bin/rollup && uglifyjs build/d3.js -c -m -o build/d3.min.js",
+        "postpublish": "VERSION=`node -e 'console.log(require(\"./package.json\").version)'`; git push && cp -v build/d3.js ../d3.github.com/d3.v${VERSION}.js && cp -v build/d3.min.js ../d3.github.com/d3.v${VERSION}.min.js && cd ../d3.github.com && git add d3.v${VERSION}.js d3.v${VERSION}.min.js && git commit -m \"d3 ${VERSION}\" && git push && cd - && zip -j build/d3.zip -- LICENSE README.md build/d3.js build/d3.min.js"
+      },
+      "devDependencies": {
+        "json2module": "0.0",
+        "rollup": "0.26",
+        "rollup-plugin-node-resolve": "1",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "dependencies": {
+        "d3-array": "0.7.1",
+        "d3-axis": "0.3.1",
+        "d3-collection": "0.1.2",
+        "d3-color": "0.4.2",
+        "d3-dispatch": "0.4.3",
+        "d3-drag": "0.1.2",
+        "d3-dsv": "0.3.2",
+        "d3-ease": "0.7.0",
+        "d3-force": "0.6.1",
+        "d3-format": "0.5.1",
+        "d3-hierarchy": "0.2.2",
+        "d3-interpolate": "0.7.0",
+        "d3-path": "0.1.5",
+        "d3-polygon": "0.2.1",
+        "d3-quadtree": "0.7.2",
+        "d3-queue": "2.0.3",
+        "d3-random": "0.2.1",
+        "d3-request": "0.4.6",
+        "d3-scale": "0.7.0",
+        "d3-selection": "0.7.2",
+        "d3-shape": "0.6.0",
+        "d3-time": "0.2.5",
+        "d3-time-format": "0.3.2",
+        "d3-timer": "0.4.3",
+        "d3-transition": "0.2.8",
+        "d3-voronoi": "0.3.2"
+      },
+      "gitHead": "d6765d8f96bea81134c4a9847ff4aa39c63fa420",
+      "bugs": {
+        "url": "https://github.com/mbostock/d3/issues"
+      },
+      "_id": "d3@4.0.0-alpha.39",
+      "_shasum": "972140609ffdead9e009a188c050e92b0913d0ab",
+      "_from": ".",
+      "_npmVersion": "3.6.0",
+      "_nodeVersion": "5.7.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mbostock@gmail.com"
+        },
+        {
+          "name": "jasondavies",
+          "email": "jason@jasondavies.com"
+        }
+      ],
+      "dist": {
+        "shasum": "972140609ffdead9e009a188c050e92b0913d0ab",
+        "tarball": "https://registry.npmjs.org/d3/-/d3-4.0.0-alpha.39.tgz"
+      },
+      "_npmOperationalInternal": {
+        "host": "packages-16-east.internal.npmjs.com",
+        "tmp": "tmp/d3-4.0.0-alpha.39.tgz_1463085868837_0.8576802397146821"
+      },
+      "directories": {}
+    },
+    "4.0.0-alpha.40": {
+      "name": "d3",
+      "version": "4.0.0-alpha.40",
+      "publishConfig": {
+        "tag": "next"
+      },
+      "description": "Data-Driven Documents",
+      "keywords": [
+        "dom",
+        "visualization",
+        "svg",
+        "animation",
+        "canvas"
+      ],
+      "homepage": "https://github.com/d3/d3",
+      "license": "BSD-3-Clause",
+      "author": {
+        "name": "Mike Bostock",
+        "url": "https://bost.ocks.org/mike"
+      },
+      "main": "build/d3.node.js",
+      "browser": "build/d3.js",
+      "jsnext:main": "index",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3.git"
+      },
+      "scripts": {
+        "pretest": "rm -rf build && mkdir build && json2module package.json > build/package.js && bin/rollup-node",
+        "test": "tape 'test/**/*-test.js'",
+        "prepublish": "npm run test && bin/rollup && uglifyjs build/d3.js -c -m -o build/d3.min.js",
+        "postpublish": "VERSION=`node -e 'console.log(require(\"./package.json\").version)'`; git push && cp -v build/d3.js ../d3.github.com/d3.v${VERSION}.js && cp -v build/d3.min.js ../d3.github.com/d3.v${VERSION}.min.js && cd ../d3.github.com && git add d3.v${VERSION}.js d3.v${VERSION}.min.js && git commit -m \"d3 ${VERSION}\" && git push && cd - && zip -j build/d3.zip -- LICENSE README.md build/d3.js build/d3.min.js"
+      },
+      "devDependencies": {
+        "json2module": "0.0",
+        "rollup": "0.26",
+        "rollup-plugin-node-resolve": "1",
+        "tape": "4",
+        "uglify-js": "2"
+      },
+      "dependencies": {
+        "d3-array": "0.7.1",
+        "d3-axis": "0.3.1",
+        "d3-collection": "0.1.2",
+        "d3-color": "0.4.2",
+        "d3-dispatch": "0.4.3",
+        "d3-drag": "0.1.2",
+        "d3-dsv": "0.3.2",
+        "d3-ease": "0.7.0",
+        "d3-force": "0.6.2",
+        "d3-format": "0.5.1",
+        "d3-hierarchy": "0.2.2",
+        "d3-interpolate": "0.7.0",
+        "d3-path": "0.1.5",
+        "d3-polygon": "0.2.1",
+        "d3-quadtree": "0.7.2",
+        "d3-queue": "2.0.3",
+        "d3-random": "0.2.1",
+        "d3-request": "0.4.6",
+        "d3-scale": "0.7.0",
+        "d3-selection": "0.7.2",
+        "d3-shape": "0.6.0",
+        "d3-time": "0.2.5",
+        "d3-time-format": "0.3.2",
+        "d3-timer": "0.4.3",
+        "d3-transition": "0.2.8",
+        "d3-voronoi": "0.3.2"
+      },
+      "gitHead": "c1254fc520246b18cd68f877a7cfa1bef5bd03cb",
+      "bugs": {
+        "url": "https://github.com/d3/d3/issues"
+      },
+      "_id": "d3@4.0.0-alpha.40",
+      "_shasum": "7a31d634d94dd257ad347ddcf5ab36db4e8fe3e0",
+      "_from": ".",
+      "_npmVersion": "3.6.0",
+      "_nodeVersion": "5.7.0",
+      "_npmUser": {
+        "name": "mbostock",
+        "email": "mbostock@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "mbostock",
+          "email": "mbostock@gmail.com"
+        },
+        {
+          "name": "jasondavies",
+          "email": "jason@jasondavies.com"
+        }
+      ],
+      "dist": {
+        "shasum": "7a31d634d94dd257ad347ddcf5ab36db4e8fe3e0",
+        "tarball": "https://registry.npmjs.org/d3/-/d3-4.0.0-alpha.40.tgz"
+      },
+      "_npmOperationalInternal": {
+        "host": "packages-12-west.internal.npmjs.com",
+        "tmp": "tmp/d3-4.0.0-alpha.40.tgz_1463163392136_0.5970023206900805"
+      },
+      "directories": {}
     }
   },
   "maintainers": [
@@ -10979,7 +11484,7 @@
     }
   ],
   "time": {
-    "modified": "2016-05-05T00:29:57.288Z",
+    "modified": "2016-05-13T18:16:34.973Z",
     "created": "2011-08-18T17:05:26.410Z",
     "1.29.5": "2011-08-18T17:05:29.698Z",
     "2.1.3": "2011-09-12T00:34:15.049Z",
@@ -11119,7 +11624,12 @@
     "4.0.0-alpha.33": "2016-04-29T18:22:46.077Z",
     "4.0.0-alpha.34": "2016-05-02T16:28:01.409Z",
     "4.0.0-alpha.35": "2016-05-03T18:30:20.978Z",
-    "3.5.17": "2016-05-05T00:29:57.288Z"
+    "3.5.17": "2016-05-05T00:29:57.288Z",
+    "4.0.0-alpha.36": "2016-05-11T15:44:52.712Z",
+    "4.0.0-alpha.37": "2016-05-11T15:51:42.469Z",
+    "4.0.0-alpha.38": "2016-05-11T23:46:56.870Z",
+    "4.0.0-alpha.39": "2016-05-12T20:44:30.744Z",
+    "4.0.0-alpha.40": "2016-05-13T18:16:34.973Z"
   },
   "author": {
     "name": "Mike Bostock",
