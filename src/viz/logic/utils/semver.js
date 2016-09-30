@@ -9,9 +9,14 @@ function parseVersion(input) {
     } else {
         var range = semver.validRange(input)
         if (range) {
-            // '~1.2.3' := '>=1.2.3 <1.3.0' -> {isRange: true, start: '1.2.3', stop: '1.3.0'}
             range = range.split(' ')
-            obj = {isRange: true, first: range[0].slice(2), stop: range[1].slice(1)}
+            if (range.length === 1) {
+                // '>= 1.0.0' := '>= 1.0.0' -> {isRelease: true, version: '1.0.0'}
+                obj = {isRelease: true, version: range[0].slice(2)}
+            } else if (range.length === 2) {
+                // '~1.2.3' := '>=1.2.3 <1.3.0' -> {isRange: true, start: '1.2.3', stop: '1.3.0'}
+                obj = {isRange: true, first: range[0].slice(2), stop: range[1].slice(1)}
+            }
         } else {
             throw 'parseVersion input: ' + JSON.stringify(input)
         }
